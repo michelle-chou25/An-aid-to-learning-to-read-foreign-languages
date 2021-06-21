@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Happiness Report</title>
+    <!-- JS -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--index style-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!--header navigation-->
+    <div class="navigationBar"></div>
+
+    <div class="my-container" style="margin-bottom: 200px;">
+        <div class="banner">
+            <img src="./img/happiness.jpeg" style="height: 10%; width: 100%;" id="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="title-section mt-5 mb-5">
+            <div class="my-title">
+                <h1 class="display-4">World Happiness Report</h1>
+                <p class="lead" style="padding: 0 200px">"The World Happiness Report, a landmark survey of the state of
+                    global happiness that ranks countries by how happy their citizens perceive themselves to be." -World
+                    Happiness Report (Image credit: widewallpapers.net) </p>
+                <hr class="my-4">
+            </div>
+        </div>
+
+        <div class="info mt-5 mb-5">
+            <div class="row">
+                <div class="col">
+                    <div id="picture">
+                        <div class="row mb-5">
+                            <div class="col-2">
+                                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-bar-chart-steps"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0z" />
+                                    <rect width="5" height="2" x="2" y="1" rx=".5" />
+                                    <rect width="8" height="2" x="4" y="5" rx=".5" />
+                                    <path
+                                        d="M6 9.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
+                                </svg>
+                            </div>
+
+                            <div class="col-10">
+                                <h1>Content</h1>
+                                <p>
+                                    Countries ranked based on their happiness, measured by social and economic factors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="picture">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-pen" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z" />
+                                </svg>
+                            </div>
+
+                            <div class="col-10">
+                                <h1>Aim</h1>
+                                <p>
+                                    Happiness indicators can be used to learn from the effects of regional policies and
+                                    inform future decisions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div id="picture">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-pen" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z" />
+                                </svg>
+                            </div>
+
+                            <div class="text-description col-10">
+                                <h1>Who</h1>
+                                <p>
+                                    Leading experts describe how measurements of well-being can be used effectively to
+                                    assess the progress of nations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="picture">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-bar-chart-steps"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0z" />
+                                    <rect width="5" height="2" x="2" y="1" rx=".5" />
+                                    <rect width="8" height="2" x="4" y="5" rx=".5" />
+                                    <path
+                                        d="M6 9.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
+                                </svg>
+                            </div>
+
+                            <div class="col-10">
+                                <h1>Meaning</h1>
+                                <p>
+                                    The reports review the state of happiness in the world and show how the new science
+                                    of happiness
+                                    explains personal and national variations in happiness.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footerBar"></div>
+</body>
+<script>
+    $(".navigationBar").load("./navigation.html");
+    $(".footerBar").load("./footer.html");
+</script>
+
+</html>
