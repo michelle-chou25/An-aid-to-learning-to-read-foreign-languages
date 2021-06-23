@@ -12,6 +12,10 @@
     width:calc(100% - 40px);margin:20px
 }
 
+.translateBox.source:hover {
+    border: 0.5px solid #9DBBF3;
+}
+
 .translateWebApp .translateHolder{
     display:flex;
     justify-content:space-between;
