@@ -1,1 +1,15 @@
-pymongo-3.11.4
+python packages:
+python 3.7.0
+pymongo 3.11.4
+Django   3.2.5
+django-cors-headers   3.7.0
+mongoengine   0.23.1
+
+database:
+mongodb    4.4.6
+
+develop tools:
+postman 8.7.0
+HbuilderX 3.1.18
+node.js v14.17.2
+robot 3t 09
