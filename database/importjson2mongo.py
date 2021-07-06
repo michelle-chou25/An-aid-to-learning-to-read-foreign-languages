@@ -2,6 +2,7 @@ import pymongo
 from pymongo import MongoClient
 import json
 
+
 class Json2Mongo(object):
     def __init__(self):
         self.host = '0.0.0.0'
