@@ -1,10 +1,11 @@
 from hyperparams import Hyperparams as hp
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 import codecs
 import regex
 
-def load_de_vocab():
+def load_cn_vocab():
     vocab = [line.split()[0] for line in codecs.open('preprocessed/cn.vocab.tsv', 'r', 'utf-8').read().splitlines() if int(line.split()[1])>=hp.min_cnt]
     word2idx = {word: idx for idx, word in enumerate(vocab)}
     idx2word = {idx: word for idx, word in enumerate(vocab)}
@@ -17,13 +18,13 @@ def load_en_vocab():
     return word2idx, idx2word
 
 def create_data(source_sents, target_sents): 
-    de2idx, idx2de = load_de_vocab()
+    cn2idx, idx2cn = load_cn_vocab()
     en2idx, idx2en = load_en_vocab()
     
     # Index
     x_list, y_list, Sources, Targets = [], [], [], []
     for source_sent, target_sent in zip(source_sents, target_sents):
-        x = [de2idx.get(word, 1) for word in (source_sent + u" </S>").split()] # 1: OOV, </S>: End of Text
+        x = [cn2idx.get(word, 1) for word in (source_sent + u" </S>").split()] # 1: OOV, </S>: End of Text
         y = [en2idx.get(word, 1) for word in (target_sent + u" </S>").split()] 
         if max(len(x), len(y)) <=hp.maxlen:
             x_list.append(np.array(x))
@@ -74,18 +75,15 @@ def load_test_data1():
 def get_batch_data():
     X, Y = load_train_data()
     
-    # 计算总共多少组
+    # calculate batch size
     num_batch = len(X) // hp.batch_size
     
-    # tf操作
     X = tf.convert_to_tensor(X, tf.int32)
     Y = tf.convert_to_tensor(Y, tf.int32)
     
-    #建队
-    input_queues = tf.train.slice_input_producer([X, Y])
+    input_queues = tf.compat.v1.train.slice_input_producer([X, Y])
             
-    # 创建队列
-    x, y = tf.train.shuffle_batch(input_queues,
+    x, y = tf.compat.v1.train.shuffle_batch(input_queues,
                                 num_threads=8,
                                 batch_size=hp.batch_size, 
                                 capacity=hp.batch_size*64,   
