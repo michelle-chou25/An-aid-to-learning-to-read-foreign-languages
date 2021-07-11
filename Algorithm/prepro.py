@@ -19,7 +19,7 @@ def make_vocab(fpath, fname):
         for word, cnt in word2cnt.most_common(len(word2cnt)):
             fout.write(u"{}\t{}\n".format(word, cnt))
 
-# if __name__ == '__main__':
-make_vocab(hp.source_train, "cn.vocab.tsv")
-make_vocab(hp.target_train, "en.vocab.tsv")
-print("Done")
+if __name__ == '__main__':
+    make_vocab(hp.source_train, "cn.vocab.tsv")
+    make_vocab(hp.target_train, "en.vocab.tsv")
+    print("Done")
