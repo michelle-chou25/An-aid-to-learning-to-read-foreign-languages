@@ -2,7 +2,7 @@ from django.db import models
 import mongoengine
 #
 # Create your models here.
-from djongo import models
+from django import models
 
 class C2ecol(mongoengine.Document):
     traditional = mongoengine.StringField(max_length=255)
