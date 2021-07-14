@@ -4,6 +4,7 @@ import jieba
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 import numpy as np
+import zhconv
 
 from hyperparams import Hyperparams as hp
 from data_load import load_cn_vocab, load_en_vocab
@@ -16,7 +17,9 @@ def eval():
     
     # acquire the terminal input
     Source = input("please input a sentence:")
-    sentence_depart = jieba.cut(Source)
+    Fan = zhconv.convert(Source, 'zh-hans')
+
+    sentence_depart = jieba.cut(Fan)
     outstr = ''
     for word in sentence_depart:
         if word != '\n':
@@ -57,7 +60,7 @@ def eval():
             for pred in preds:
                 got = " ".join(idx2en[idx] for idx in pred).split("</S>")[0].strip()
                 print("- source: " + Source +"\n")
-                print("- got: " + got + "\n\n")
+                print("- got: " + got + "\n")
                                           
 if __name__ == '__main__':
     eval()
