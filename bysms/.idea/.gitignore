@@ -46,3 +46,7 @@ venv.bak/
 *.zip
 *.tar
 *.tar
+
+#dictionary
+*.u8
+*.json
