@@ -24,6 +24,6 @@ def word(request):
                     'definitions': result[0].definitions[0]}
             return JsonResponse({"status": 200, "data": data, "msg": "query runs successfully."})
 
-
 def index(request):
     return render(request, 'index.html')
+
