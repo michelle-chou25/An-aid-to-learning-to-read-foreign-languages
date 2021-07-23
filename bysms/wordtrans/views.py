@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import C2ecol
-
+from Transformer import compose
 # Create your views here.
 from django.http import HttpResponse, JsonResponse
 import json
@@ -14,15 +14,16 @@ def word(request):
         if not result:
             result = C2ecol.objects.filter(simplified=word)
             if not result: # translation not found
-                return JsonResponse({"status":400,"data":"","msg":"query fails."})
+                result = compose.get(word)
+                return JsonResponse({"status":200,"data": result, "msg":"sentence query runs successfully."})
             else:
                 data = {"simplified": result[0].simplified, "pinyin": result[0].pinyin,
                         'definitions': result[0].definitions[0]}
-                return JsonResponse({"status": 200, "data": data, "msg": "query runs successfully."})
+                return JsonResponse({"status": 200, "data": data, "msg": "word query runs successfully."})
         else:
             data = {"simplified": result[0].simplified, "pinyin": result[0].pinyin,
                     'definitions': result[0].definitions[0]}
-            return JsonResponse({"status": 200, "data": data, "msg": "query runs successfully."})
+            return JsonResponse({"status": 200, "data": data, "msg": "word query runs successfully."})
 
 def index(request):
     return render(request, 'index.html')

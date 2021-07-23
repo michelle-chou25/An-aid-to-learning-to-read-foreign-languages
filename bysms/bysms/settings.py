@@ -57,7 +57,8 @@ ROOT_URLCONF = 'bysms.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],       # 修改位置
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), 
+                 os.path.join(BASE_DIR, 'Transformer')],      # 修改位置
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

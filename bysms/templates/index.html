@@ -44,13 +44,19 @@
 		data: JSON.stringify({word: query}),
 		success: function (data) {
 			console.log(data);
-			if(data.status == 200){
-				var res=data.data.definitions;
-				$(".targetText")[0].innerHTML=res;
-				console.log(res);
-			}else{
-				$(".targetText")[0].innerHTML='Query fails';
+			if(data.status == 200 && data.msg == "word query runs successfully."){
+				var res1=data.data.definitions;
+				$(".targetText")[0].innerHTML=res1;
+				console.log(res1);
 			}
+            if(data.status == 200 && data.msg == "sentence query runs successfully."){
+                var res2=data.data;
+				$(".targetText")[0].innerHTML=res2;
+				console.log(res2);
+            }
+            //else{
+			//	$(".targetText")[0].innerHTML='Query fails';
+			//}
 
 		}
 	});
