@@ -1,0 +1,107 @@
+<<<<<<< HEAD
+###########################################
+############ Project Specific ############
+###########################################
+## folders to ignore
+
+
+# Default ignored files
+/shelf/
+/workspace.xml
+*.xml
+
+#Pycharm specific
+.idea/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*pyc
+
+# Django stuff:
+*.log
+*.sqlite3
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Video / Image related
+*.avi
+*.mp4
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.wav
+
+# Intermediate files
+*.zip
+*.tar
+*.tar
+
+*.json
+=======
+###########################################
+############ Project Specific ############
+###########################################
+## folders to ignore
+
+
+# Default ignored files
+/shelf/
+/workspace.xml
+
+#Pycharm specific
+.idea/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+db.sqlite3
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Video / Image related
+*.avi
+*.mp4
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# Intermediate files
+*.zip
+*.tar
+*.tar
+
+*.json
+>>>>>>> 831b09b7ced459817014edac952a340665a3c256
+*.u8
