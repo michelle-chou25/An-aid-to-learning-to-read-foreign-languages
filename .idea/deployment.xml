@@ -5,7 +5,14 @@
       <paths name="nz32@pc5-010-l.cs.st-andrews.ac.uk:22 key">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/speech2text/proj" local="$PROJECT_DIR$/../../git/masrbinzhou" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="nz32@pc5-010-l.cs.st-andrews.ac.uk:22 key (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/git/masr" local="$PROJECT_DIR$/../../masr" web="/" />
           </mappings>
         </serverdata>
       </paths>
