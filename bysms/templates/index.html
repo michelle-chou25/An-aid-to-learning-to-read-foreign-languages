@@ -36,7 +36,7 @@
 		var query = $("#sourceInputField").val();
 		console.info(query)
 		$.ajax({
-		url: 'http://127.0.0.1/wordtrans/',
+		url: 'http://127.0.0.1:8000/wordtrans/',
 		dataType:"json",
 		type: 'POST',
 		contentType: "application/json;charset=UTF-8",
@@ -53,6 +53,11 @@
                 var res2=data.data;
 				$(".targetText")[0].innerHTML=res2;
 				console.log(res2);
+            }
+            if(data.status == 200 && data.msg == "chinese sentence query runs successfully."){
+                var res3=data.data;
+				$(".targetText")[0].innerHTML=res3;
+				console.log(res3);
             }
             //else{
 			//	$(".targetText")[0].innerHTML='Query fails';
@@ -90,7 +95,7 @@
     
     ttsDiv.removeChild(ttsAudio);
     var au1 = '<audio id="tts_autio_id1" autoplay="autoplay">';
-    var sss = '<source id="tts_source_id1" src="http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&per=3&spd=5&text=' + ttsText + '" type="audio/mpeg">';
+    var sss = '<source id="tts_source_id1" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&per=3&spd=5&text=' + ttsText + '" type="audio/mpeg">';
     var eee = '<embed id="tts_embed_id1" height="0" width="0" src="">';
     var au2 = '</audio>';
     ttsDiv.innerHTML = au1 + sss + eee + au2;
@@ -109,7 +114,21 @@
   document.execCommand("copy"); // 执行浏览器复制命令
   alert("copy success");
  }
-  
+    
+    //exchange source and target language
+  function exchange() {
+    var sourcediv = document.getElementById("sourceLang");
+    var sourcebutton = document.getElementById("mainButton1");
+    if (sourcediv.contains(sourcebutton)) {
+        $("#mainButton1").appendTo("#targetLang");
+        $("#mainButton2").prependTo("#sourceLang");
+    }
+    else {
+        $("#mainButton2").appendTo("#targetLang");
+        $("#mainButton1").prependTo("#sourceLang");
+    }
+      
+  }  
    
     </script>
 </head>
@@ -129,11 +148,14 @@
                                 <div class="translateHolder">
                                     <div class="translateBox source">
                                         <div class="boxTop">
-                                            <div class="customSelect sourceLang">
-                                                <button type="button", class="mainButton">
+                                            <div id="sourceLang">
+                                                <button type="button", id="mainButton1">
                                                     <img class="flag" src="https://itranslate-webapp-production.web.app/images/zh-CN.svg" alt="zh-CN">
                                                     Chinese     
-                                                    <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
+                                                <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
+                                                </button>
+                                                <button class="iconBtn Btn" type="button" data-button="btn-switch">
+                                                 <img src="https://itranslate-webapp-production.web.app/images/icon-switch.svg" alt="switch" onclick="exchange()">
                                                 </button>
                                             </div>
                                             <div class="langHistoryHolder">
@@ -170,8 +192,8 @@
                                 </div>
                                 <div class="translateBox target">
                                     <div class="boxTop">
-                                        <div class="customSelect targetLang">
-                                            <button type="button", class="mainButton">
+                                        <div id="targetLang">
+                                            <button type="button", id="mainButton2">
                                                 <img class="flag" src="https://itranslate-webapp-production.web.app/images/en-UK.svg" alt="en-UK">
                                                 English
                                                 <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->

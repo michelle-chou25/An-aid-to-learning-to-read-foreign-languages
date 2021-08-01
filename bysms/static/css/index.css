@@ -33,15 +33,28 @@
 }
 
 .customSelect{position:relative}
-.customSelect .mainButton{padding:0px 5px 2 5px; outline: none;}
-.customSelect .mainButton img{
+.customSelect #mainButton1{padding:0px 5px 2 5px; outline: none;}
+.customSelect #mainButton2{padding:0px 5px 2 5px; outline: none;}
+.customSelect #mainButton1 img{
     width:33px;
     height:33px;
     vertical-align:middle;
     margin-right:6px
 }
-.customSelect .mainButton img.flag{margin-right:10px}
-.customSelect .mainButton img.arrowdown{
+.customSelect #mainButton2 img{
+    width:33px;
+    height:33px;
+    vertical-align:middle;
+    margin-right:6px
+}
+.customSelect #mainButton1 img.flag{margin-right:10px}
+.customSelect #mainButton2 img.flag{margin-right:10px}
+.customSelect #mainButton1 img.arrowdown{
+    width:25px;
+    height:25px;
+    margin-left:5px
+}
+.customSelect #mainButton2 img.arrowdown{
     width:25px;
     height:25px;
     margin-left:5px
@@ -158,10 +171,17 @@
 }
 
 @media only screen and (max-width: 1050px){
-    .customSelect .mainButton img{
+    .customSelect #mainButton1 img{
         width:24px;height:24px
     }
-    .customSelect .mainButton img.arrowdown{
+    .customSelect #mainButton2 img{
+        width:24px;height:24px
+    }
+    .customSelect #mainButton1 img.arrowdown{
+        width:18px;
+        height:18px
+    }
+    .customSelect #mainButton2 img.arrowdown{
         width:18px;
         height:18px
     }
@@ -485,6 +505,7 @@ button.animate[data-button="btn-switch"]{
     button.textBtnBlue{padding:0px 20px}
     button.iconBtn{width:36px;height:36px;padding:0px}
     button.iconBtn.darkBtn{width:65px;height:36px;padding:0px}
+    button.iconBtn.Btn{height:36px;padding:0px}
     button.historyBtn{font-size:13px}
     button img{width:17px;height:17px;vertical-align:middle}}
 
