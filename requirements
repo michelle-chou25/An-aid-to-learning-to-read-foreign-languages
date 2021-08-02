@@ -13,3 +13,10 @@ postman 8.7.0
 HbuilderX 3.1.18
 node.js v14.17.2
 robot 3t 09
+
+algorithm packages:
+tensorflow 2.5.0
+jieba 0.42.1
+numpy 1.19.5
+zhconv 1.4.1
+tqdm 4.56.0
