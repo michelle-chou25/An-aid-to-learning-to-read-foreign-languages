@@ -4,7 +4,8 @@ import torch.nn as nn
 import torch.optim as optim
 import data
 from tensorboardX import SummaryWriter
-from warpctc_pytorch import CTCLoss
+# from warpctc_pytorch import CTCLoss
+from torch.nn import CTCLoss
 from tqdm import tqdm
 from Levenshtein import distance
 
