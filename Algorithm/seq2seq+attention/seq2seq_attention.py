@@ -30,7 +30,6 @@ import re
 # 2.2 attention
 # 2.3 decoder
 # 3. evaluation
-# 3.1 given sentence, return translated results
 
 # hyperparameters
 batch_size = 64
@@ -56,8 +55,8 @@ units = 1024
 
 
 ## preprocessing data
-source_path = "drive/MyDrive/Corpus/chinese_out.txt"
-target_path = "drive/MyDrive/Corpus/english1w.txt"
+source_path = "drive/MyDrive/Corpus/corpus_1w/chinese_out.txt"
+target_path = "drive/MyDrive/Corpus/corpus_1w/english1w.txt"
 
 # add <S> and </S>
 def MakeDataset(file_path):
@@ -123,7 +122,7 @@ for x, y in train_dataset.take(1):
   print(y)
 
 import re
-filename = 'drive/MyDrive/en_simple.txt'
+filename = 'drive/MyDrive/Corpus/seq2seq_testcorpus/en_simple.txt'
 
 def preprocess_sentence(s):
   s = s.strip()
@@ -246,7 +245,7 @@ def loss_function(real, pred):
   mask = tf.math.logical_not(tf.math.equal(real, 0))
   loss_ = loss_object(real, pred)
   mask = tf.cast(mask, dtype = loss_.dtype)
-  loss_ += mask
+  loss_ *= mask
   return tf.reduce_mean(loss_)
 
 @tf.function
@@ -270,7 +269,7 @@ def train_step(inp, targ, encoding_hidden):
 steps_per_epoch = len(source_tensor) // batch_size
 
 # checkpoint
-checkpoint_dir = 'drive/MyDrive/training_checkpoints_smalldataset'
+checkpoint_dir = 'drive/Shareddrives/ruochen.katherina@gmail.com/training_checkpoints_smalldataset'
 checkpoint_prefix = os.path.join(checkpoint_dir, 'ckpt')
 checkpoint = tf.train.Checkpoint(optimizer=optimizer, encoder=encoder, attention_model=attention_model, decoder=decoder)
 
@@ -305,7 +304,7 @@ encoder = Encoder(input_vocab_size, embedding_units, units, 1)
 attention_model = BahdanauAttention(units = 10)
 decoder = Decoder(output_vocab_size, embedding_units, units, 1)
 optimizer = keras.optimizers.Adam()
-checkpoint_dir = 'drive/MyDrive/training_checkpoints_smalldataset'
+checkpoint_dir = 'drive/Shareddrives/ruochen.katherina@gmail.com/training_checkpoints_smalldataset'
 checkpoint = tf.train.Checkpoint(optimizer=optimizer, encoder=encoder, attention_model=attention_model, decoder=decoder)
 checkpoint.restore(tf.train.latest_checkpoint(checkpoint_dir))
 
@@ -369,12 +368,12 @@ encoder = Encoder(input_vocab_size, embedding_units, units, 1)
 attention_model = BahdanauAttention(units = 10)
 decoder = Decoder(output_vocab_size, embedding_units, units, 1)
 optimizer = keras.optimizers.Adam()
-checkpoint_dir = 'drive/MyDrive/training_checkpoints'
+checkpoint_dir = 'drive/Shareddrives/ruochen.katherina@gmail.com/training_checkpoints_smalldataset'
 checkpoint = tf.train.Checkpoint(optimizer=optimizer, encoder=encoder, attention_model=attention_model, decoder=decoder)
 checkpoint.restore(tf.train.latest_checkpoint(checkpoint_dir))
 
-test_input_filepath = 'drive/MyDrive/Corpus/test_chinese.txt'
-test_output_filepath = 'drive/MyDrive/Corpus/test_english.txt'
+test_input_filepath = 'drive/MyDrive/Corpus/corpus_1w/test_chinese.txt'
+test_output_filepath = 'drive/MyDrive/Corpus/corpus_1w/test_english.txt'
 
 def seg_depart(input_sentence):
   # Chinese word segmentation for each line in the document
@@ -432,5 +431,7 @@ for line in codecs.open(test_output_filepath, 'r', 'utf-8').read().splitlines():
   targets.append([line])
 
 ## Calculate bleu score
+print(predictions)
+print(targets)
 score = corpus_bleu(targets, predictions)
 print("Bleu Score = " + str(100*score))
