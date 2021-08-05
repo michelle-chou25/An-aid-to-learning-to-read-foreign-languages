@@ -61,7 +61,7 @@ venv.bak/
 
 # Default ignored files
 /shelf/
-/workspace.xml
+*.xml
 
 #Pycharm specific
 .idea/
@@ -103,5 +103,9 @@ venv.bak/
 *.tar
 
 *.json
->>>>>>> 831b09b7ced459817014edac952a340665a3c256
+*.pth
+error
+nohup
 *.u8
+bysms/Transformer/model/
+bysms/Transformer/model_en_zh
