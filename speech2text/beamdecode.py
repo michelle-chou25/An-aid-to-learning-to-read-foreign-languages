@@ -44,7 +44,7 @@ def predict(f):
         y = model.cnn(spec) # 得到声学模型识别后的音素的张量
         y = F.softmax(y, 1) #转为概率
     y_len = torch.tensor([y.size(-1)]) # tensor张量的列数
-    y = y.permute(0, 2, 1)  # B * T * V
+    y = y.permute(0, 2, 1)  # B * T * V # 对y转置
     print("decoding")
     out, score, offset, out_len = decoder.decode(y, y_len)
     return translate(model.vocabulary, out[0][0], out_len[0][0])

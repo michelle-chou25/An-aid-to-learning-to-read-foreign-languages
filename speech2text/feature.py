@@ -56,7 +56,8 @@ def spectrogram(path, normalize=True):
     spec = mfcc(wav, sr)  # 提取MFCC特征
     # np.log1p(spec)
     # spec = np.log1p(spec)  # 对MFCC平滑处理
-    spec = torch.FloatTensor(spec)  # 把MFCC矩阵转换为torch张量，运行在cpu上，如果要运行在GPU上，改为torch.cuda.FloatTensor(spec)
+    # spec = torch.FloatTensor(spec)  # 
+    spec = torch.cuda.FloatTensor(spec) # 把MFCC矩阵转换为torch张量，运行在gpu上，如果要运行在cpu上，改为torch.FloatTensor(spec)
     if normalize:
         spec = (spec - spec.mean()) / spec.std()
     return spec

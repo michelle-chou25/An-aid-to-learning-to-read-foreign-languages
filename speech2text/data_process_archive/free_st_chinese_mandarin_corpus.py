@@ -4,6 +4,7 @@ import codecs
 import os
 from utility import download, unpack
 from utility import add_arguments, print_arguments
+# already done
 
 URL_ROOT = 'http://www.openslr.org/resources/38'
 DATA_URL = URL_ROOT + '/ST-CMDS-20170001_1-OS.tar.gz'

@@ -40,13 +40,13 @@ def train(
         dev_dataset, batch_size=batch_size, num_workers=0
     )
     parameters = model.parameters()
-    # define the optimization
+    # define the optimization。SGD
     optimizer = torch.optim.SGD(
         parameters,
         lr=learning_rate,
         momentum=momentum,
         nesterov=True,
-        weight_decay=weight_decay,
+        weight_decay=weight_decay, #权重衰减
     )
     ctcloss = CTCLoss()
     # lr_sched = torch.optim.lr_scheduler.ExponentialLR(optimizer, 0.985)
@@ -58,16 +58,17 @@ def train(
         if epoch > 0:
             train_dataloader = train_dataloader_shuffle
         # lr_sched.step()
-        # 每个epoch需要一个内部回路来更新loss，反向传播更新参数
+        # 每个epoch需要一个内部回路来反向传播求梯度，更新参数
         for i, (x, y, x_lens, y_lens) in enumerate(train_dataloader):
             x = x.cuda()
             out, out_lens = model(x, x_lens)
             out = out.transpose(0, 1).transpose(0, 2)
-            loss = ctcloss(out, y, out_lens, y_lens)
-            optimizer.zero_grad()
-            loss.backward()
+            loss = ctcloss(out, y, out_lens, y_lens) #知道当前loss是多少
+            # backward and optimizer
+            optimizer.zero_grad() #将梯度清0，避免使用的grad和上一个mini batch有关
+            loss.backward() #反向传播更新梯度
             nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
-            optimizer.step()
+            optimizer.step() #更新参数
             epoch_loss += loss.item()
             gstep += 1
             print(
@@ -75,18 +76,21 @@ def train(
                     epoch + 1, epochs, i, int(batchs), loss.item()
                 )
             )
-        epoch_loss = epoch_loss / batchs
-        cer = eval(model, dev_dataloader)
+        epoch_loss = epoch_loss / batchs # get average ctcloss for the current epoch
+        cer = eval(model, dev_dataloader) # get cer of current epoch
         print("Epoch {}: Loss= {}, CER = {}".format(epoch, epoch_loss, cer))
         if (epoch+1) % 5 == 0:
-            torch.save(model, "pretrained/model_{}.pth".format(epoch))
+            torch.save(model, "pretrained/model_{}.pth".format(epoch)) # 每隔5个epoch保存一个预训练模型
 
-def eval(model, dataloader):
-    model.eval()
+def eval(model, dataloader): # model: GLU CNN
+    model.eval() #用于测试合和预测， 为了排除BN和Dropout对测试影响
+                # 将model改为eval模式后，BN的参数固定，并采用之前训练好的全局的mean和std
     decoder = GreedyDecoder(dataloader.dataset.labels_str) # 贪婪搜索解码，只匹配最大概率
     cer = 0  # 字符错误率
     print("decoding")
-    with torch.no_grad():
+    with torch.no_grad(): # 用于停止autograd的工作， 
+                        #更进一步加速和节省gpu空间（因为不用计算和存储梯度），
+                        # # 从而可以更快计算，也可以跑更大的batch来测试
         for i, (x, y, x_lens, y_lens) in tqdm(enumerate(dataloader)):
             x = x.cuda()
             outs, out_lens = model(x, x_lens)
@@ -99,7 +103,8 @@ def eval(model, dataloader):
                 offset += y_len
             out_strings, out_offsets = decoder.decode(outs, out_lens)
             y_strings = decoder.convert_to_strings(ys)
-            for pred, truth in zip(out_strings, y_strings):
+            #zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。
+            for pred, truth in zip(out_strings, y_strings): 
                 trans, ref = pred[0], truth[0]
                 cer += decoder.cer(trans, ref) / float(len(ref))
         cer /= len(dataloader.dataset)

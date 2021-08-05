@@ -69,7 +69,7 @@ def is_ustr(in_str):
 
 
 def is_uchar(uchar):
-    if u'\u4e00' <= uchar <= u'\u9fa5':
+    if u'\u4e00' <= uchar <= u'\u9fa5': # Chinese
         return True
     if u'\u0030' <= uchar <= u'\u0039':
         return False

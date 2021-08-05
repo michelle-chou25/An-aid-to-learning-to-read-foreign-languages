@@ -36,7 +36,7 @@ class GatedConv(MASRModel):
         self.name = name
         output_units = len(vocabulary)
         modules = []
-        modules.append(ConvBlock(nn.Conv1d(161, 500, 48, 2, 97), 0.2)) # 输入层
+        modules.append(ConvBlock(nn.Conv1d(20, 500, 48, 2, 97), 0.2)) # 输入层
 
         # 隐藏层，3×3，这是最小的能够捕获像素八邻域信息的尺寸。
         # 有更多的非线性（更多层的非线性函数，使用了3个非线性激活函数），使得判决函数更加具有判决性。
