@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ###########################################
 ############ Project Specific ############
 ###########################################
@@ -52,7 +51,7 @@ venv.bak/
 *.tar
 
 *.json
-=======
+
 ###########################################
 ############ Project Specific ############
 ###########################################
@@ -61,7 +60,7 @@ venv.bak/
 
 # Default ignored files
 /shelf/
-*.xml
+/workspace.xml
 
 #Pycharm specific
 .idea/
@@ -103,9 +102,11 @@ venv.bak/
 *.tar
 
 *.json
+
+*.u8
 *.pth
 error
 nohup
-*.u8
 bysms/Transformer/model/
 bysms/Transformer/model_en_zh
+Corpus/
