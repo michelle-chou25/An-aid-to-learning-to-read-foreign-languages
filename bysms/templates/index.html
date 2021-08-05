@@ -36,7 +36,7 @@
 		var query = $("#sourceInputField").val();
 		console.info(query)
 		$.ajax({
-		url: 'http://127.0.0.1:9000/wordtrans/',
+		url: 'http://127.0.0.1:8000/wordtrans/',
 		dataType:"json",
 		type: 'POST',
 		contentType: "application/json;charset=UTF-8",
@@ -46,7 +46,7 @@
 			console.log(data);
 			if(data.status == 200 && data.msg == "word query runs successfully."){
 				var res1=data.data.definitions;
-				var res2=data.data.content;
+				var res2=data.data.content; // 返回从html抓取回的内容
 				$(".targetText")[0].innerHTML=res1;
 				console.log(res1);
 				console.log(res2);
