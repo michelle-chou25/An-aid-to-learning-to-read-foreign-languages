@@ -1,4 +1,3 @@
-__mtime__= '20210318'
 import os
 from models.conv import GatedConv
 from config import pretrained_model_path

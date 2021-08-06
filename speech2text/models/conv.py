@@ -61,6 +61,7 @@ class GatedConv(MASRModel):
                 ) // module.stride[0] + 1
         return x, lens
 
+    # prediction without language model
     def predict(self, path):
         self.eval()
         # wav = feature.load_audio(path)
