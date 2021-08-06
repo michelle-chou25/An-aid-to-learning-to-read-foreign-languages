@@ -8,7 +8,7 @@ def record_audio(wave_out_path,record_second):
     CHUNK = 1024
     FORMAT = pyaudio.paInt16
     CHANNELS = 2
-    RATE = 44100
+    RATE = 16000
     p = pyaudio.PyAudio()
     stream = p.open(format=FORMAT,
                     channels=CHANNELS,
@@ -29,4 +29,4 @@ def record_audio(wave_out_path,record_second):
     p.terminate()
     wf.close()
 
-record_audio("output.wav",record_second=8)
+record_audio("output.wav",record_second=5)

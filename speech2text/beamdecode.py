@@ -1,4 +1,4 @@
-__mtime__= '20210318'
+
 import torch
 import feature
 from models.conv import GatedConv
@@ -35,6 +35,7 @@ def translate(vocab, out, out_len):
     return "".join([vocab[x] for x in out[0:out_len]])
 
 
+
 def predict(f):
     # wav = feature.load_audio(f)
     # spec = feature.spectrogram(wav)
@@ -46,7 +47,7 @@ def predict(f):
     y_len = torch.tensor([y.size(-1)]) # tensor张量的列数
     y = y.permute(0, 2, 1)  # B * T * V # 对y转置
     print("decoding")
-    out, score, offset, out_len = decoder.decode(y, y_len)
+    out, score, offset, out_len = decoder.decode(y, y_len) # 加入了語言模型的解碼
     return translate(model.vocabulary, out[0][0], out_len[0][0])
 
 if __name__ == '__main__':

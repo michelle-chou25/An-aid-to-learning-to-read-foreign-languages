@@ -100,6 +100,7 @@ venv.bak/
 *.zip
 *.tar
 *.tar
+*tar.gz
 
 *.json
 
@@ -110,3 +111,4 @@ nohup
 bysms/Transformer/model/
 bysms/Transformer/model_en_zh
 Corpus/
+nohupt
