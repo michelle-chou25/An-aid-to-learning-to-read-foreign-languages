@@ -113,20 +113,20 @@ def eval(model, dataloader): # model: GLU CNN
                         # # 从而可以更快计算，也可以跑更大的batch来测试
         for i, (x, y, x_lens, y_lens) in tqdm(enumerate(dataloader)):
             x = x.cuda()
-            outs, out_lens = model(x, x_lens)
+            outs, out_lens = model(x, x_lens) # x卷积后的结果
             outs = F.softmax(outs, 1)
-            outs = outs.transpose(1, 2)
+            outs = outs.transpose(1, 2) # transpose dim1 and dim 2
             ys = []
             offset = 0
             for y_len in y_lens:
                 ys.append(y[offset : offset + y_len])
                 offset += y_len
             out_strings, out_offsets = decoder.decode(outs, out_lens)
-            y_strings = decoder.convert_to_strings(ys)
+            y_strings = decoder.convert_to_strings(ys) #解码后的text
             #zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。
             for pred, truth in zip(out_strings, y_strings): 
                 trans, ref = pred[0], truth[0]
-                cer += decoder.cer(trans, ref) / float(len(ref))
+                cer += decoder.cer(trans, ref) / float(len(ref)) # get character error rate by calculating Levenshtein distance
         cer /= len(dataloader.dataset)
     model.train()
     return cer

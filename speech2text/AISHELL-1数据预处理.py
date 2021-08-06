@@ -71,8 +71,8 @@ from random import shuffle
 # In[21]:
 
 
-train_path_dir = '/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/'
-dev_path_dir = '/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/dev/'
+train_path_dir = 'data_aishell/wav/train/'
+dev_path_dir = 'data_aishell/wav/dev/'
 
 
 # In[22]:
@@ -128,7 +128,7 @@ all_files_path
 
 
 _d = {}
-with open('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/transcript/aishell_transcript_v0.8.txt', encoding='utf-8') as f:
+with open('data_aishell/transcript/aishell_transcript_v0.8.txt', encoding='utf-8') as f:
     data = f.readlines()
     for i in tqdm(data):
         k, v = re.split('\s+', i, 1)
@@ -168,9 +168,9 @@ len(all_words)
 # In[36]:
 
 
-pd.DataFrame(res_train).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/train.index',index=False,header=None)
-pd.DataFrame(res_dev).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/dev.index',index=False,header=None)
-joblib.dump(all_words, '/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/labels.gz')
+pd.DataFrame(res_train).to_csv('data_aishell/train.index',index=False,header=None)
+pd.DataFrame(res_dev).to_csv('data_aishell/dev.index',index=False,header=None)
+joblib.dump(all_words, 'data_aishell/labels.gz')
 
 
 # In[13]:
