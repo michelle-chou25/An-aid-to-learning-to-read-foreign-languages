@@ -84,7 +84,7 @@ def train(
             gstep += 1
             print(
                 "[{}/{}][{}/{}]\tLoss = {}".format(
-                    epoch + 1, epochs, step+1, int(train_steps), loss.item()
+                    epoch + 1, epochs, step, int(train_steps), loss.item()
                 )
             )
             if tensorboard:
@@ -95,7 +95,7 @@ def train(
         cer = eval(model, test_dataloader) # get cer of current epoch
         epoch_loss/=train_steps
         print("Epoch {}: Loss= {}, CER = {}".format(epoch, epoch_loss, cer))
-        # cer and loss visulization
+        # cer and loss visulization for current epoch
         if tensorboard:
             writer.add_scalar("cer/epoch", cer, epoch+1)
             writer.add_scalar("loss/epoch", loss, epoch+1)
