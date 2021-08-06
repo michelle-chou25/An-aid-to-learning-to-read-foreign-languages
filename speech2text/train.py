@@ -7,6 +7,7 @@ from decoder import GreedyDecoder
 from torch.nn import CTCLoss
 import torch.nn.functional as F
 import joblib
+from tensorboardX import SummaryWriter
 from config import TRAIN_PATH, DEV_PATH, LABEL_PATH
 
 
@@ -17,8 +18,8 @@ torch.cuda.empty_cache()
 torch.cuda.memory_summary(device=None, abbreviated=False)
 def train(
     model,
-    epochs=110,
-    batch_size=128,
+    epochs=100,
+    batch_size=64,
     train_index_path=TRAIN_PATH,
     dev_index_path=DEV_PATH,
     labels_path=LABEL_PATH,
@@ -26,17 +27,22 @@ def train(
     momentum=0.8,
     max_grad_norm=0.2,
     weight_decay=0,
+    tensorboard = True
 ):
+    #  visualize log
+    if tensorboard:
+        writer = SummaryWriter()
     train_dataset = data.MASRDataset(train_index_path, labels_path)
-    batchs = (len(train_dataset) + batch_size - 1) // batch_size #计算有多少个batch需要训练
+    # batchs = (len(train_dataset) + batch_size - 1) // batch_size #计算有多少个batch需要训练
+    
     dev_dataset = data.MASRDataset(dev_index_path, labels_path)
-    train_dataloader = data.MASRDataLoader(
-        train_dataset, batch_size=batch_size, num_workers=0
-    )
+    # train_dataloader = data.MASRDataLoader(
+    #     train_dataset, batch_size=batch_size, num_workers=0
+    # )
     train_dataloader_shuffle = data.MASRDataLoader(
         train_dataset, batch_size=batch_size, num_workers=0, shuffle=True
     )
-    dev_dataloader = data.MASRDataLoader(
+    test_dataloader = data.MASRDataLoader(
         dev_dataset, batch_size=batch_size, num_workers=0
     )
     parameters = model.parameters()
@@ -55,30 +61,44 @@ def train(
     # enumerate epochs
     for epoch in range(epochs):
         epoch_loss = 0
-        if epoch > 0:
-            train_dataloader = train_dataloader_shuffle
+        train_dataloader = train_dataloader_shuffle
+        train_steps = len(train_dataloader)
         # lr_sched.step()
         # 每个epoch需要一个内部回路来反向传播求梯度，更新参数
-        for i, (x, y, x_lens, y_lens) in enumerate(train_dataloader):
+        for step, (x, y, x_lens, y_lens) in enumerate(train_dataloader):
             x = x.cuda()
             out, out_lens = model(x, x_lens)
             out = out.transpose(0, 1).transpose(0, 2)
+            # loss=ctcloss(input=out, target=y, input_lengths=out_lens, target_lengths=y_lens)
             loss = ctcloss(out, y, out_lens, y_lens) #知道当前loss是多少
-            # backward and optimizer
+            
+            #  backward propagation and optimizer
             optimizer.zero_grad() #将梯度清0，避免使用的grad和上一个mini batch有关
-            loss.backward() #反向传播更新梯度
-            nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
+            #  反向传播更新梯度
+            loss.backward() 
+            #  梯度截断，将梯度约束在某一个区间之内，防止梯度爆炸
+            #  在训练的过程中，在优化器更新之前进行梯度截断操作。
+            nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm) 
             optimizer.step() #更新参数
             epoch_loss += loss.item()
             gstep += 1
             print(
                 "[{}/{}][{}/{}]\tLoss = {}".format(
-                    epoch + 1, epochs, i, int(batchs), loss.item()
+                    epoch + 1, epochs, step+1, int(train_steps), loss.item()
                 )
             )
-        epoch_loss = epoch_loss / batchs # get average ctcloss for the current epoch
-        cer = eval(model, dev_dataloader) # get cer of current epoch
+            if tensorboard:
+                writer.add_scalar("loss/step", loss.item(), gstep)
+
+        # epoch_loss = epoch_loss / batchs # get average ctcloss for the current epoch
+        
+        cer = eval(model, test_dataloader) # get cer of current epoch
+        epoch_loss/=train_steps
         print("Epoch {}: Loss= {}, CER = {}".format(epoch, epoch_loss, cer))
+        # cer and loss visulization
+        if tensorboard:
+            writer.add_scalar("cer/epoch", cer, epoch+1)
+            writer.add_scalar("loss/epoch", loss, epoch+1)
         if (epoch+1) % 5 == 0:
             torch.save(model, "pretrained/model_{}.pth".format(epoch)) # 每隔5个epoch保存一个预训练模型
 
@@ -118,3 +138,5 @@ if __name__ == "__main__":
     model = GatedConv(vocabulary)
     model.cuda() # 把模型从CPU迁移到GPU上
     train(model)
+    # model.to_train()
+    # model.fit()
