@@ -46,8 +46,11 @@
 			console.log(data);
 			if(data.status == 200 && data.msg == "word query runs successfully."){
 				var res1=data.data.definitions;
+				var res2=data.data.content; // 返回从html抓取回的内容
 				$(".targetText")[0].innerHTML=res1;
 				console.log(res1);
+				console.log(res2);
+				document.getElementById("sourceInputField").value=res2;
 			}
             if(data.status == 200 && data.msg == "sentence query runs successfully."){
                 var res2=data.data;

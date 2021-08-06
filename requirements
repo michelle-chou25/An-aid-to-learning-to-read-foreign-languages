@@ -14,9 +14,24 @@ HbuilderX 3.1.18
 node.js v14.17.2
 robot 3t 09
 
+
 algorithm packages:
 tensorflow 2.5.0
 jieba 0.42.1
 numpy 1.19.5
 zhconv 1.4.1
 tqdm 4.56.0
+jieba 0.42.1
+fake-useragent 0.1.11
+torch==1.8.1
+Levenshtein==0.12.0
+librosa==0.8.0
+tensorboardX==2.1
+ctcdecode==1.0.2
+sounddevice==0.4.1
+pyaudio==0.2.11
+Flask==1.1.2
+Flask-Cors==3.0.9
+joblib==1.0.0
+scipy          1.7.0
+

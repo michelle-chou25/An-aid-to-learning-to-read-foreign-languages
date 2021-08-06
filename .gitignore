@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ###########################################
 ############ Project Specific ############
 ###########################################
@@ -16,7 +15,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*pyc
+*.pyc
 
 # Django stuff:
 *.log
@@ -52,7 +51,7 @@ venv.bak/
 *.tar
 
 *.json
-=======
+
 ###########################################
 ############ Project Specific ############
 ###########################################
@@ -101,7 +100,15 @@ venv.bak/
 *.zip
 *.tar
 *.tar
+*tar.gz
 
 *.json
->>>>>>> 831b09b7ced459817014edac952a340665a3c256
+
 *.u8
+*.pth
+error
+nohup
+bysms/Transformer/model/
+bysms/Transformer/model_en_zh
+Corpus/
+nohupt

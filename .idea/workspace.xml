@@ -6,8 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/speech2text/playaudio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/stop recording when speaker stops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/bysms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/bysms/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/output.wav" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/output.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/play_audio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/record_audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/recordaudio.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +43,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bysms/manage.py" />
+    <property name="credentialsType com.jetbrains.python.remote.PyCreateRemoteInterpreterDialog$PyCreateRemoteSdkForm" value="Web Deployment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../git/masrbinzhou" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -47,7 +60,29 @@
       <recent name="D:\CS5014\An-aid-to-learning-to-read-foreign-languages\dict" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.play_audio">
+  <component name="RunManager" selected="Python.train (1)">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="debug" type="PythonConfigurationType" factoryName="Python">
       <module name="An-aid-to-learning-to-read-foreign-languages" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,19 +105,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="play_audio" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="An-aid-to-learning-to-read-foreign-languages" />
+    <configuration name="playaudio (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Michelle\anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/play_audio.py" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/playaudio.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="record_audio (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="playaudio (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="An-aid-to-learning-to-read-foreign-languages" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,54 +135,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/record_audio.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="record_audio" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="An-aid-to-learning-to-read-foreign-languages" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\CS5014\An-aid-to-learning-to-read-foreign-languages\speech2text\record_audio.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="server_temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="An-aid-to-learning-to-read-foreign-languages" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="/" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\CS5014\An-aid-to-learning-to-read-foreign-languages\server\server_temp.py" />
+      <option name="SCRIPT_NAME" value="&lt;49d61826-d448-4458-b300-c6b613e7e6da&gt;/git/An-aid-to-learning-to-read-foreign-languages/speech2text/playaudio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="An-aid-to-learning-to-read-foreign-languages" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="&lt;49d61826-d448-4458-b300-c6b613e7e6da&gt;/speech2text/proj/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="An-aid-to-learning-to-read-foreign-languages" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="&lt;49d61826-d448-4458-b300-c6b613e7e6da&gt;/git/masrbinzhou/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,35 +200,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Michelle\anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\CS5014\An-aid-to-learning-to-read-foreign-languages\url_content_temp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="url_content_temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="An-aid-to-learning-to-read-foreign-languages" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\CS5014\An-aid-to-learning-to-read-foreign-languages\url_content_temp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/url_content_temp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,19 +217,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.debug" />
-      <item itemvalue="Python.play_audio" />
-      <item itemvalue="Python.record_audio (1)" />
-      <item itemvalue="Python.record_audio" />
-      <item itemvalue="Python.server_temp" />
+      <item itemvalue="Python.playaudio (1)" />
+      <item itemvalue="Python.playaudio (2)" />
       <item itemvalue="Python.url_content_temp" />
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.train (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.play_audio" />
-        <item itemvalue="Python.record_audio (1)" />
-        <item itemvalue="Python.record_audio" />
+        <item itemvalue="Python.train (1)" />
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.url_content_temp" />
-        <item itemvalue="Python.url_content_temp" />
+        <item itemvalue="Python.playaudio (2)" />
+        <item itemvalue="Python.playaudio (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -231,6 +247,14 @@
       <workItem from="1626528597368" duration="6617000" />
       <workItem from="1626623845856" duration="4393000" />
       <workItem from="1626731299289" duration="19006000" />
+      <workItem from="1627433518352" duration="2168000" />
+      <workItem from="1627682326134" duration="707000" />
+      <workItem from="1627683283120" duration="10229000" />
+      <workItem from="1627747351763" duration="7752000" />
+      <workItem from="1627755378315" duration="73000" />
+      <workItem from="1627756234483" duration="641000" />
+      <workItem from="1627756984177" duration="10000" />
+      <workItem from="1627757365479" duration="131000" />
     </task>
     <servers />
   </component>
@@ -255,56 +279,23 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1515" height="92" key="GridCell.Tab.0.bottom" timestamp="1627087782690">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627087782690" />
-    <state width="1515" height="92" key="GridCell.Tab.0.center" timestamp="1627087782690">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1627087782690" />
-    <state width="1515" height="92" key="GridCell.Tab.0.left" timestamp="1627087782689">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1627087782689" />
-    <state width="1515" height="92" key="GridCell.Tab.0.right" timestamp="1627087782690">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1627087782690" />
-    <state width="1515" height="92" key="GridCell.Tab.1.bottom" timestamp="1627087782690">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627087782690" />
-    <state width="1515" height="92" key="GridCell.Tab.1.center" timestamp="1627087782690">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1627087782690" />
-    <state width="1515" height="92" key="GridCell.Tab.1.left" timestamp="1627087782690">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1627087782690" />
-    <state width="1515" height="92" key="GridCell.Tab.1.right" timestamp="1627087782690">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="92" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1627087782690" />
-    <state x="270" y="56" key="SettingsEditor" timestamp="1627078993523">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1627078993523" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/url_content_temp.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/url_content_temp.py</url>
           <line>18</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/speech2text/playaudio.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/speech2text/stop recording when speaker stops.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -313,7 +304,16 @@
         <watch expression="requests" language="Python" />
         <watch expression="html=res.text" language="Python" />
         <watch expression="a" language="Python" />
+        <watch expression="sum(fft_data) // len(fft_data)" language="Python" />
+        <watch expression="sum(fft_data)" language="Python" />
+        <watch expression="len(fft_data)" language="Python" />
+        <watch expression="np.abs(fft_temp_data)" language="Python" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$train.coverage" NAME="train Coverage Results" MODIFIED="1627682673500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
+    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$train__1_.coverage" NAME="train (1) Coverage Results" MODIFIED="1627756535371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
+    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$url_content_temp.coverage" NAME="url_content_temp Coverage Results" MODIFIED="1627682597755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
