@@ -415,26 +415,26 @@ class Graph():
                 tf.summary.scalar('mean_loss', self.mean_loss)
                 self.merged = tf.summary.merge_all()
 
-if __name__ == '__main__':                    
-    cn2idx, idx2cn = load_cn_vocab()
-    en2idx, idx2en = load_en_vocab()
+# if __name__ == '__main__':                    
+#     cn2idx, idx2cn = load_cn_vocab()
+#     en2idx, idx2en = load_en_vocab()
     
-    g = Graph("train"); print("load successfully")
+#     g = Graph("train"); print("load successfully")
     
-    sv = tf.train.Supervisor(graph=g.graph, 
-                             logdir=logdir,
-                             save_model_secs=0)
-    with sv.managed_session() as sess:
-        for epoch in range(1, num_epochs+1): 
-            print('The%d' % (epoch)+'period')
-            if sv.should_stop(): break
-            for step in tqdm(range(g.num_batch), total=g.num_batch, ncols=70, leave=False, unit='b'):
-                sess.run(g.train_op)
+#     sv = tf.train.Supervisor(graph=g.graph, 
+#                              logdir=logdir,
+#                              save_model_secs=0)
+#     with sv.managed_session() as sess:
+#         for epoch in range(1, num_epochs+1): 
+#             print('The%d' % (epoch)+'period')
+#             if sv.should_stop(): break
+#             for step in tqdm(range(g.num_batch), total=g.num_batch, ncols=70, leave=False, unit='b'):
+#                 sess.run(g.train_op)
                 
-            gs = sess.run(g.global_step)   
-            sv.saver.save(sess, logdir + '/model_epoch_%02d_gs_%d' % (epoch, gs))
+#             gs = sess.run(g.global_step)   
+#             sv.saver.save(sess, logdir + '/model_epoch_%02d_gs_%d' % (epoch, gs))
     
-    print("Done")
+#     print("Done")
 
 import os
 def eval(): 

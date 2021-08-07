@@ -238,20 +238,20 @@
 - expected: 各市 人民政府 对 此项 市政 基础设施 配套 建设费 应 酌情 给予 减免 .
 - got: <UNK> <UNK> 对 <UNK> <UNK> 基础设施 <UNK> 应 <UNK> 给予 <UNK> .
 
+- source: for example , a high - tech estate should be set up in beijing 's zhongguancun , and urban planning should provide services for it .
+- expected: 如 北京 中关村 要 建高 科技园 , 城市规划 就 为 其 服务 , 提供 多个 规划 方案 进行 优化 比选 .
+- got: 如 北京 <UNK> 要 <UNK> , <UNK> 就 为 其 服务 , 提供 <UNK> 规划 方案 进行 优化 <UNK> .
+
 - source: we have the advantages of comparatively low wages and high - quality labor force . accession to the wto will greatly expand our market and tap our potential .
-- expected: 其次 , 随着 产业结构 的 变化 , 每个 城市 要 结合 自身 特点 , 对 其 性质 和 职能 作出 恰当 的 调整 和 选择 .
+- expected: 我们 有 工资 成本 较 低 , 素质 较 高 的 劳动力 , 将会 极大 地 释放 市场 拓展 潜力 .
 - got: 我们 有 <UNK> 成本 较 低 , 素质 较 高 的 <UNK> , 将会 极大 地 <UNK> 市场 <UNK> 市场 <UNK> .
 
-- source: canceling the guiding plan of food production , canceling price supports for some types of foods , and implementing strategic reform were major events for a billion farmers .
-- expected: 在 朱镕基 总理 所作 的 《 政府 工作 报告 》 中 , 第一 没有 出现 的 计划指标 除了 " 增长速度 " 以外 , 还有 一个 : 粮食产量 .
-- got: 1999 年 7 月 <UNK> 日 , <UNK> <UNK> 改革 <UNK> , <UNK> 为 <UNK> 服务 , <UNK> 服务 於 <UNK> 生产 , <UNK> 生产 .
+- source: the one - man camouflage smoke launcher and assembled false target that they developed and improved won a third - class prize for military scientific and technological progress .
+- expected: 他们 革新 成功 的 单兵 伪装 烟幕 发射装置 , 组装 式 假 目标 等 成果 , 还 获得 军队 科技进步 成果 三等奖 .
+- got: 他们 <UNK> 成功 的 <UNK> <UNK> <UNK> <UNK> , <UNK> <UNK> <UNK> 目标 等 成果 , 还 获得 军队 科技进步 成果 <UNK> .
 
-- source: take cereal , for example .
+- source: does this mean that brown 's worries were without basis ?
 - expected: 这 是否 意味着 布朗 的 担忧 没有 根据 ?
-- got: <UNK> 是 农业 科技进步 对 粮食 <UNK> 起 了 重要 <UNK> .
+- got: 这 是否 <UNK> 的 <UNK> 没有 根据 ?
 
-- source: in 1998 , yield was 330.2 kg per acre , compared to 1992 , when it was 289.5 kg per acre , which is a 14% increase .
-- expected: 其次 是 农业 科技进步 对 粮食 增产 起 了 重要 促进作用 .
-- got: 以 <UNK> <UNK> , 1998 年 <UNK> <UNK> , 比 <UNK> <UNK> 提高 了 <UNK> .
-
-Bleu Score = 50.462702431050964
+Bleu Score = 53.722808682902944
