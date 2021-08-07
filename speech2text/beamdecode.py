@@ -1,4 +1,4 @@
-
+# coding: utf-8
 import torch
 import feature
 from models.conv import GatedConv

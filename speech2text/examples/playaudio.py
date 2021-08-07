@@ -1,4 +1,5 @@
 """PyAudio Example: Play a WAVE file."""
+# coding: utf-8
 import pyaudio
 import wave
 from tqdm import tqdm
