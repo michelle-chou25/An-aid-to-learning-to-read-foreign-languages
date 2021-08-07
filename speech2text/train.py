@@ -1,3 +1,4 @@
+# coding: utf-8
 import torch
 import torch.nn as nn
 import data
@@ -19,7 +20,7 @@ torch.cuda.memory_summary(device=None, abbreviated=False)
 def train(
     model,
     epochs=100,
-    batch_size=64,
+    batch_size=128,
     train_index_path=TRAIN_PATH,
     dev_index_path=DEV_PATH,
     labels_path=LABEL_PATH,
@@ -102,35 +103,37 @@ def train(
         if (epoch+1) % 5 == 0:
             torch.save(model, "pretrained/model_{}.pth".format(epoch)) # 每隔5个epoch保存一个预训练模型
 
-def eval(model, dataloader): # model: GLU CNN
-    model.eval() #用于测试合和预测， 为了排除BN和Dropout对测试影响
-                # 将model改为eval模式后，BN的参数固定，并采用之前训练好的全局的mean和std
-    decoder = GreedyDecoder(dataloader.dataset.labels_str) # 贪婪搜索解码，只匹配最大概率
+def eval(model, dataloader):
+    # 用于测试合和预测， 为了排除Batch Normalization和Dropout对测试影响
+    # 将model改为eval模式后，BN的参数固定，并采用之前训练好的全局的mean和std
+    model.eval()
+    decoder = GreedyDecoder(dataloader.dataset.labels_str)
     cer = 0  # 字符错误率
     print("decoding")
-    with torch.no_grad(): # 用于停止autograd的工作， 
-                        #更进一步加速和节省gpu空间（因为不用计算和存储梯度），
-                        # # 从而可以更快计算，也可以跑更大的batch来测试
+    #  no_grad()用于停止autograd的工作，
+    # 更进一步加速和节省gpu空间（因为不用计算和存储梯度），
+    # # 从而可以更快计算，也可以跑更大的batch来测试
+    with torch.no_grad():
         for i, (x, y, x_lens, y_lens) in tqdm(enumerate(dataloader)):
-            x = x.cuda()
-            outs, out_lens = model(x, x_lens) # x卷积后的结果
+            x = x.cuda()  # x卷积后的结果
+            outs, out_lens = model(x, x_lens)
             outs = F.softmax(outs, 1)
-            outs = outs.transpose(1, 2) # transpose dim1 and dim 2
+            outs = outs.transpose(1, 2)
             ys = []
             offset = 0
             for y_len in y_lens:
                 ys.append(y[offset : offset + y_len])
                 offset += y_len
             out_strings, out_offsets = decoder.decode(outs, out_lens)
-            y_strings = decoder.convert_to_strings(ys) #解码后的text
-            #zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。
-            for pred, truth in zip(out_strings, y_strings): 
+            y_strings = decoder.convert_to_strings(ys)  # 解码后的text
+            #  zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。
+            for pred, truth in zip(out_strings, y_strings):
                 trans, ref = pred[0], truth[0]
-                cer += decoder.cer(trans, ref) / float(len(ref)) # get character error rate by calculating Levenshtein distance
+                # get character error rate by calculating Levenshtein distance
+                cer += decoder.cer(trans, ref) / float(len(ref))
         cer /= len(dataloader.dataset)
     model.train()
     return cer
-
 
 if __name__ == "__main__":
     vocabulary = joblib.load(LABEL_PATH) # vocabulary：训练集中的全部汉字

@@ -1,3 +1,4 @@
+# coding: utf-8
 import Levenshtein as Lev
 import torch
 from six.moves import xrange
