@@ -112,3 +112,6 @@ bysms/Transformer/model/
 bysms/Transformer/model_en_zh
 Corpus/
 nohupt
+speech2text/data_aishell/train.index
+speech2text/data_aishell/dev.index
+speech2text/data_aishell/labels.gz
