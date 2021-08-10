@@ -28,7 +28,5 @@ tensorboardX==2.1
 ctcdecode==1.0.2
 sounddevice==0.4.1
 pyaudio==0.2.11
-Flask==1.1.2
-Flask-Cors==3.0.9
 joblib==1.0.0
 scipy                             1.7.0

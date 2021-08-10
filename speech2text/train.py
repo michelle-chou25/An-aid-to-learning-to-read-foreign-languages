@@ -19,7 +19,7 @@ torch.cuda.empty_cache()
 torch.cuda.memory_summary(device=None, abbreviated=False)
 def train(
     model,
-    epochs=100,
+    epochs=120,
     batch_size=128,
     train_index_path=TRAIN_PATH,
     dev_index_path=DEV_PATH,
@@ -117,7 +117,7 @@ def eval(model, dataloader):
         for i, (x, y, x_lens, y_lens) in tqdm(enumerate(dataloader)):
             x = x.cuda()  # x卷积后的结果
             outs, out_lens = model(x, x_lens)
-            outs = F.softmax(outs, 1)
+            outs = F.softmax(outs, 1) # 对n维输入张量运用Softmax函数, dim=0为按列计算，dim=1为按行计算
             outs = outs.transpose(1, 2)
             ys = []
             offset = 0
