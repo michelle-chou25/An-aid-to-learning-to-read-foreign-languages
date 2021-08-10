@@ -36,7 +36,7 @@
 		var query = $("#sourceInputField").val();
 		console.info(query)
 		$.ajax({
-		url: 'http://127.0.0.1:8000/wordtrans/',
+		url: 'http://127.0.0.1:9000/wordtrans/',
 		dataType:"json",
 		type: 'POST',
 		contentType: "application/json;charset=UTF-8",
@@ -46,8 +46,11 @@
 			console.log(data);
 			if(data.status == 200 && data.msg == "word query runs successfully."){
 				var res1=data.data.definitions;
+				var res2=data.data.content;
 				$(".targetText")[0].innerHTML=res1;
 				console.log(res1);
+				console.log(res2);
+				document.getElementById("sourceInputField").value=res2;
 			}
             if(data.status == 200 && data.msg == "sentence query runs successfully."){
                 var res2=data.data;
@@ -92,7 +95,7 @@
     var ttsAudio = document.getElementById('tts_autio_id1');
     var ttsText = $(".targetText")[0].innerHTML;
     console.log(ttsText);
-    
+
     ttsDiv.removeChild(ttsAudio);
     var au1 = '<audio id="tts_autio_id1" autoplay="autoplay">';
     var sss = '<source id="tts_source_id1" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&per=3&spd=5&text=' + ttsText + '" type="audio/mpeg">';
@@ -114,7 +117,7 @@
   document.execCommand("copy"); // 执行浏览器复制命令
   alert("copy success");
  }
-    
+
     //exchange source and target language
   function exchange() {
     var sourcediv = document.getElementById("sourceLang");
@@ -127,13 +130,16 @@
         $("#mainButton2").appendTo("#targetLang");
         $("#mainButton1").prependTo("#sourceLang");
     }
-      
-  }  
-   
+
+  }
+
     </script>
 </head>
-
 <body style="background-color: aliceblue;">
+    <div class="app">
+        <button class="record-btn">record</button>
+        <audio controls class="audio-player"></audio>
+    </div>
     <div class="my-container">
         <div class="banner"  style="background-color: aliceblue;">
             <div class="title-section mt-5 mb-5">
@@ -142,6 +148,7 @@
                     <p>This tool aims to design a webpage for English speakers, who expect to obtain translation from
                         Chinese to English together with more linguistic information.
                     </p>
+
                     <div class="webappLayout">
                         <div id="react-webapp">
                             <div class="translateWebApp">
@@ -151,7 +158,7 @@
                                             <div id="sourceLang">
                                                 <button type="button", id="mainButton1">
                                                     <img class="flag" src="https://itranslate-webapp-production.web.app/images/zh-CN.svg" alt="zh-CN">
-                                                    Chinese     
+                                                    Chinese
                                                 <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
                                                 </button>
                                                 <button class="iconBtn Btn" type="button" data-button="btn-switch">
@@ -160,7 +167,7 @@
                                             </div>
                                             <div class="langHistoryHolder">
                                                 <!-- <button type="button" class="historyBtn">Spanish</button> -->
-                                                
+
                                                 <!-- Confirm button -->
                                                 <!-- <button type="button" class="historyBtn">Confirm</button> -->
                                             </div>
@@ -227,8 +234,8 @@
                             </div>
                         </div>
                     </div>
-                </div>         
-            </div>         
+                </div>
+            </div>
         </div>
     </div>
    <!-- footer -->
@@ -239,8 +246,9 @@
     </footer>
 </div>
 <!-- <iframe src="https://www.baidu.com" width="100%" height="100px"></iframe> -->
- 
-</body>
 
+</body>
+<!-- 录音音频播放 -->
+<script src="../static/js/recorder.js"></script>
 
 </html>
