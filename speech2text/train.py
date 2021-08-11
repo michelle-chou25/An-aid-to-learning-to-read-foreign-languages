@@ -20,7 +20,7 @@ torch.cuda.memory_summary(device=None, abbreviated=False)
 def train(
     model,
     epochs=100,
-    batch_size=128,
+    batch_size=64,
     train_index_path=TRAIN_PATH,
     dev_index_path=DEV_PATH,
     labels_path=LABEL_PATH,

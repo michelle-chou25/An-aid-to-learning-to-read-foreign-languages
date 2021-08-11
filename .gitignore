@@ -8,6 +8,7 @@
 /shelf/
 /workspace.xml
 *.xml
+*.iml
 
 #Pycharm specific
 .idea/
@@ -112,3 +113,6 @@ bysms/Transformer/model/
 bysms/Transformer/model_en_zh
 Corpus/
 nohupt
+speech2text/pretrained/nano.save
+runs/
+speech2text/results/

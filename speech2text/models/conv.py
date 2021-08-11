@@ -1,6 +1,7 @@
 # coding: utf-8
 import torch
 import torch.nn as nn
+from torch.nn.functional import hardtanh
 from torch.nn.utils import weight_norm
 from .base import MASRModel
 import feature
@@ -15,6 +16,7 @@ class ConvBlock(nn.Module):
         # 激活函数1维GLU  是Relu激活单元：(X * W + b)，加上一个Sigmoid激活单元：O(X * V + c)构成的gate unit
         # 详解见肖桐的书9.3.3
         self.act = nn.GLU(1)
+        # self.act = nn.Hardtanh()
         self.dropout = nn.Dropout(p, inplace=True)  # 每次都随机让一些神经元不参与运算，也就是达到局部连接的作用, dropout设为0.3到0.5
 
     def forward(self, x): # 传播
