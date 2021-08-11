@@ -31,7 +31,7 @@ def play_audio(wave_path):
     stream.close()
     # close PyAudio (5)
     p.terminate()
-play_audio("output.wav")
+play_audio("../data_aishell/output.wav")
 
 
 # speech recognition
