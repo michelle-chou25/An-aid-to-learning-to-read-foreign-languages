@@ -6,15 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/speech2text/playaudio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech2text/stop recording when speaker stops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/data_aishell/transcript/aishell_transcript_v0.8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/pretrained" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/output.wav" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/output.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/play_audio.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/record_audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/recordaudio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/AISHELL-1数据预处理.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/AISHELL-1数据预处理.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/data_aishell/labels.gz" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/data_aishell/labels.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/models/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/models/conv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/models/trainable.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/models/trainable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/pretrained/model_104.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/pretrained/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +42,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1uVIfM5B2XKGrvd6t9KCMUZMX3G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -310,10 +316,5 @@
         <watch expression="np.abs(fft_temp_data)" language="Python" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$train.coverage" NAME="train Coverage Results" MODIFIED="1627682673500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
-    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$train__1_.coverage" NAME="train (1) Coverage Results" MODIFIED="1627756535371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
-    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$url_content_temp.coverage" NAME="url_content_temp Coverage Results" MODIFIED="1627682597755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
