@@ -1,4 +1,4 @@
-#coding: utf-8
+# coding: utf-8
 # 录音模块sounddevice或者pyaudio
 # pyaudio版本
 import pyaudio
