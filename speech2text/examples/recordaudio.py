@@ -29,4 +29,4 @@ def record_audio(wave_out_path,record_second):
     p.terminate()
     wf.close()
 
-record_audio("output.wav", record_second=5)
+record_audio("../data_aishell/output.wav", record_second=5)

@@ -14,6 +14,8 @@ HbuilderX 3.1.18
 node.js v14.17.2
 robot 3t 09
 
+
+algorithm packages:
 tensorflow 2.5.0
 jieba 0.42.1
 numpy 1.19.5
@@ -30,3 +32,4 @@ sounddevice==0.4.1
 pyaudio==0.2.11
 joblib==1.0.0
 scipy                             1.7.0
+
