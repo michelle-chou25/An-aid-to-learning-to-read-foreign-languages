@@ -75,28 +75,32 @@ def word(request):
             data = {"content": infoStr, "definitions": tempResult}
             return JsonResponse({"status": 200, "data": data, "msg": "word query runs successfully."})
         else:
-            word = req.get("word")
+            word= req.get("word")
+            id = req.get("id")
+            print(id)
+            print(word)
             for ch in word:
-                if u'\u4e00' <= ch <= u'\u9fff':  # Chinese
+                if id == "mainButton1" and u'\u4e00' <= ch <= u'\u9fff': #source button is Chinese and source language has Chinese
                     result = C2ecol.objects.filter(traditional=word)
                     if not result:
-                        print("result: ", result)
                         result = C2ecol.objects.filter(simplified=word)
-                        if not result:  # translation not found
-                            result = compose.get(word)  # call paragraph translation model of English->Chinese
-                            return JsonResponse({"status": 200, "data": result, "msg": "chinese sentence query runs successfully."})
+                        if not result: # translation not found
+                            result = compose.get(word)
+                            return JsonResponse({"status":200,"data": result, "msg":"chinese sentence query runs successfully."})
                         else:
                             data = {"simplified": result[0].simplified, "pinyin": result[0].pinyin,
-                                    'definitions': result[0].definitions[0],"content":word}
+                                    'definitions': result[0].definitions[0]}
                             return JsonResponse({"status": 200, "data": data, "msg": "word query runs successfully."})
                     else:
                         data = {"simplified": result[0].simplified, "pinyin": result[0].pinyin,
-                                'definitions': result[0].definitions[0],"content":word}
+                                'definitions': result[0].definitions[0]}
                         return JsonResponse({"status": 200, "data": data, "msg": "word query runs successfully."})
-                else:  # English
-                    result = compose.get_en(word)  # call paragraph translation model of Chinese->English
-                    return JsonResponse({"status": 200, "data": result, "msg": "sentence query runs successfully."})
-
+                if id == "mainButton2" and (u'\u0041' <= ch <= u'\u005a' or u'\u0061' <= ch <= u'\u007a'): #source button is English and source language has English
+                    result = compose.get_en(word)
+                    return JsonResponse({"status":200,"data": result, "msg":"sentence query runs successfully."})
+                else:
+                    return JsonResponse({"status":200,"data": "translate failed", "msg":"translate failed"})
+    
 def index(request):
     return render(request, 'index.html')
 
