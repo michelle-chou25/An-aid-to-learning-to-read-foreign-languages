@@ -1,6 +1,39 @@
-#!/usr/bin/env python
 # coding: utf-8
+"""
+This file is to do the data preprocessing of speech corpus, the output of train.index and dev.index are like:
+[['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/S0016/BAC009S0016W0295.wav',
+  '苹果占有全球智能手机市场百分之十一点七的市场份额'],
+ ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/S0016/BAC009S0016W0479.wav',
+  '八十三名中企工人因公司欠薪被困蒙古挖野菜充饥'],
+ ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/S0016/BAC009S0016W0162.wav',
+  '目前还处于互联网家装的发展初期'],
+ ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/S0016/BAC009S0016W0128.wav',
+  '悦家的身份其实是多品牌多集成的综合营销管道'],
+ ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/S0016/BAC009S0016W0359.wav',
+  '汤普森以零点零三秒之差屈于亚军'],
+ ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/S0016/BAC009S0016W0478.wav',
+  '在庆平胡同的一间小平房里'],
+ ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train/S0016/BAC009S0016W0147.wav',
+  '要说服精明的投资人'],
 
+the output of labels.gz is all Chinses characters in dataset:
+['_',
+ '匣',
+ '胶',
+ '讶',
+ '泔',
+ '双',
+ '棕',
+ '祠',
+ '摧',
+ '昨',
+ '掐',
+ '枉',
+ '童',
+ '桂',
+ '扶',
+
+"""
 # In[4]:
 
 
@@ -134,13 +167,6 @@ with open('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2te
     idx = f.readlines()
 idx = [x.strip().split(",", 1) for x in idx]
 
-
-# In[53]:
-
-
-
-
-
 # In[56]:
 
 
@@ -155,28 +181,6 @@ idx = [x.strip().split(",", 1) for x in idx]
 
 
 all_words
-
-
-# In[58]:
-
-
-
-
-
-# In[59]:
-
-
-
-
-
-# In[60]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
