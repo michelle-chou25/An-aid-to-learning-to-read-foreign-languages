@@ -1,4 +1,5 @@
 # coding: utf-8
+# from speech2text.validate import validate
 import torch
 import torch.nn as nn
 import data
@@ -20,14 +21,18 @@ torch.cuda.memory_summary(device=None, abbreviated=False)
 def train(
     model,
     epochs=100,
+<<<<<<< Updated upstream
     batch_size=64,
+=======
+    batch_size=128,
+>>>>>>> Stashed changes
     train_index_path=TRAIN_PATH,
     dev_index_path=DEV_PATH,
     labels_path=LABEL_PATH,
     learning_rate=0.6,
     momentum=0.8,
     max_grad_norm=0.2,
-    weight_decay=0,
+    weight_decay=1e-4,
     tensorboard = True
 ):
     #  visualize log
@@ -56,7 +61,6 @@ def train(
         weight_decay=weight_decay, #权重衰减
     )
     ctcloss = CTCLoss()
-    # lr_sched = torch.optim.lr_scheduler.ExponentialLR(optimizer, 0.985)
 
     gstep = 0
     # enumerate epochs
@@ -104,7 +108,7 @@ def train(
             torch.save(model, "pretrained/model_{}.pth".format(epoch)) # 每隔5个epoch保存一个预训练模型
 
 def eval(model, dataloader):
-    # 用于测试合和预测， 为了排除Batch Normalization和Dropout对测试影响
+    # 用于测试和预测， 为了排除Batch Normalization和Dropout对测试影响
     # 将model改为eval模式后，BN的参数固定，并采用之前训练好的全局的mean和std
     model.eval()
     decoder = GreedyDecoder(dataloader.dataset.labels_str)
@@ -132,10 +136,14 @@ def eval(model, dataloader):
                 # get character error rate by calculating Levenshtein distance
                 cer += decoder.cer(trans, ref) / float(len(ref))
         cer /= len(dataloader.dataset)
-    model.train()
+    model.train() # change the model back to train mode
     return cer
 
+
+
 if __name__ == "__main__":
+    torch.cuda.empty_cache()
+    torch.cuda.memory_summary(device=None, abbreviated=False)
     vocabulary = joblib.load(LABEL_PATH) # vocabulary：训练集中的全部汉字
     vocabulary = "".join(vocabulary)
     model = GatedConv(vocabulary)

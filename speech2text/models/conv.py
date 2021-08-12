@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch.nn.functional import hardtanh
 from torch.nn.utils import weight_norm
 from .base import MASRModel
-import speech2text.feature
+import feature
 import speech2text.config
 
 # 单个卷积层
@@ -69,12 +69,12 @@ class GatedConv(MASRModel):
     def predict(self, path):
         self.eval()
         # wav = feature.load_audio(path)
-        # spec = feature.spectrogram(wav)
-        spec = speech2text.feature.spectrogram(path)
-        spec.unsqueeze_(0) # 维数扩张
-        x_lens = spec.size(-1)  # MFCC特征的列数
-        out = self.cnn(spec) # 声学模型的结果:音素
-        out_len = torch.tensor([out.size(-1)])  # 音素的列数
+        # spec = feature.spectrogram(wav
+        spec = feature.spectrogram(path)
+        spec.unsqueeze_(0) # extend the number of dimensions
+        x_lens = spec.size(-1)  # the number of columns of mfcc features
+        out = self.cnn(spec) # the output of cnn network is the possible Chineses characters of a speech
+        out_len = torch.tensor([out.size(-1)])  # the number of the Chineses characters
         text = self.decode(out, out_len)
         self.train()
         return text[0]
