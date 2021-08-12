@@ -193,7 +193,7 @@
                                         <div class="boxBottomHolder">
                                             <div class="suggestHolder">
                                                 <div class="boxBottom">
-                                                    <button class="iconBtn lightBtn" type="button" onclick="doTTS1()">
+                                                    <button class="iconBtn lightBtn" type="button" onclick="doTTS1()" data-tip="voice">
                                                         <img src="https://itranslate-webapp-production.web.app/images/icon-speaker.svg" alt="voice">
                                                     </button>
                                                     <div id="bdtts_div_id">
@@ -224,11 +224,11 @@
                                     <textarea id="input" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">used for copy text</textarea>
                                     <div class="boxBottomHolder">
                                         <div class="boxBottom">
-                                            <button class="iconBtn lightBtn" type="button" data-button="btn-switch" onclick="copyText()">
+                                            <button class="iconBtn lightBtn" type="button" data-button="btn-switch" onclick="copyText()" data-tip="Copy text">
                                                 <span class="infoText">Text copied</span>
                                                 <img src="https://itranslate-webapp-production.web.app/images/icon-copy.svg" alt="copy">
                                             </button>
-                                            <button class="iconBtn lightBtn" type="button"  onclick="doTTS2()">
+                                            <button class="iconBtn lightBtn" type="button"  onclick="doTTS2()" data-tip="voice">
                                                 <img src="https://itranslate-webapp-production.web.app/images/icon-speaker.svg" alt="voice">
                                             </button>
                                             <div id="bdtts_div_id1">

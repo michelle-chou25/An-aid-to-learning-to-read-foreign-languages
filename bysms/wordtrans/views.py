@@ -99,7 +99,7 @@ def word(request):
                     result = compose.get_en(word)
                     return JsonResponse({"status":200,"data": result, "msg":"sentence query runs successfully."})
                 else:
-                    return JsonResponse({"status":200,"data": "translate failed", "msg":"translate failed"})
+                    return JsonResponse({"status":200,"data": word, "msg":"translate failed"})
     
 def index(request):
     return render(request, 'index.html')
