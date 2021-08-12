@@ -1,5 +1,7 @@
-#!/usr/bin/env python
 # coding: utf-8
+"""
+This file is used to visualize the mfcc features of a speech
+"""
 
 # In[1]:
 

@@ -31,27 +31,30 @@ def play_audio(wave_path):
     stream.close()
     # close PyAudio (5)
     p.terminate()
-play_audio("output.wav")
+play_audio("../data_aishell/output.wav")
 
 
 # speech recognition
 import speech_recognition as sr
-say = 'say something more than 5 words'
+# say = 'say something more than 5 words'
 r = sr.Recognizer()
 
-harvard = sr.AudioFile('output.wav')
+harvard = sr.AudioFile('../data_aishell/output.wav')
 with harvard as source:
     r.adjust_for_ambient_noise(source, duration=0.5)
     audio = r.record(source)
 test = r.recognize_google(audio_data=audio, language="cmn-Hans-CN", show_all=True)
+#English
 # test = r.recognize_google(audio_data=audio, language="en-US", show_all=True)
-print(test)
+result = test['alternative'][0]
 
-flag = False
-for t in test['alternative']:
-    print(t)
-    if say in t['transcript']:
-        flag = True
-        break
-if flag:
-    print('Bingo')
+print("recognized result: ", result)
+
+# flag = False
+# for t in test['alternative']:
+#     print(t)
+#     if say in t['transcript']:
+#         flag = True
+#         break
+# if flag:
+#     print('Bingo')

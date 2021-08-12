@@ -4,7 +4,8 @@ import torch.nn as nn
 from torch.nn.functional import hardtanh
 from torch.nn.utils import weight_norm
 from .base import MASRModel
-import feature
+import speech2text.feature
+import speech2text.config
 
 # 单个卷积层
 class ConvBlock(nn.Module):
@@ -69,7 +70,7 @@ class GatedConv(MASRModel):
         self.eval()
         # wav = feature.load_audio(path)
         # spec = feature.spectrogram(wav)
-        spec = feature.spectrogram(path)
+        spec = speech2text.feature.spectrogram(path)
         spec.unsqueeze_(0) # 维数扩张
         x_lens = spec.size(-1)  # MFCC特征的列数
         out = self.cnn(spec) # 声学模型的结果:音素

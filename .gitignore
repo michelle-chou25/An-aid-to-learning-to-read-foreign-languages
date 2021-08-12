@@ -113,12 +113,15 @@ bysms/Transformer/model/
 bysms/Transformer/model_en_zh
 Corpus/
 nohupt
-<<<<<<< HEAD
+
 speech2text/pretrained/nano.save
 runs/
 speech2text/results/
-=======
 speech2text/data_aishell/train.index
 speech2text/data_aishell/dev.index
 speech2text/data_aishell/labels.gz
->>>>>>> d1bd716909c074b457ab34276a6898da17fe19aa
+/wavletter.pdf
+/speech2text/data_process_archive/
+/speech2text/data_aishell/transcript/aishell_transcript_v0.8.txt
+
+/speech2text/pretrained/model_99.pth
