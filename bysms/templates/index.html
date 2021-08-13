@@ -57,8 +57,11 @@
 			console.log(data);
 			if(data.status == 200 && data.msg == "word query runs successfully."){
 				var res1=data.data.definitions;
+                var pinyin1=data.data.pinyin;
 				$(".targetText")[0].innerHTML=res1;
+                $("#pinyinField")[0].innerHTML=pinyin1;
 				console.log(res1);
+                console.log(pinyin1);
 			}
             if(data.status == 200 && data.msg == "sentence query runs successfully."){
                 var res2=data.data;
@@ -74,6 +77,14 @@
                 var res4=data.data;
 				$(".targetText")[0].innerHTML=res4;
 				console.log(res4);
+            }
+            if(data.status == 200 && data.msg == "english word query runs successfully."){
+                var res5=data.data.simplified;
+                var pinyin2=data.data.pinyin;
+				$(".targetText")[0].innerHTML=res5;
+                $("#pinyinField1")[0].innerHTML=pinyin2;
+				console.log(res5);
+                console.log(pinyin2);
             }
 		}
 	});
@@ -104,7 +115,7 @@
     var ttsAudio = document.getElementById('tts_autio_id1');
     var ttsText = $(".targetText")[0].innerHTML;
     console.log(ttsText);
-
+    
     ttsDiv.removeChild(ttsAudio);
     var au1 = '<audio id="tts_autio_id1" autoplay="autoplay">';
     var sss = '<source id="tts_source_id1" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&per=3&spd=5&text=' + ttsText + '" type="audio/mpeg">';
@@ -126,7 +137,7 @@
   document.execCommand("copy"); // 执行浏览器复制命令
   alert("copy success");
  }
-
+    
     //exchange source and target language
   function exchange() {
     var sourcediv = document.getElementById("sourceLang");
@@ -139,16 +150,12 @@
         $("#mainButton2").appendTo("#targetLang");
         $("#mainButton1").prependTo("#sourceLang");
     }
-
-  }
-
+  }  
+   
     </script>
 </head>
+
 <body style="background-color: aliceblue;">
-    <div class="app">
-        <button class="record-btn">record</button>
-        <audio controls class="audio-player"></audio>
-    </div>
     <div class="my-container">
         <div class="banner"  style="background-color: aliceblue;">
             <div class="title-section mt-5 mb-5">
@@ -157,7 +164,6 @@
                     <p>This tool aims to design a webpage for English speakers, who expect to obtain translation from
                         Chinese to English together with more linguistic information.
                     </p>
-
                     <div class="webappLayout">
                         <div id="react-webapp">
                             <div class="translateWebApp">
@@ -165,9 +171,9 @@
                                     <div class="translateBox source">
                                         <div class="boxTop">
                                             <div id="sourceLang">
-                                                <button type="button", id="mainButton1">
+                                                <button type="button", id="mainButton1", name="mainButton1">
                                                     <img class="flag" src="https://itranslate-webapp-production.web.app/images/zh-CN.svg" alt="zh-CN">
-                                                    Chinese
+                                                    Chinese     
                                                 <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
                                                 </button>
                                                 <button class="iconBtn Btn" type="button" data-button="btn-switch">
@@ -176,7 +182,7 @@
                                             </div>
                                             <div class="langHistoryHolder">
                                                 <!-- <button type="button" class="historyBtn">Spanish</button> -->
-
+                                                
                                                 <!-- Confirm button -->
                                                 <!-- <button type="button" class="historyBtn">Confirm</button> -->
                                             </div>
@@ -193,6 +199,7 @@
                                         <div class="boxBottomHolder">
                                             <div class="suggestHolder">
                                                 <div class="boxBottom">
+                                                    <div id="pinyinField" name="pinyinField" style="height: auto; width: 100%;"></div>
                                                     <button class="iconBtn lightBtn" type="button" onclick="doTTS1()" data-tip="voice">
                                                         <img src="https://itranslate-webapp-production.web.app/images/icon-speaker.svg" alt="voice">
                                                     </button>
@@ -201,7 +208,7 @@
                                                           <source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=5&per=1&text=请输入文字" type="audio/mpeg">
                                                           <embed id="tts_embed_id" height="0" width="0" src="">
                                                         </audio>
-                                                      </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -209,7 +216,7 @@
                                 <div class="translateBox target">
                                     <div class="boxTop">
                                         <div id="targetLang">
-                                            <button type="button", id="mainButton2">
+                                            <button type="button", id="mainButton2", name="mainButton2">
                                                 <img class="flag" src="https://itranslate-webapp-production.web.app/images/en-UK.svg" alt="en-UK">
                                                 English
                                                 <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
@@ -223,6 +230,7 @@
                                     <div class="targetText" role="presentation"></div>
                                     <textarea id="input" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">used for copy text</textarea>
                                     <div class="boxBottomHolder">
+                                        <div id="pinyinField1" name="pinyinField1" style="height: auto; width: 100%;"></div>
                                         <div class="boxBottom">
                                             <button class="iconBtn lightBtn" type="button" data-button="btn-switch" onclick="copyText()" data-tip="Copy text">
                                                 <span class="infoText">Text copied</span>
@@ -243,8 +251,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>         
+            </div>         
         </div>
     </div>
    <!-- footer -->
@@ -255,9 +263,8 @@
     </footer>
 </div>
 <!-- <iframe src="https://www.baidu.com" width="100%" height="100px"></iframe> -->
-
+ 
 </body>
-<!-- 录音音频播放 -->
-<script src="../static/js/recorder.js"></script>
+
 
 </html>
