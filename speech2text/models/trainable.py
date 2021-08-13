@@ -6,34 +6,34 @@
 # from tensorboardX import SummaryWriter
 # # from warpctc_pytorch import CTCLoss
 # from torch.nn import CTCLoss
-
+#
 # from tqdm import tqdm
 # from Levenshtein import distance
-
-
+#
+#
 # class TrainableModel(MASRModel):
 #     def __init__(self, **config):
 #         super().__init__(**config)
-
+#
 #     def save(self, path):
 #         state_dict = self.state_dict()
 #         config = self.config
 #         package = {"state_dict": state_dict, "config": config}
 #         torch.save(package, path)
-
+#
 #     def loss(self, *pred_targets):  # -> loss: scalar tensor
 #         preds, targets = pred_targets
 #         return self._default_loss(*preds, *targets)
-
+#
 #     def cer(self, texts, *targets):  # -> cer: float
 #         return self._default_cer(texts, *targets)
-
+#
 #     def _default_loss(self, yp, yp_lens, y, y_lens):  # -> ctc_loss: scalar tensor
 #         criterion = CTCLoss(size_average=True)
 #         yp = yp.permute(2, 0, 1)  # B * V * T -> T * B * V
 #         loss = criterion(yp, y, yp_lens, y_lens)
 #         return loss
-
+#
 #     def _default_cer(self, texts, y, y_lens):  # -> cer: float
 #         index = 0
 #         cer = 0
@@ -45,7 +45,7 @@
 #             index += y_len
 #         cer /= len(y_lens)
 #         return cer
-
+#
 #     def test(self, test_index, batch_size=64):  # -> cer: float
 #         self.eval()
 #         test_dataset = data.MASRDataset(test_index, self.vocabulary)
@@ -63,7 +63,7 @@
 #         cer /= test_steps
 #         self.train()
 #         return cer
-
+#
 #     def fit(
 #         self,
 #         train_index,
@@ -126,4 +126,4 @@
 #                 writer.add_scalar("cer/epoch", cer, epoch + 1)
 #                 writer.add_scalar("loss/epoch", loss, epoch + 1)
 #             self.save("pretrained/{}_epoch_{}.pth".format(self.name, epoch + 1))
-
+#

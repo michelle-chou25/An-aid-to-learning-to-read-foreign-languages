@@ -5,16 +5,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/speech2text/playaudio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech2text/stop recording when speaker stops.py" afterDir="false" />
+    <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="Merge branch 'michelle_dev'&#10;&#10;# Conflicts:&#10;#&#9;requirements">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/output.wav" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/output.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/play_audio.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/record_audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/recordaudio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bysms/Transformer/model/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/Transformer/model/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bysms/Transformer/model/graph.pbtxt" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/Transformer/model/graph.pbtxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bysms/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/AISHELL-1数据预处理.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/AISHELL-1数据预处理.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/data_process_archive.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/examples/playaudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/playaudio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/examples/recordaudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/recordaudio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/mfcc_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/mfcc_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/models/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/models/conv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/pretrained" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/pretrained" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/pretrained/model_104.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/pretrained/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/speechdatapreprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/speechdatapreprocessing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +49,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1uVIfM5B2XKGrvd6t9KCMUZMX3G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,7 +73,7 @@
       <recent name="D:\CS5014\An-aid-to-learning-to-read-foreign-languages\dict" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.train (1)">
+  <component name="RunManager" selected="Python.demo-record-recognize">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,20 +118,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="playaudio (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="demo-recognize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="An-aid-to-learning-to-read-foreign-languages" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Michelle\anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text/examples" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/playaudio.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="playaudio (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="demo-record-recognize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="An-aid-to-learning-to-read-foreign-languages" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,12 +148,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="/" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="&lt;49d61826-d448-4458-b300-c6b613e7e6da&gt;/git/An-aid-to-learning-to-read-foreign-languages/speech2text/playaudio.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="playaudio" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="An-aid-to-learning-to-read-foreign-languages" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/examples/playaudio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="recordaudio" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="An-aid-to-learning-to-read-foreign-languages" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/speech2text/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech2text/examples/recordaudio.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,65 +228,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="An-aid-to-learning-to-read-foreign-languages" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="/" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="&lt;49d61826-d448-4458-b300-c6b613e7e6da&gt;/git/masrbinzhou/train.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="url_content_temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="An-aid-to-learning-to-read-foreign-languages" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Michelle\anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/url_content_temp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.debug" />
-      <item itemvalue="Python.playaudio (1)" />
-      <item itemvalue="Python.playaudio (2)" />
-      <item itemvalue="Python.url_content_temp" />
-      <item itemvalue="Python.train" />
       <item itemvalue="Python.train (1)" />
+      <item itemvalue="Python.demo-recognize" />
+      <item itemvalue="Python.playaudio" />
+      <item itemvalue="Python.recordaudio" />
+      <item itemvalue="Python.demo-record-recognize" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.demo-record-recognize" />
+        <item itemvalue="Python.demo-recognize" />
+        <item itemvalue="Python.recordaudio" />
+        <item itemvalue="Python.playaudio" />
         <item itemvalue="Python.train (1)" />
-        <item itemvalue="Python.train" />
-        <item itemvalue="Python.url_content_temp" />
-        <item itemvalue="Python.playaudio (2)" />
-        <item itemvalue="Python.playaudio (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +292,48 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="WindowStateProjectService">
+    <state width="1506" height="466" key="DebuggerActiveHint" timestamp="1628764444458">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1506" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1628764444458" />
+    <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1628768177926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="100" y="100" width="1336" height="624" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1628768177926" />
+    <state width="1500" height="232" key="GridCell.Tab.0.bottom" timestamp="1628768112846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628768112846" />
+    <state width="1500" height="232" key="GridCell.Tab.0.center" timestamp="1628768112846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628768112846" />
+    <state width="1500" height="232" key="GridCell.Tab.0.left" timestamp="1628768112846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628768112846" />
+    <state width="1500" height="232" key="GridCell.Tab.0.right" timestamp="1628768112846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628768112846" />
+    <state width="1500" height="318" key="GridCell.Tab.1.bottom" timestamp="1628764491144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="318" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628764491144" />
+    <state width="1500" height="318" key="GridCell.Tab.1.center" timestamp="1628764491144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="318" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1628764491144" />
+    <state width="1500" height="318" key="GridCell.Tab.1.left" timestamp="1628764491144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="318" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1628764491144" />
+    <state width="1500" height="318" key="GridCell.Tab.1.right" timestamp="1628764491144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="318" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628764491144" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -297,6 +352,11 @@
           <line>69</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/speech2text/examples/playaudio.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -310,10 +370,5 @@
         <watch expression="np.abs(fft_temp_data)" language="Python" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$train.coverage" NAME="train Coverage Results" MODIFIED="1627682673500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
-    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$train__1_.coverage" NAME="train (1) Coverage Results" MODIFIED="1627756535371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
-    <SUITE FILE_PATH="coverage/An_aid_to_learning_to_read_foreign_languages$url_content_temp.coverage" NAME="url_content_temp Coverage Results" MODIFIED="1627682597755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

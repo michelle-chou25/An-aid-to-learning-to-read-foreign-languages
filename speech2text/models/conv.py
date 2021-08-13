@@ -1,9 +1,11 @@
 # coding: utf-8
 import torch
 import torch.nn as nn
+from torch.nn.functional import hardtanh
 from torch.nn.utils import weight_norm
 from .base import MASRModel
 import feature
+import speech2text.config
 
 # 单个卷积层
 class ConvBlock(nn.Module):
@@ -15,6 +17,7 @@ class ConvBlock(nn.Module):
         # 激活函数1维GLU  是Relu激活单元：(X * W + b)，加上一个Sigmoid激活单元：O(X * V + c)构成的gate unit
         # 详解见肖桐的书9.3.3
         self.act = nn.GLU(1)
+        # self.act = nn.Hardtanh()
         self.dropout = nn.Dropout(p, inplace=True)  # 每次都随机让一些神经元不参与运算，也就是达到局部连接的作用, dropout设为0.3到0.5
 
     def forward(self, x): # 传播
@@ -66,12 +69,12 @@ class GatedConv(MASRModel):
     def predict(self, path):
         self.eval()
         # wav = feature.load_audio(path)
-        # spec = feature.spectrogram(wav)
+        # spec = feature.spectrogram(wav
         spec = feature.spectrogram(path)
-        spec.unsqueeze_(0) # 维数扩张
-        x_lens = spec.size(-1)  # MFCC特征的列数
-        out = self.cnn(spec) # 声学模型的结果:音素
-        out_len = torch.tensor([out.size(-1)])  # 音素的列数
+        spec.unsqueeze_(0) # extend the number of dimensions
+        x_lens = spec.size(-1)  # the number of columns of mfcc features
+        out = self.cnn(spec) # the output of cnn network is the possible Chineses characters of a speech
+        out_len = torch.tensor([out.size(-1)])  # the number of the Chineses characters
         text = self.decode(out, out_len)
         self.train()
         return text[0]
