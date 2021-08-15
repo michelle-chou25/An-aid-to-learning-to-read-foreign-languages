@@ -24,6 +24,19 @@ After the Django server part and MongoDB part start, input the URL http://127.0.
 (the port number 8000 needs to be change into the default port number of the used computer).
 Then the word query and sentence translation can be done in the FrontEnd part.
 
+The Google Drive link for trained Machine Translation models are as follows: 
+(Format: Corpus name_Algorithm name_Translation direction)
+1.	Corpus1w_Transformer_Chinese-English:
+https://drive.google.com/file/d/1-q6RZcZyxEBfXzOFnJkLRNIa9ctQLWMD/view?usp=sharing
+2.	Corpus1w_Transformer_English-Chinese:
+https://drive.google.com/drive/folders/13y7P1uFnKijU8BS1J2YOVH_QyaHD114o?usp=sharing
+3.	Corpus1w_seq2seq+attention_Chinese-English:
+https://drive.google.com/drive/folders/1-P3U4B7RNtwdeeM0KjpyfHB7Aji4s8nq?usp=sharing
+4.	Corpus_education_Transformer_Chinese-English:
+https://drive.google.com/drive/folders/1-R4lTnch3UEF_BQTAeUS74Yk9lSH5jIj?usp=sharing
+5.	Seq2seq_testcorpus_ seq2seq+attention_Chinese-English:
+https://drive.google.com/drive/folders/1UXjT5NN3JdNIImfNdWg3bHCXCNIPi9Ne?usp=sharing
+
 # Contributors
 Ruochen Xue 
 Nanjun Zhou
