@@ -1,57 +1,7 @@
 #!/usr/bin/env python
-
-
-# ## 预处理方式一
-# 你可以使用自己的数据集来训练模型。你的数据集需要包含至少以下3个文件：
-#  - train.index
-#  - dev.index
-#  - labels.json
-# 
-# train.index和dev.index为索引文件，表示音频文件和标注的对应关系，应具有如下的简单格式：
-# ```text
-# /path/to/audio/file0.wav,数据预处理
-# /path/to/audio/file1.wav,小时不识月
-# ...
-# ```
-# 
-# labels.gz是pkle文件，应包含数据集标注中出现过的所有字符，表示为一个list数组。其中开头首字符必须是无效字符（可任意指定，不和其他字符重复就行），预留给CTC作为blank label;建议索引0为'_'，索引28位' '
-# ```text
-# [
-#    '_', // 第一个字符表示CTC空字符，可以随便设置，但不要和其他字符重复。
-#    '小',
-#    '时',
-#    '不',
-#    '识',
-#    '月',
-#    ...
-# ]
-# ```
-
-# ## 预处理方式二
-# train.index和dev.index为索引文件，表示音频文件和标注的对应关系，应具有如下的简单格式：
-# ```text
-# /path/to/audio/file0.wav,数据 预 处理
-# /path/to/audio/file1.wav,小时 不识 月
-# ...
-# ```
-# 
-# labels.gz是pkle文件，应包含数据集标注中出现过的所有字符，表示为一个list数组。其中开头首字符必须是无效字符（可任意指定，不和其他字符重复就行），预留给CTC作为blank label;建议索引0为'_'，索引28位' '
-# ```text
-# [
-#    '_', // 第一个字符表示CTC空字符，可以随便设置，但不要和其他字符重复。
-#    '小时',
-#    '不识',
-#    '月',
-#     '预',
-#     '处理'
-#    ...
-# ]
-# ```
-# **注：如果是方式二处理，则data.py中MASRDataset类读取数据后处理的方式要有所改动**<br>
-# 原始数据集AISHELL-1已经给我们分好词，也可以自行用jieba分词
+# coding: utf-8
 
 # In[1]:
-
 
 import os
 import re
@@ -65,7 +15,31 @@ from tqdm import tqdm
 import random
 from random import shuffle
 
+# """
+# This is used to extract the corresponding relationship between audio files and their text, dev_index is like:
+# [['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/dev/S0754/BAC009S0754W0292.wav',
+#   '纽交所其后通过推特表示'],
+#  ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/dev/S0754/BAC009S0754W0205.wav',
+#   '日前国家发展改革委发出通知'],
+#  ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/dev/S0754/BAC009S0754W0131.wav',
+#   '自明年一月一日开始'],
+#  ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/dev/S0754/BAC009S0754W0182.wav',
+#   '美国养老类地产的潜力巨大'],
+#  ['/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/dev/S0754/BAC009S0754W0256.wav',
+#   '针对美联航的地面禁令才被取消']]
 
+# labels.gz is like:
+#   ['_',
+#  '战',
+#  '嵩',
+#  '曰',
+#  '彻',
+#  '纾',
+#  '慷',
+#  '冥',
+#  '返',
+#  '诈']
+# """
 # ## 读取wav文件
 
 # In[21]:
@@ -73,12 +47,14 @@ from random import shuffle
 
 train_path_dir = '/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/train'
 dev_path_dir = '/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/dev'
+test_path_dir = '/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/wav/test'
 
 # In[22]:
 
 
 train_files_path = []
 dev_files_path = []
+test_files_path = []
 def recur_train(rootdir):
     for root, dirs, files in tqdm(os.walk(rootdir)):
         for file in files:
@@ -87,6 +63,7 @@ def recur_train(rootdir):
             train_files_path.append(os.path.join(root,file))
         for dir in dirs:
             recur_train(dir)
+
 def recur_dev(rootdir):
     for root, dirs, files in tqdm(os.walk(rootdir)):
         for file in files:
@@ -95,8 +72,19 @@ def recur_dev(rootdir):
             dev_files_path.append(os.path.join(root,file))
         for dir in dirs:
             recur_dev(dir)
+
+def recur_test(rootdir):
+    for root, dirs, files in tqdm(os.walk(rootdir)):
+        for file in files:
+            # if 'DS_Store' in file:
+            #     continue
+            test_files_path.append(os.path.join(root,file))
+        for dir in dirs:
+            recur_test(dir)
+
 recur_train(train_path_dir)
 recur_dev(dev_path_dir)
+recur_test(test_path_dir)
 # wav_paths = [x for x in all_files_path if 'wav' in x]
 
 
@@ -105,7 +93,8 @@ recur_dev(dev_path_dir)
 
 print('train_files_path len:', len(train_files_path))
 print('dev_files_path len:', len(dev_files_path))
-all_files_path = train_files_path+dev_files_path
+print('test_files_path len:', len(test_files_path))
+all_files_path = train_files_path+dev_files_path+test_files_path
 
 
 # In[26]:
@@ -150,6 +139,12 @@ for file in tqdm(dev_files_path):
     if file_name in _d:
         res_dev.append((file, _d[file_name]))
 
+res_test = []
+for file in tqdm(test_files_path):
+    file_name = file.split('/')[-1][:-4]
+    if file_name in _d:
+        res_test.append((file, _d[file_name]))
+
 
 # In[31]:
 
@@ -169,6 +164,7 @@ len(all_words)
 
 pd.DataFrame(res_train).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/train.index',index=False,header=None)
 pd.DataFrame(res_dev).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/dev.index',index=False,header=None)
+pd.DataFrame(res_test).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/test.index',index=False,header=None)
 joblib.dump(all_words, '/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/labels.gz')
 
 

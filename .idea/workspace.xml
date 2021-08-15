@@ -7,26 +7,25 @@
   <component name="ChangeListManager">
     <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="Merge branch 'michelle_dev'&#10;&#10;# Conflicts:&#10;#&#9;requirements">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/An-aid-to-learning-to-read-foreign-languages.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/Transformer/model/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/Transformer/model/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/Transformer/model/graph.pbtxt" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/Transformer/model/graph.pbtxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bysms/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/static/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bysms/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bysms/wordtrans/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/wordtrans/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/speech2text/AISHELL-1数据预处理.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/AISHELL-1数据预处理.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/speech2text/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/data_process_archive.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/playaudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/playaudio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/recordaudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/recordaudio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/mfcc_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/mfcc_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/data_aishell/labels.gz" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/data_aishell/labels.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/examples/_init_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/_init_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-recognize_cn.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-recognize_cn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/speech2text/models/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/models/conv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/output" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/speech2text/pretrained" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/pretrained" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/speech2text/pretrained/model_104.pth" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/speech2text/pretrained/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/speechdatapreprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/speechdatapreprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech2text/utils/speechdatapreprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/utils/speechdatapreprocessing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,10 +296,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1506" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1628764444458" />
-    <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1628768177926">
+    <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1629046671343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="100" y="100" width="1336" height="624" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1628768177926" />
+    <state x="100" y="100" width="1336" height="624" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1629046671343" />
     <state width="1500" height="232" key="GridCell.Tab.0.bottom" timestamp="1628768112846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -333,6 +332,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1500" height="318" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628764491144" />
+    <state x="467" y="144" width="602" height="536" key="find.popup" timestamp="1629046530262">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="144" width="602" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1629046530262" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

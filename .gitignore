@@ -111,17 +111,22 @@ error
 nohup
 bysms/Transformer/model/
 bysms/Transformer/model_en_zh
-Corpus/
+# Corpus/
 nohupt
 
 speech2text/pretrained/nano.save
 runs/
+# results
 speech2text/results/
 speech2text/data_aishell/train.index
 speech2text/data_aishell/dev.index
+speech2text/data_aishell/test.index
 speech2text/data_aishell/labels.gz
-/wavletter.pdf
-/speech2text/data_process_archive/
-/speech2text/data_aishell/transcript/aishell_transcript_v0.8.txt
+speech2text/runs
+speech2text.results
+speech2text/output
+speech2text/data_process_archive/
+speech2text/data_aishell/transcript/aishell_transcript_v0.8.txt
+speech2text/pretrained/model_99.pth
+speech2text/error
 
-/speech2text/pretrained/model_99.pth

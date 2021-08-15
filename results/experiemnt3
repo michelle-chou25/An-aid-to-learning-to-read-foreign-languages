@@ -1,0 +1,641 @@
+- source: 谁 搞 " 台独 " , 谁 就 没有 好下场 .
+- expected: he who seeks " taiwan independence " will come to no good end .
+- got: he who <UNK> " taiwan independence " will come to no good end .
+
+- source: 钱其琛 希望 香港 各界人士 在 加强 两岸 各 领域 合作 与 交流 方面 做出 积极 的 贡献 .
+- expected: qian qichen hoped the people of all sectors in hong kong will make positive contribution to strengthening cross - strait cooperation and exchanges in various fields .
+- got: qian qichen hoped the people of all sectors in hong kong will make positive contribution to strengthening and cooperation between the two countries ' cooperation in this aspect .
+
+- source: 李日焕 表示 , 朝鲜 青年 将 为 推动 两 国 老一辈 领导人 所 培育 的 朝 中 传统友谊 在 二十一 世纪 的 不断 发展 而 努力 .
+- expected: yi il - hwan said : dprk youths will work for the constant development of dprk - chinese traditional friendship , nurtured by leaders of the older general of our two countries , in the new century .
+- got: jiang <UNK> said : the <UNK> - <UNK> - <UNK> will <UNK> by the dprk - chinese friendship , <UNK> by leaders of the two countries in the new century .
+
+- source: 朝鲜 客人 是 应 共青团中央 的 邀请 来华访问 的 .
+- expected: the dprk guests arrived china for a visit at the invitation of the cyl central committee .
+- got: the dprk <UNK> arrived china for a visit at the invitation of the chinese people 's <UNK> central committee .
+
+- source: 双方 就 广泛 问题 交换 了 看法 .
+- expected: the two sides exchanged views on a wide range of issues .
+- got: the two sides exchanged views on a <UNK> of issues .
+
+- source: 在 回答 记者 有关 中东 和平 进程 问题 时 , 孙玉玺 说 , 巴勒斯坦 问题 是 中东问题 的 核心 .
+- expected: in answering a question on the middle east peace process , sun yuxi said : the palestine issue is the core of the middle east issue .
+- got: <UNK> <UNK> <UNK> , deputy director of the hong kong issue said : the <UNK> issue is the core of the middle east issue .
+
+- source: 自 一九九一年 马德里 和 会 以来 , 巴 以 和谈 在 双方 共同努力 和 国际 社会 的 推动 下 , 取得 了 重要 进展 .
+- expected: since the madrid peace meeting in 1991 , with common efforts of the two sides and efforts made by the international community , important progress has been made in palestinian - israeli peace talks .
+- got: since the <UNK> peace meeting in <UNK> , with common efforts of the two sides and efforts made by the international community , important progress has been made in <UNK> peace talks .
+
+- source: 他 说 , 中国 认为 , 支持 和 帮助 巴勒斯坦 人民 恢复 合法 的 民主权利 , 包括 重返家园 建立 独立国家 , 是 国际 社会 应 尽责任 和 义务 .
+- expected: he said : china is of the view that supporting and helping the palestinian people to regain their legitimate democratic rights , including enabling them to return to their homeland and build an independent state , is a due responsibility and obligation of the international community .
+- got: he said : china is of the view that supporting and <UNK> people to <UNK> their <UNK> and <UNK> their legitimate rights , including <UNK> and <UNK> them to <UNK> them to their <UNK> and build an independent state <UNK> and <UNK> .
+
+- source: 外交部长 唐家璇 同 他 举行 了 会谈 .
+- expected: foreign minister tang jiaxuan held talks with him .
+- got: foreign minister tang jiaxuan held talks with him .
+
+- source: 今天 , 中央 外事办公室 主任 刘华秋 会见 了 他 .
+- expected: today , central foreign affairs office director liu huaqiu met with him .
+- got: today , central foreign affairs office director liu <UNK> met with him .
+
+- source: 今天下午 江泽民 主席 将 会见 他 .
+- expected: this afternoon , president jiang zemin will meet with him .
+- got: this afternoon , president jiang zemin will meet with him .
+
+- source: 对此 , 伯杰 表示 , 美国 和 中国 的 关系 正处 於 关键时刻 .
+- expected: to this , berger said the relations between the united states and china are at a crucial moment .
+- got: to this , <UNK> said the relations between the united states and china are at a crucial moment .
+
+- source: 中共 中央政治局常委 , 国务院 副 总理 李岚清 出席会议 并 讲话 .
+- expected: li lanqing , member of the cpc politburo standing committee and vice premier of the state council , attended the conference and delivered a speech .
+- got: li lanqing , member of the cpc central committee political bureau and vice premier of the state council , attended and delivered a speech .
+
+- source: 人口普查 作为 重大 的 国情 国力 调查 , 是 一项 庞大 的 社会 系统工程 .
+- expected: as a major survey on the national conditions and national strength , the census is a huge social systems engineering .
+- got: as a major <UNK> on the national conditions and national strength , the <UNK> is a major <UNK> and an <UNK> of national strength , which is a major issue as a major <UNK> on the national strength and society .
+
+- source: 对 违反 《 统计法 》 和 《 第五 全国 人口普查 办法 》 规定 , 干扰 普查 工作 , 编造 普查 数据 的 , 要 依法 严肃 予以 处理 .
+- expected: those who violate the stipulations set forth in the " law of statistics " and the " procedures for the fifth national census , " interfere in the census work , and fabricate census data must be sternly dealt with in accordance with the law .
+- got: the " <UNK> " <UNK> <UNK> " stresses that is to <UNK> <UNK> with the <UNK> of <UNK> and <UNK> <UNK> , one <UNK> <UNK> , and the <UNK> <UNK> <UNK> .
+
+- source: 为了 搞好 普查 , 国务院 有关 部门 已 制定 了 相关 配套 政策 , 各 地区 要 认真 贯彻落实 , 不能 自 定 政策 , 各行其是 .
+- expected: in order to do a good job of the census , the state council and pertinent departments have drawn up relevant supporting policies .
+- got: in order to do a good job of the <UNK> , the <UNK> departments have <UNK> up relevant policies and <UNK> up relevant departments in china , have <UNK> up relevant policies .
+
+- source: 各级 政府 要 按照 《 第五 全国 人口普查 办法 》 的 规定 , 做好 普查人员 的 选调 工作 , 确保 普查 所 需 人员 的 数量 和 质量 .
+- expected: in accordance with the stipulations of the " procedures for the fifth national census , " governments at all levels must do a good job of selecting and transferring personnel to ensure the quantity and quality of the personnel needed for the census .
+- got: in accordance with the <UNK> of the stipulations of the " procedures for the fifth national <UNK> , " governments at all levels must do a good job of <UNK> and <UNK> personnel to ensure the <UNK> and quality of the <UNK> .
+
+- source: 地方 政府 的 经费 还 没有 安排 或者 安排 得 不足 的 , 要 抓紧 落实 .
+- expected: the local governments which have not made arrangements or have not made adequate arrangements for the funds must carry out the work in no time .
+- got: the local governments which have not made arrangements or have not made <UNK> arrangements for the funds must carry out the work in no time .
+
+- source: 各级 政府 要 采取 一切 有效 的 方式 , 做好 组织 领导 工作 , 动员群众 和 社会 力量 , 投入 到 人口普查 中来 .
+- expected: governments at all levels should adopt every effective means to organize and guide the work properly , and mobilize the masses and social forces to participate in the census .
+- got: governments at all levels should adopt every effective means to <UNK> and guide the <UNK> and social forces to <UNK> the <UNK> of <UNK> .
+
+- source: 每个 公民 都 要 认真 履行 自己 应尽 的 义务 , 如实 申报 有关 情况 和 数据 .
+- expected: all citizens should fulfill their own obligations and report the relevant conditions and data accurately .
+- got: all <UNK> should give the report and support and policies on the work of the taiwan issue , <UNK> <UNK> <UNK> .
+
+- source: 各级 普查 机构 及 广大 普查 工作人员 , 要 认真 工作 , 确保 普查 源头 数据 的 高质量 .
+- expected: the census organizations at all levels and the vast numbers of census workers should perform their duties conscientiously to ensure the high quality of source data of the census .
+- got: the <UNK> departments at all levels should <UNK> the <UNK> of <UNK> , <UNK> <UNK> , and the vast <UNK> of <UNK> workers to ensure the <UNK> of workers and <UNK> .
+
+- source: 他 强调 , 各级 政府 要 把 人口普查 各项 工作 落到实处 .
+- expected: he stressed that governments at all levels should effectively carry out various tasks of the census .
+- got: he stressed that governments at all levels should effectively carry out various tasks of the <UNK> .
+
+- source: ( 44 ) 孙玉玺 敦促 日本 不要 做 有损 於 中国 统一大业 的 事情 " 中新社 北京 三月 三十日 电 " 外交部 发言人 孙玉玺 今天 在 此间 敦促 日本 有关 方面 多为 发展 中日 友好关系 作 努力 , 不要 做 任何 有损 於 中国 统一大业 的 事情 .
+- expected: beijing , 30 mar (zxs) - - foreign ministry spokesman sun yuxi today urged concerned authorities of japan to make greater efforts for the development of sino - japanese friendly relations and not to do anything unfavorable to the great cause of china 's reunification .
+- got: beijing , 30 mar (zxs) - - foreign ministry spokesman sun <UNK> today emphatically said : china <UNK> to make a joint efforts for the great cause of sino - japanese relations , to the russian relations <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> of the great cause of the
+
+- source: 有 消息 说 , 最近 当选 台湾地区 领导人 的 陈水扁 计划 邀请 各国 政党 和 政府 的 代表 前去 参加 其 就任 有关 仪式 .
+- expected: it has been reported that chen shui - bian [ ch ' en shui - pien , ] the newly elected leader of the taiwan region , planned to invite representatives of political parties and governments of various countries to attend ceremonies related to his inauguration .
+- got: it has been reported that chen shui - bian [ <UNK> <UNK> , <UNK> <UNK> , <UNK> <UNK> <UNK> , ] of the <UNK> of the <UNK> , of the <UNK> government and its <UNK> of the state council , held : the taiwan policy toward taiwan .
+
+- source: 孙玉玺 严正 指出 , 台湾 问题 纯属 中国 内政 .
+- expected: sun yuxi solemnly pointed out : the taiwan issue is completely an internal issue of china .
+- got: sun <UNK> <UNK> pointed out : the taiwan issue is determined by the pla general election on the taiwan issue .
+
+- source: 日本政府 曾 就 台湾 问题 向 中国 作出 过 一系列 郑重 表态 和 承诺 .
+- expected: the japanese government clearly and solemnly stated to china on various occasions its stand on the taiwan issue and made a series of solemn commitments .
+- got: the japanese government and <UNK> stated to <UNK> on various <UNK> and made a series of <UNK> on china 's taiwan .
+
+- source: 在 今天 的 外交部 新闻 发布会 上 , 孙玉玺 再次 重申 , 世界 上 只有 一个 中国 , 台湾 是 中国 领土 不可分割 的 一部分 .
+- expected: at today 's news briefing of the foreign ministry , sun yuxi again reiterated : there is only one china in the world and taiwan is an inalienable part of chinese territory .
+- got: at today 's news conference , foreign ministry news conference , sun <UNK> in the world reiterated : there is only one china , and taiwan is an <UNK> part of chinese territory .
+
+- source: 中国 坚决 反对 任何 与 中国 建交国 , 同 台湾 建立 官方 关系 或 进行 具有 任何 性质 的 官方 往来 .
+- expected: china resolutely opposes any countries which have diplomatic relations with china establishing official relations with taiwan or engaging in exchanges of any kind of official nature with taiwan .
+- got: china resolutely <UNK> any countries which have diplomatic relations with china establishing official relations with china establishing official nature with taiwan or <UNK> in any kind of official nature with taiwan or <UNK> in any kind of official nature with taiwan .
+
+- source: 张万年 在讲话中 代表 江泽民 主席 向 辛勤工作 在 军事 科研 战线 的 全体 同志 , 向 为 军事 科研 事业 做出 突出贡献 的 专家 , 学者 , 表示 亲切 的 问候 .
+- expected: in his speech , zhang wannian extended cordial greetings , on chairman jiang zemin 's behalf , to all comrades who worked on the military scientific research front and experts and scholars who had made outstanding contributions to the military scientific cause .
+- got: in his speech , zhang wannian <UNK> <UNK> <UNK> <UNK> , on behalf of all comrades who had made to president jiang zemin 's military scientific research front and <UNK> <UNK> <UNK> <UNK> . in the military region , to the military region , <UNK> <UNK> <UNK> <UNK> <UNK> ,
+
+- source: 解放军四总部 , 军事科学院 和 军委办公厅 有关 领导 参加 了 今天 的 会议 .
+- expected: present at today 's conference were relevant leaders of the four general departments of the chinese people 's liberation army , the academy of military sciences , and the general office of the central military commission .
+- got: today 's conference were relevant leaders of the chinese people 's liberation army , the chinese people 's liberation army , the military commission , and the general office of the central military commission .
+
+- source: 温家宝 指出 , 要 充分认识 国土 绿化 的 重要 意义 .
+- expected: wen jiabao pointed out the need to gain a full understanding of the important significance of land greening .
+- got: wen jiabao pointed out the need to gain a full understanding of the important position in the need of a full play to gain a important position of land <UNK> .
+
+- source: 我国 国土 绿化 事业 取得 了 巨大成就 , 去年 造林 绿化 继续 保持 了 良好 的 发展势头 .
+- expected: china has made tremendous achievements in greening its land and last year , afforestation and greening maintained a positive momentum of development .
+- got: china has made tremendous achievements in <UNK> its land and last year , afforestation and <UNK> maintained a positive momentum of development .
+
+- source: 但 也 必须 清醒 看到 , 我国 的 生态环境 状况 依然 相当 严峻 , 水土流失 严重 .
+- expected: but we must also be soberly aware that the situation concerning china 's ecological environment remains rather grim and water losses and soil erosion are serious .
+- got: but we must also be <UNK> aware that the situation concerning china 's ecological environment remains rather <UNK> and water losses and <UNK> <UNK> <UNK> <UNK> <UNK> .
+
+- source: 生态环境 的 恶化 , 严重威胁 和 制约 了 国民经济 和 社会 的 可 持续 发展 , 改善 生态环境 已 成为 经济 , 社会 发展 和 人民 生活 水平 提高 的 迫切要求 .
+- expected: the deterioration of the ecological environment is severely jeopardizing and hampering the sustainable development of our national economy and society . improving the ecological environment has become an urgent requirement of economic and social development and the effort to improve the people 's standard of living .
+- got: the <UNK> of the ecological environment is severely <UNK> and <UNK> the <UNK> development of our national economy and society . improving the ecological environment has become an important guarantee for the development and society .
+
+- source: 要 增强 紧迫感 和 责任感 , 迅速行动 起来 , 广泛 动员 亿万人民 群众 , 投身于 祖国 绿化 事业 , 加快 建设 山川 秀美 的 新河 山 .
+- expected: it is necessary to have a heightened sense of urgency and responsibility , rise to action immediately , extensively mobilize millions of members of the public to involve themselves in the greening of their motherland , and speed up the process of creating a new , beautiful landscape .
+- got: <UNK> <UNK> of the <UNK> and <UNK> of the <UNK> of the general <UNK> of the masses , <UNK> their <UNK> , <UNK> , and <UNK> of the people to have strong points , and be <UNK> to safeguard their future .
+
+- source: 温家宝 强调 , 努力 做好 今年 的 国土 绿化 工作 , 对于 全面 加快 我国 新世纪 的 生态环境 建设 具有 十分 重要 的 意义 .
+- expected: wen jiabao stressed that making a success of this year 's land - greening work with a conscientious effort is of great significance to comprehensively expediting the construction of a new ecological environment in china in the new century .
+- got: wen jiabao stressed that making a success of this year 's land - <UNK> work with a <UNK> effort is of great significance to comprehensively <UNK> the construction of a new ecological environment in china 's new century .
+
+- source: 当前 国土 绿化 工作 的 主要 任务 , 一是 继续 开展 全民 义务 植树 运动 .
+- expected: the main tasks of afforestation at present are manifold . first , the all - people voluntary tree - planting campaign should be continued .
+- got: the main tasks of afforestation at present are <UNK> . first , the main <UNK> <UNK> <UNK> .
+
+- source: 积极探索 发挥 各 方面 力量 , 以 各种 形式 参与 绿化 建设 的 新机制 . 二是 全面 加快 城乡 绿化 进程 .
+- expected: an active effort should be made to explore new mechanisms of bringing into play the forces from various quarters and enabling them to participate in afforestation in various ways .
+- got: all sides express their <UNK> <UNK> to participate in the various <UNK> of afforestation in various <UNK> and <UNK> them to participate in the new cause of afforestation in various ways .
+
+- source: 坚持 以城带 乡 , 以乡 促城 , 城乡 联动 , 总体 推进 .
+- expected: second , the urban and rural greening process should be comprehensively accelerated .
+- got: second , the urban and rural <UNK> process should be <UNK> through <UNK> and <UNK> .
+
+- source: 城乡 绿化 要 与 城市 基础设施 建设 和 小城镇 建设 相结合 , 纳入 城乡建设 规划 , 全面 安排 , 同步 实施 .
+- expected: it is necessary to adhere to the principle of letting urban areas lead rural areas , letting rural areas spur urban areas on , joining urban and rural forces , and moving forward in synergy .
+- got: it is necessary to adhere to the principle of <UNK> urban areas lead rural areas lead rural areas , <UNK> rural areas <UNK> urban areas <UNK> .
+
+- source: 三是 为 改善 农业 生产 条件 和 生态环境 服务 , 为 实现 农业 可 持续 发展 创造条件 .
+- expected: third , conditions should be created for the improvement of conditions for agricultural production and the ecological environment and for the realization of sustainable agricultural development .
+- got: third , conditions should be created for the improvement of conditions for agricultural development and the conditions for agricultural production .
+
+- source: 四是 与 实施 西部 大 开发 战略 结合 起来 .
+- expected: fourth , this process should be integrated with the strategy of developing the western country in a big way .
+- got: fourth , this process should be integrated with the strategy of developing the western region with a large - scale development of the country .
+
+- source: 西部 地区 要 从 生态环境 脆弱 的 实际 情况 出发 , 把 绿化 重点 放在 生态环境 的 保护 和 林草 植被 的 恢复 建设 上 .
+- expected: western regions should face the reality of a fragile ecological environment and focus their greening endeavors on the protection of the ecological environment and restoration of forest and grass cover .
+- got: western regions should face the <UNK> <UNK> of a <UNK> ecological environment and focus their <UNK> <UNK> of the ecological environment and focus their <UNK> <UNK> <UNK> <UNK> <UNK> .
+
+- source: 各 有关 部门 要 积极开展 绿化 对口 支援 活动 .
+- expected: all departments concerned should give energetic support to relevant industries in the greening campaign .
+- got: all departments concerned should give <UNK> support to the <UNK> in the <UNK> campaign .
+
+- source: 东部 地区 要 加强 与 中西部 地区 的 协作 , 要 以 投资 入股 , 联合开发 , 互利 合作 等 各种 形式 造林 种草 , 促进 绿化 事业 共同 发展 .
+- expected: eastern regions should strengthen their cooperation with central and western regions , by developing forests and pastures in various forms , including acquiring shareholding through investment , joint exploitation , and cooperation for mutual benefit , so as to promote the joint development of the greening cause .
+- got: eastern regions should strengthen their cooperation with central and western regions , by developing the <UNK> <UNK> <UNK> in various fields , including <UNK> , including <UNK> , to attract qualified personnel in various fields , including <UNK> , to promote cooperation and western regions .
+
+- source: 二要 依靠 科技进步 , 提高 国土 绿化 水平 .
+- expected: second , it is necessary to rely on scientific and technological advancement to raise the standard of land greening .
+- got: second , it is necessary to raise the standard of increasing the <UNK> and to raise the standard of land <UNK> .
+
+- source: 三要 完善 机制 , 调动 广大群众 的 绿化 积极性 .
+- expected: third , it is necessary to perfect the mechanisms and arouse the general public 's enthusiasm in afforestation .
+- got: third , it is necessary to perfect the mechanisms and <UNK> the mechanisms to <UNK> the mechanisms of the general public 's enthusiasm in afforestation .
+
+- source: 把 思想 动员 与 物质利益 结合 起来 , 让 群众 从 绿化 中 得到 实惠 ; 鼓励 不同 地区 , 行业 , 所有制 的 投资者 从事 绿化 建设 .
+- expected: mental mobilization and material incentives should be combined to benefit the public taking part in afforestation in real terms ; investors in different regions , industries , and under different forms of ownership should be encouraged to engage themselves in afforestation .
+- got: <UNK> <UNK> and <UNK> <UNK> should be <UNK> in the <UNK> and protection of the public opinion ; the <UNK> should be <UNK> to afforestation in afforestation in different regions , and in different regions .
+
+- source: 四要 严格 依法 治林 , 全面 加强 林草 资源 与 绿化 成果 的 保护 .
+- expected: fourth , it is necessary to manage forests in strict accordance with law and comprehensively strengthen the protection of forest and pasture resources and the fruits of afforestation .
+- got: fourth , it is necessary to strengthen the <UNK> and protecting forest resources and strengthen their <UNK> in afforestation .
+
+- source: 要 在 国土 绿化 立法 上 取得 新进展 , 在 加大 执法 力度 上 有 新举措 .
+- expected: new progress should be made in legislation on land greening and new measures introduced to intensify law enforcement .
+- got: new progress should be made in legislation on legislation on law enforcement , and new measures for law enforcement .
+
+- source: 五要 统一认识 , 切实加强 对 绿化 工作 的 领导 .
+- expected: fifth , it is necessary to unify people 's understanding and conscientiously strengthen leadership over greening work .
+- got: fifth , it is necessary to <UNK> people 's understanding and conscientiously strengthen leadership over <UNK> work .
+
+- source: 坚持 实行 绿化 目标 责任制 , 进一步 明确 造林 绿化 和 资源 保护 的 任务 , 切实 帮助 基层 解决 绿化 工作 中 的 实际 问题 .
+- expected: the responsibility system based on greening targets should be upheld ; the tasks for afforestation , greening , and resource protection should be further clarified ; and substantial help should be extended to grassroots organizations in solving any practical problems they may encounter in their greening work .
+- got: the tasks so we should <UNK> <UNK> <UNK> the situation with the tasks of afforestation , <UNK> , <UNK> , and <UNK> , and resource protection should be <UNK> to <UNK> ; and <UNK> they should be <UNK> in <UNK> in <UNK> with the requirements of <UNK> problems in order
+
+- source: 据 了解 , 调整 后 的 中国人民银行 货币政策 委员会 主席 是 中国人民银行 行长 戴相龙 , 副 主席 为 中国人民银行 副行长 刘廷焕 .
+- expected: after the reshuffle , the chairman of the pboc monetary policy committee is dai xianglong , governor of the pboc , and its vice chairman is liu tinghuan , pboc deputy governor .
+- got: after the <UNK> <UNK> <UNK> , chairman is <UNK> <UNK> , chairman of the <UNK> policy committee for <UNK> <UNK> the <UNK> policy committee for <UNK> the <UNK> is <UNK> after its vice chairman is <UNK> <UNK> with <UNK> <UNK> <UNK> <UNK> , and its vice chairman is <UNK> <UNK>
+
+- source: 自 1997 年 7 月 以来 , 货币政策 委员会 共 召开 例会 9 , 就 有关 货币政策 事项 向 党中央 , 国务院 报告 , 较 好 地 发挥 了 货币政策 委员会 咨询 议事 机构 的 作用 .
+- expected: since july 1997 , the monetary policy committee has held nine regular meetings and submitted reports to the party central committee and state council on matters concerning the monetary policy , successfully carrying out its functions as a consultative body .
+- got: the <UNK> has been <UNK> with the <UNK> of the party committee and state council on matters concerning the policy and state council , the <UNK> policy committee and its committee . the state council has <UNK> <UNK> policy <UNK> policy decision to <UNK> , <UNK> , and put forward
+
+- source: 会议 上 发言
+- expected: following is the full text of the speech .
+- got: a speech at the meeting held today .
+
+- source: 能 在 这里 重逢 故友 , 结交 新朋 , 我 感到 格外 高兴 .
+- expected: i am extremely glad to meet my old friends again and to make new friends here .
+- got: i am extremely <UNK> to meet my old <UNK> again and to make new <UNK> here .
+
+- source: 我 对 东道主 的 盛情 邀请 和 热情接待 表示 衷心 的 感谢 !
+- expected: i want to express my heartfelt thanks to the host for its cordial invitation and warm reception !
+- got: i want to express my <UNK> thanks to the <UNK> for its <UNK> and <UNK> invitation and <UNK> <UNK> !
+
+- source: 在 开始 于 1996 年 4 月 的 " 上海 五国 " 元首 会晤 进程 中 , 先后 形成 了 关于 在 边境地区 加强 军事 领域 信任 和 相互 裁减 军事力量 两个 协定 .
+- expected: during the " shanghai five countries " summit initiated in april 1996 , the agreements on confidence - building in the military sphere and on the mutual reduction of the armed forces in the border areas were signed one after another .
+- got: during the " shanghai five countries " <UNK> <UNK> in <UNK> , <UNK> <UNK> and <UNK> with each other <UNK> on the <UNK> of <UNK> . in the <UNK> areas were signed one after another .
+
+- source: 两个 协定 生效 后 , 各国 为 履约 进行 了 积极 而 富有成效 的 工作 .
+- expected: after the two agreements came into force , the five countries have done a positive and fruitful work to honor the agreements .
+- got: after the two countries have done a positive and <UNK> work to <UNK> the agreements .
+
+- source: 我们 认为 , 各方 都 能 严格遵守 协定 , 没有 任何 违反 协定 规定 的 行为 .
+- expected: we believe that all the five countries will strictly abide by the agreements without violating the stipulations .
+- got: all the agreements must be <UNK> without <UNK> the stipulations , strictly <UNK> the stipulations .
+
+- source: 据我所知 , 中 俄 双方 还 将 于 4 月 中旬 在 中国 黑龙江省 绥芬河 再次 进行 试验性 核查 .
+- expected: as far as i know , china and russia will conduct another test examination in suifenhe in china 's heilongjiang province in mid - april .
+- got: as far as i know , china and russia will conduct another test examination in <UNK> in <UNK> in <UNK> - april .
+
+- source: 某些 国家 无视 公认 的 国际 关系 准则 , 鼓吹 " 人权 高于 主权 " , 以 " 人权 " , " 人 道 " 为 由 干涉 别国 内政 和 损害 别国 主权 .
+- expected: ignoring the established principles governing international relations , some countries have advocated that " human rights are above sovereignty " and have used " human rights " and " humanity " as an excuse to interfere in the internal affairs and infringe upon the sovereignty of other countries .
+- got: <UNK> the <UNK> of " human rights " sovereignty " <UNK> " is only two different countries which have <UNK> the right over sovereignty , but a country 's sovereignty over sovereignty , and territorial integrity , said that is <UNK> upon the international community , " human rights are
+
+- source: 同时 不能不 看到 , 一些 国家 坚持 冷战 思维 , 不断 强化 军事同盟 , 增加 了 地区 的 不 稳定 因素 .
+- expected: however , we must notice that some countries still cling to the cold war idea and continue to intensify the military alliance , thus increasing the regional unstable factors .
+- got: however , we must <UNK> that some countries still <UNK> to the <UNK> war have not <UNK> <UNK> , thus <UNK> the military <UNK> of certain countries .
+
+- source: 互利 合作 , 共同 发展 , 是 维护和平 与 安全 的 经济 保障 .
+- expected: the cooperation based on mutual benefit and the common development are the economic guarantee for safeguarding peace and security .
+- got: the cooperation based on mutual benefit and the common development are the economic security . the common <UNK> is the common <UNK> of all countries .
+
+- source: 建立 在 平等 基础 上 的 对话 , 协商 和 谈判 , 是 解决 争端 , 维护和平 与 安全 的 正确 途径 .
+- expected: and , holding dialogues , negotiations , and talks based on equality is the correct channel to solve disputes and safeguard peace and security .
+- got: and , holding <UNK> , negotiations , and talks based on <UNK> is the correct <UNK> and negotiations <UNK> to solve <UNK> and safeguard peace and security .
+
+- source: 我们 支持 俄罗斯 在 车臣 问题 上 采取 的 果断 措施 , 支持 俄罗斯政府 维护 国家 统一 和 领土完整 的 神圣 事业 .
+- expected: we support russia 's resolute measures against chechen and support russian government 's sacred cause of safeguarding national unification and territorial integrity .
+- got: we support russia 's resolute measures against <UNK> and support russian government 's sacred cause of safeguarding national unification and territorial integrity .
+
+- source: 我们 也 同样 支持 中亚国家 为 维护 本国 和 地区 和平 与 稳定 所作 的 努力 .
+- expected: we also support the efforts made by the middle east countries to safeguard the national and regional peace and stability .
+- got: we also support the efforts made by the middle east countries to safeguard the national and regional peace and stability in the region .
+
+- source: " 上海 五国 " 元首 比什凯克 会晤 发表 的 联合声明 明确规定 : " 各方 决不允许 利用 本国 领土 从事 损害 五国 中 任何 一国 主权 , 安全 及 社会秩序 的 行为 " .
+- expected: the joint statement issued by " shanghai five countries " summit in bishkek definitely stipulates : " no country is allowed to use its own territory to engage in the acts that damage the sovereignty , security , and social order of any of these five countries . "
+- got: the article points out : " shanghai five countries <UNK> in <UNK> : " five countries have <UNK> that <UNK> the <UNK> of any <UNK> <UNK> <UNK> , and there is no <UNK> for " independence of taiwan independence . "
+
+- source: 作为 国防部长 , 我们 有 责任 落实 这一 共识 .
+- expected: as defense ministers , we are duty - bound to carry this consensus out .
+- got: as <UNK> defense <UNK> , we are duty - <UNK> to carry this consensus out .
+
+- source: 我们 不 承诺 放弃 使用 武力 , 不是 针对 台湾 人民 , 而是 针对 外国 干涉 势力 和 台独 势力 .
+- expected: our refusal to give up the use of force is not directed against taiwan people but is directed against foreign forces and taiwan independence forces .
+- got: our <UNK> to use of force is <UNK> against taiwan is not <UNK> against taiwan independence forces and foreign forces .
+
+- source: 中方 对 各国 在 台湾 问题 上 一贯 理解 和 支持 中国政府 的 立场 表示 赞赏 和 感谢 , 并 希望 继续 得到 你们 的 有力 支持 .
+- expected: the chinese side appreciates and thanks your countries for the consistent understanding and support to the chinese government 's stance concerning the taiwan issue . we look forward to your continued great support .
+- got: the chinese side <UNK> and thanks your countries for the consistent understanding and support to the chinese government 's stance on this issue . we would continue to your <UNK> and support to the taiwan issue .
+
+- source: 谢谢 各位 !
+- expected: thank you !
+- got: <UNK> you !
+
+- source: 纪工委 的 成立 , 对于 加强 国有 重要 骨干企业 党风廉政 建设 具有 重要 意义 .
+- expected: the establishment of the central discipline work committee for enterprises is of a great significance in promoting the building of a sound party style and a clean administration in major and key state enterprises .
+- got: the establishment of the central discipline work committee for enterprises is of a great significance in promoting the building of a sound party style and a clean administration in major and key state enterprises .
+
+- source: 要 遵守 纪检监察 工作 的 有关 纪律 和 规定 , 坚决 摈弃 衙门作风 , 积极 为 基层 排忧解难 .
+- expected: they should observe the relevant disciplines and stipulations concerning the discipline inspection and supervision work , resolutely get rid of the bureaucratic style of work , and make active efforts to help grass - roots units remove their difficulties and worries .
+- got: they should <UNK> the relevant <UNK> and stipulations concerning the discipline inspection and supervision work , resolutely supervision over the <UNK> , and make <UNK> efforts to help the <UNK> and supervision of the <UNK> , and work <UNK> their <UNK> and ensure that are <UNK> .
+
+- source: 要 加强 学习 , 不断 提高 自己 的 工作 能力 和 水平 .
+- expected: they should step up their studies , and constantly enhance their work ability and work level .
+- got: they should step up their ability and enhance their work ability and work level .
+
+- source: 中央 企业 工委 委员 , 纪工委 书记 张轰 在 会上 作 了 报告 , 对 今年 国有 重要 骨干企业 纪检监察 工作 作 了 部署 .
+- expected: zhang hong , member of the central work committee for enterprises and secretary of the central discipline work committee , delivered a report at the meeting , in which he made work arrangements for this year 's discipline inspection and supervision work in major and key state enterprises .
+- got: the central discipline work committee for enterprises have a report at the meeting , secretary of the central discipline work committee for enterprises , and secretary of the state enterprises , delivered a report at the meeting .
+
+- source: 认真落实 中央纪委 四 会议 提出 的 国有企业 领导人员 " 五不准 " .
+- expected: we should conscientiously impose " five prohibition 's , " which were put forward at the fourth session of the central commission for discipline inspection , on the leading personnel of state enterprises .
+- got: the <UNK> <UNK> of the " <UNK> <UNK> " which were <UNK> <UNK> on the central commission for discipline inspection , at the fourth plenary session of the central commission of the central commission for discipline inspection commission .
+
+- source: 他 要求 , 有关 企业 要 尽快 建立健全 纪检监察 机构 , 努力提高 纪检监察 干部素质 , 造就 一支 优秀 的 企业 纪检监察 干部队伍 .
+- expected: he urged relevant enterprises to establish and perfect their own discipline inspection and supervision organs , work hard to enhance the quality of their discipline inspection and supervision cadres , and build up a contingent of outstanding inspection and supervision cadres in enterprises .
+- got: he urged relevant enterprises to establish and establish a discipline inspection work in line with the requirements for the requirements of <UNK> the requirements of <UNK> the discipline inspection and supervision cadres , to <UNK> their own discipline inspection and supervision .
+
+- source: 中央 企业 工委 副 书记 王瑞祥 主持会议 .
+- expected: the meeting was presided over by wang ruixiang , deputy secretary of the central work committee for enterprises .
+- got: the meeting was <UNK> over by wang <UNK> , deputy secretary of the central work committee for enterprises .
+
+- source: 改善 生态环境 是 西部 大 开发 的 重中之重 .
+- expected: to improve the ecological environment is a task of prime importance in the large - scale development of the western region .
+- got: to improve the ecological environment is a task of the large - scale development of the western region .
+
+- source: 国土资源部 部长 田凤山 说 , 西部 地区 生态 改善 不仅 利于 当地 , 更 将 惠及 全国 .
+- expected: tian fengshan , minister of land and natural resources , said : ecological improvement in the western region will benefit not only the region itself , but also the entire country .
+- got: <UNK> <UNK> , minister of land and natural resources , said : ecological improvement in the western region will benefit not only the region .
+
+- source: 经过 几十年 努力 , 当 西部 地区 山川 秀美 的 时候 , 全国 百姓 会 看到 更 蓝 的 天 , 更清 的 水 .
+- expected: several decades from now , when the mountains and rivers in the western region become beautiful , the people across the country will see bluer sky and clearer river water .
+- got: <UNK> from now , the <UNK> and <UNK> in the western region , the <UNK> <UNK> <UNK> and <UNK> in a large number of <UNK> and <UNK> <UNK> and <UNK> .
+
+- source: 西部 基础设施 完善 了 , 特别 是 交通 便利 了 , 经济 发展 了 , 人民 生活 水平 提高 , 潜在 的 消费 需求 将 被 激活 .
+- expected: when the infrastructure in the western region becomes adequate , particularly when the people there enjoys better transport facilities , a developed economy and higher living standards , their dormant consumption demand will become vigorous .
+- got: when the infrastructure in a large in the western region <UNK> <UNK> , there <UNK> <UNK> <UNK> and <UNK> facilities , a developed economy and a developed <UNK> consumption demand , their <UNK> consumption demand will become increasingly <UNK> .
+
+- source: 从 新疆塔里木盆地 到 上海 的 " 西气东 输 " 工程 , 正 加紧 前期 准备 工作 .
+- expected: the preparatory work for building the project of " transferring gas from the west to the east " - - a pipeline between xinjiang 's tarim basin and shanghai - - is being stepped up .
+- got: the <UNK> work for the project of " <UNK> gas from the west to the east " - - a <UNK> between xinjiang 's <UNK> <UNK> <UNK> and the east " - - - a east " project .
+
+- source: 在 大中城市 推广 使用 清洁 , 廉价 的 天然气 , 将会 有效 提高 企业 经济效益 , 改善 工业污染 状况 , 并 为 百姓生活 带来 方便 .
+- expected: popularizing the use of clean and inexpensive natural gas in large and medium - sized cities will effectively enhance the economic efficiency of enterprises , reduce industrial pollution , and bring convenience to the people ' daily life .
+- got: <UNK> the use of large - <UNK> of <UNK> and medium - <UNK> enterprises should effectively improve the <UNK> of <UNK> , <UNK> , and <UNK> of the people 's rights , and effectively improve efficiency .
+
+- source: 青海柴达木盆地 钾盐 的 探明储量 占 全国 90% 以上 , 而且 开采 条件 优越 .
+- expected: the proved reserve of sylvite in qinghai 's qaidam basin accounts for more than 90 percent of china 's total proved sylvite reserve , and the conditions for exploitation are very good .
+- got: the <UNK> of <UNK> <UNK> in <UNK> 's <UNK> accounts for more than <UNK> percent of the total <UNK> <UNK> in china 's <UNK> <UNK> <UNK> and <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> .
+
+- source: 据 专家 预测 , 这个 项目 的 产品质量 将 与 进口产品 相当 , 价格 却 便宜 许多 , 这 将 给 广大 农民 带来 实惠 .
+- expected: according to experts ' forecast , the products to be produced by this project will have a quality as good as that of imported products , but they will be much cheaper and therefore benefiting the vast number of peasants .
+- got: according to the experts ' <UNK> , the products to be produced by this <UNK> and they are no means that they will be much <UNK> and as they are good .
+
+- source: 据 记者 了解 , 目前 西部 各 省份 都 已 制订 或 正在 制订 有关 政策 , 以 良好 服务 和 市场经济 利益驱动 机制 , 吸引 更 多 国内外 客商 成为 投资 主体 .
+- expected: to this reporter 's knowledge , various provinces in the western region either have formulated or are formulating relevant policies , trying to attract more domestic and overseas investors with good service and market economic benefit .
+- got: to this reporter 's various provinces in the western region <UNK> <UNK> have formulated or are <UNK> relevant policies , where conditions , funds should have a more <UNK> environment , or even more <UNK> to attract more domestic and overseas investors with their <UNK> .
+
+- source: 这些 投资 机会 广泛 分布 在 基础 建设 , 资源 开发利用 , 改善 生态环境 , 旅游 , 农牧业 结构调整 和 产品 深加工 , 饮食 服务业 等 众多 领域 , 适合 各种 投资规模 .
+- expected: the investment opportunities are for various scales of investment and spreading in many fields , such as infrastructural construction , exploitation of natural resources , ecological environment improvement , tourism , agricultural and animal husbandry restructuring , deep processing industry , and restaurants and other catering businesses .
+- got: these two <UNK> of investment in many fields , ecological environment such as <UNK> of natural resources , <UNK> of natural resources , <UNK> of agriculture , ecological environment and <UNK> of investment and <UNK> of agriculture , which are the investment of the agricultural restructuring , the investment of
+
+- source: 创造 大量 就业机会 是 西部 大 开发 带给 老百姓 的 一个 巨大 实惠 .
+- expected: creation of a large number of job opportunities will be a great benefit to be brought to the people by the large - scale development of the western region .
+- got: <UNK> of a large number of job opportunities will be a great benefit to be brought to the people by the large - scale development of the western region .
+
+- source: 未来 一个 时期 , 西部 地区 对 经济 管理 , 生态建设 , 工程技术 与 管理 , 资源 开发 与 利用 , 旅游 管理 等 方面 的 人才需求 十分 巨大 .
+- expected: for a period to come , there will be a huge demand for qualified personnel in the fields of economic management , ecological construction , engineering technology and management , exploitation of natural resources , and tourism management .
+- got: for a period to come , there will be a huge demand for qualified personnel in the fields of economic management , <UNK> , <UNK> , <UNK> , <UNK> , and tourism management , and ecological construction .
+
+- source: 过去 " 一窝蜂 " 南涌 的 民工潮 , 如今 开始 向 西部 分流 ; 过去 " 东南 飞 " 的 科技人才 和 高校 毕业生 , 如今 西进 的 数量 也 开始 增加 了 .
+- expected: in the past , a large number of migrant workers had swarmed to southern china . today , migrant workers are beginning to move westward . in the past , scientists , technicians and college graduates sought jobs in the southeastern region .
+- got: in the past , a large number of <UNK> workers had <UNK> to southern china . in the past , <UNK> workers are beginning to move <UNK> . in the <UNK> and <UNK> <UNK> <UNK> .
+
+- source: 新华社 北京 3 月 30 日电 国务院 副 总理 吴邦国 今天 在 中南海 会见 了 美国 摩托罗拉公司 前 首席 执行官 加里 · 图克 一行 .
+- expected: beijing , 30 mar ( xinhua ) - - state council vice premier wu bangguo met gary tooke [ jia li tu ke 0502 6849 0956 0344 ] , former chief executive of the us - based motorola corporation , and his entourage in zhongnanhai today .
+- got: beijing , 27 mar ( xinhua ) - - this afternoon , vice premier of the state council premier of the russian federation of beijing <UNK> <UNK> met with us secretary of his <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> at <UNK> .
+
+- source: 图克 表示 , 摩托罗拉公司 在 中国 投资 以来 , 和 中方 建立 了 互信 互利 的 合作 关系 , 公司 将 进一步 扩大 在 中国 的 投资 .
+- expected: tooke indicated that since it began making investments in china , motorola has established a cooperative relationship of mutual trust and benefit with china and will further expand its investment in china .
+- got: <UNK> indicated that since it began making <UNK> in china , <UNK> has established a cooperative relationship of mutual trust and benefit with china and benefit with china and in china .
+
+- source: 迟浩田 说 , 中塔 是 友好邻邦 , 两国人民 有着 传统友谊 .
+- expected: chi haotian said : china and tajikistan are friendly neighboring countries , and peoples of the two countries have their traditional friendship .
+- got: chi haotian said : china and <UNK> are friendly <UNK> countries have the traditional friendship between the two countries . they are still <UNK> and have their <UNK> .
+
+- source: 两 国 建交 以来 , 双边关系 稳步发展 , 合作 领域 不断扩大 .
+- expected: since the establishment of diplomatic relations between the two countries , their bilateral ties have been developing steadily , and their fields of cooperation have been constantly expanded .
+- got: since the establishment of diplomatic relations between the two countries , the two countries have been constantly <UNK> their bilateral cooperation in various fields .
+
+- source: 中方 对塔 政府 在 台湾 , 西藏 , 人权 及 反对 民族 分裂主义 等 问题 上 一贯 明确 支持 中方 的 立场 表示 赞赏 和 感谢 .
+- expected: the chinese side appreciates and thanks tajikistan for its consistent support of china 's clear - cut stance on taiwan , tibet , and human rights , and on opposition to national splittism .
+- got: the chinese side <UNK> and thanks <UNK> for its consistent support of china 's sovereignty and territorial integrity , on an equal <UNK> and on taiwan .
+
+- source: 海鲁洛耶夫 说 , 拉赫莫诺夫 总统 和 江泽民 主席 为 两国关系 的 发展 奠定 了 良好 的 基础 .
+- expected: khairullaev said : president rakhmonov and president jiang zemin have laid a solid foundation for the development of the ties between the two countries .
+- got: president <UNK> said : president jiang zemin have laid a solid foundation for the development of the ties between the two countries .
+
+- source: 塔吉克 人民 非常 珍视 同 中国 人民 和 军队 之间 的 友谊 , 认为 中国 的确 是 塔吉克斯坦 的 友好 邻居 和 真诚 伙伴 .
+- expected: the tajik people greatly value their friendship with the chinese people and the chinese army . they believe that china is a truly friendly neighbor and sincere partner of tajikistan .
+- got: the <UNK> people greatly value their <UNK> and <UNK> of <UNK> <UNK> with the chinese people . they believe that china is always attached great importance to the <UNK> of <UNK> and <UNK> .
+
+- source: 海鲁洛耶夫 指出 , 国际 恐怖主义 , 宗教 极端主义 和 好战 的 民族 分裂主义 已 成为 世界 上 很多 国家 共同 面临 的 问题 , 我们 必须 联合 起来 共同 对付 才能 给予 有效 打击 .
+- expected: khairullaev pointed out : international terrorism , religious extremism , and bellicose national splittism have become a common problem facing many countries in the world . we should join hands to strike effective blows at them .
+- got: <UNK> pointed out : international <UNK> have a <UNK> of <UNK> , and <UNK> national <UNK> , and national <UNK> have become a common problem facing many countries in the world . we should have <UNK> <UNK> <UNK> <UNK> .
+
+- source: 去年 吉尔吉斯斯坦 南部 发生 劫持人质 事件 后 , 塔 与 几个 邻国 采取 的 联合行动 便是 良好 范例 .
+- expected: an incident of hijacking hostages happened in the southern part of tajikistan last year . tajikistan and several of its neighboring countries took joint action against it . this was a good example in this regard .
+- got: an <UNK> <UNK> <UNK> of <UNK> <UNK> <UNK> in the <UNK> <UNK> <UNK> last year and this <UNK> and <UNK> <UNK> was a <UNK> <UNK> . <UNK> <UNK> and this was a last year and <UNK> .
+
+- source: 今后 塔 仍 将 为此 继续 努力 , 以 维护 本身 及 地区 的 安全 与 稳定 .
+- expected: in the future , tajikistan will continue to make efforts to safeguard its own and regional security and stability .
+- got: <UNK> will make efforts to make contributions to <UNK> and regional security and stability . in the future regional security .
+
+- source: 1996 年 我 访问 印度 期间 , 同 贵国 领导人 就 建立 中 印 面向 21 世纪 建设性 合作伙伴 关系 达成 共识 , 为 两国关系 揭开 了 新的一页 .
+- expected: during my visit to india in 1996 , i reached a consensus with your leaders on establishing a constructive , cooperative sino - indian partnership oriented to the 21 st century , thus opening a new page for bilateral relations .
+- got: during my visit to india in <UNK> , i <UNK> to india forward a bilateral relations with china and india on establishing a new <UNK> , thus <UNK> <UNK> , thus <UNK> <UNK> , and i am <UNK> to work for bilateral relations .
+
+- source: 我们 还 高兴 地 看到 , 当前 中印关系 又 进入 了 一个 改善 和 发展 的 新 阶段 .
+- expected: we are also pleased to see that the current sino - indian relations have entered a new stage of improvement and development .
+- got: we are also <UNK> to see that the current sino - <UNK> relations have entered a new stage of development .
+
+- source: 作为 世界 上 两 最大 的 发展中国家 , 我们 在 国际事务 中 有着 广泛 的 共识 和 诸多 良好 的 配合 .
+- expected: as the two largest developing countries in the world , china and india share a vast common understanding and conduct much good cooperation in handling international affairs .
+- got: as the two largest developing countries in the world , china and india share a vast common understanding and conduct much good cooperation in handling international affairs .
+
+- source: 朱 ( 金字 旁容 ) 基 总理 致电 印度 总理 祝贺 中 印 建交 50 周年 新华社 北京 3 月 31 日电 中华人民共和国国务院 总理 朱 ( 金字 旁容 ) 基 今天 致电 印度 总理 阿塔尔 · 比 哈里 · 瓦杰帕伊 , 热烈祝贺 中印 两国 建交 50 周年 .
+- expected: prc state council premier zhu rongji sent a telegram to indian premier atal behari vajpayee , warmly hailing the 50 th anniversary of the establishment of diplomatic relations between china and india .
+- got: beijing , <UNK> mar ( xinhua ) - - state council premier zhu rongji sent a <UNK> to <UNK> <UNK> <UNK> premier <UNK> <UNK> to the 50 th anniversary of the establishment of diplomatic relations between china and india .
+
+- source: 新 中国 成立 后 , 印度 是 率先 同 中国 建交 的 国家 之一 .
+- expected: india is one of the first countries to establish diplomatic ties with china following the founding of new china .
+- got: india is one of the first countries to establish diplomatic ties with china following the founding of new china .
+
+- source: 在 国际形势 发生 深刻 变化 的 今天 , 作为 世界 上 两 最大 的 发展中国家 , 我们 都 肩负着 发展 经济 , 提高 人民 生活 水平 的 重任 .
+- expected: with the profound changes in the international situation of today , as the two largest developing countries in the world , we are charged with the important tasks of developing economies and raising the people 's living standards .
+- got: with the profound changes in the international situation of today , we are <UNK> with the two largest developing countries in the world , we are <UNK> with the important tasks of developing countries , and raising the people 's living standards .
+
+- source: 值此 新世纪 的 黎明 , 我 相信 , 共同 的 历史使命 和 责任 必将 促使 中印 两国 携手 共进 , 把 一个 和平 , 稳定 , 友好 的 中印关系 带入 21 世纪 .
+- expected: at the dawn of the new century , i believe that the common historic missions and responsibilities surely will prompt china and india to jointly advance and bring into the 21 st century a peaceful , stable , and friendly relationship between china and india .
+- got: at the <UNK> of the new century , i believe that the common understanding and <UNK> of the china and india and <UNK> a stable , and <UNK> , and <UNK> , and it will <UNK> <UNK> <UNK> <UNK> by the two sides of the friendly relationship between china and
+
+- source: 新华社 北京 3 月 31 日电 中国 外交部长 唐家璇 今天 致电 印度 外交部长 贾 斯万 特 · 辛格 , 热烈祝贺 中印 两国 建交 50 周年 .
+- expected: beijing , 31 mar ( xinhua ) - - chinese foreign minister tang jiaxuan sent a telegram to his indian counterpart jaswant singh to warmly celebrate the 50 th anniversary of the establishment of sino - indian diplomatic relations .
+- got: beijing , <UNK> mar ( xinhua ) - - chinese foreign minister tang jiaxuan sent a <UNK> to his <UNK> <UNK> <UNK> <UNK> to his <UNK> <UNK> <UNK> <UNK> <UNK> to his <UNK> <UNK> <UNK> , <UNK> to his <UNK> <UNK> to his <UNK> <UNK> .
+
+- source: 中印 两国 国情 相似 , 我们 之间 存在 着 广泛 的 共识 和 共同利益 , 这 构成 了 我们 友好相处 的 坚实基础 .
+- expected: with similar national situations , china and india share a vast common understanding and common interests , thus constituting a firm foundation for our friendship .
+- got: with the bilateral economic and trade <UNK> , our bilateral economic and trade cooperation have been <UNK> with each other , and our friendship between our two countries .
+
+- source: 我 特别 高兴 地 忆及 阁下 去年 对 中国 的 成功 访问 , 两国关系 再次 步入 改善 和 发展 的 进程 .
+- expected: i am especially very pleased to call in mind the successful visit to china by your excellency in 1999 . since then , bilateral relations once again have entered a process of improvement and development .
+- got: i am especially very <UNK> to call in my own <UNK> on bilateral relations once again , especially the development of sino - us relations last year .
+
+- source: 中印关系 正 展现出 美好 的 发展前景 .
+- expected: a bright prospect for developing sino - indian relations is now arising .
+- got: a <UNK> <UNK> for developing sino - <UNK> relations is now <UNK> .
+
+- source: 中国 三 领导人 都 重视 发展 与 印度 的 睦邻友好 关系 .
+- expected: the chinese leaders of three generations have paid attention to developing good - neighborly and friendly relations with india .
+- got: the chinese leaders of three generations have paid attention to developing good - <UNK> and friendly relations with india .
+
+- source: 哈萨克斯坦 总统 纳扎尔巴耶夫 会见 了 参加 会晤 的 中 , 俄 , 吉 , 塔 四国 国防部长 .
+- expected: kazakh president nazarbayev met with the defense ministers of china , russia , kyrgyzstan , and tajikistan who were attending the defense minister meeting .
+- got: <UNK> president <UNK> met with the defense <UNK> of china , <UNK> , russia , <UNK> , and defense minister meeting his defense minister ; <UNK> <UNK> , <UNK> , <UNK> , <UNK> , to defense minister meeting his defense minister .
+
+- source: 我国 老年 人口基数 大 , 增长 快 , 特别 是 随着 家庭 小型化 的 发展 , 社会化 养老 需求 迅速 增长 .
+- expected: in particular , due to the current trend of big families being replaced by small ones , there is a fast - growing need for socialized service to take care of old people .
+- got: in particular , due to the current trend of <UNK> <UNK> by small production , there is a <UNK> <UNK> - <UNK> <UNK> <UNK> <UNK> <UNK> - <UNK> <UNK> sectors of old .
+
+- source: 同时 , 残疾人 和 孤儿 的 养护 , 康复 条件 也 需要 进一步 改善 .
+- expected: also , both special care given to disabled people and orphans and conditions provided for their recuperation need further improvement .
+- got: also , both special care for people and conditions should further improve their <UNK> and <UNK> their <UNK> need further improvement and conditions .
+
+- source: 《 意见 》 强调 , 对 社会 力量 投资 创办 社会福利 机构 , 各级 政府 及 有关 部门 应 给予 政策 上 的 扶持 和 优惠 .
+- expected: the " opinion " stresses that governments at all levels and departments concerned should , through the implementation of special policies , support and give preferential treatment to social welfare organizations established with investments by various social sectors . 1 .
+- got: the <UNK> departments concerned under the <UNK> of the " three stresses " education on this year and social sectors , <UNK> by various social sectors , and <UNK> .
+
+- source: ( 一 ) 各地 要 将 社会福利 机构 及 床位数 作为 社会 发展 的 指导性 指标 纳入 国民经济 和 社会 发展 计划 , 要 在 基本建设 计划 中 统筹安排 社会福利 设施 建设 .
+- expected: all localities should include in their economic and social development plans the numbers of welfare organizations and hospital beds under the welfare program as guiding targets . also , their infrastructure construction program should include the social welfare facilities they plan to build . 2 .
+- got: the national people 's congress [ npc ] reform plans in all aspects , as well as the <UNK> of the <UNK> of its <UNK> program , and planning commission should all social <UNK> their <UNK> and <UNK> should be <UNK> in accordance with the <UNK> of the social <UNK>
+
+- source: 各市 人民政府 对 此项 市政 基础设施 配套 建设费 应 酌情 给予 减免 .
+- expected: all city people 's governments should reduce or exempt the urban infrastructure construction fee on these facilities as appropriate . 4 .
+- got: all city people 's governments should <UNK> the <UNK> <UNK> and <UNK> the <UNK> <UNK> on the urban infrastructure facilities as <UNK> .
+
+- source: 欧盟 贸易 委员 帕斯卡尔 拉米 是 应 中国 外经贸部 部长 石广生 的 邀请 , 三月 二十八日 来京 进行 部长级 磋商 的 .
+- expected: at the invitation of shi guangsheng , minister of foreign trade and economic cooperation , eu trade commissioner pascal lamy arrived in beijing on 28 march to hold ministerial - level consultations .
+- got: at the invitation of shi guangsheng , minister of foreign trade and economic cooperation , <UNK> <UNK> <UNK> eu trade <UNK> <UNK> <UNK> to beijing on 28 march at the meeting .
+
+- source: 中国 加入 世贸组织 , 将 对 我国 社会 经济 文化 等 各 方面 产生 一定 影响 , 作为 社会 经济 文化 发展 多种 因素 综合 集聚 体 的 城市 也 将 受到 种种 挑战 .
+- expected: china 's accession to wto will have a certain impact on our country 's economic , cultural , and other fields ; chinese cities will also be facing various challenges as the cities are combinations of all factors in social , economic , and cultural development .
+- got: china 's accession to wto will have a certain impact on our country 's economic , cultural , and cultural , organizations , and cultural knowledge , and cultural knowledge will have a certain extent have a certain country 's economic , and trade , and cultural <UNK> .
+
+- source: 如 北京 中关村 要 建高 科技园 , 城市规划 就 为 其 服务 , 提供 多个 规划 方案 进行 优化 比选 .
+- expected: for example , a high - tech estate should be set up in beijing 's zhongguancun , and urban planning should provide services for it .
+- got: for example , a high - tech <UNK> should be set up in beijing 's <UNK> , and provide services for it .
+
+- source: 其次 , 随着 产业结构 的 变化 , 每个 城市 要 结合 自身 特点 , 对 其 性质 和 职能 作出 恰当 的 调整 和 选择 .
+- expected: second , along with the changes in the industrial structure , every city should make appropriately adjust and select its character and functions in the light of its own characteristics .
+- got: second , every task of the industrial structure , <UNK> <UNK> <UNK> in the light of the light of the military region and its <UNK> <UNK> <UNK> and its <UNK> with the characteristics of its own characteristics .
+
+- source: 我们 有 工资 成本 较 低 , 素质 较 高 的 劳动力 , 将会 极大 地 释放 市场 拓展 潜力 .
+- expected: we have the advantages of comparatively low wages and high - quality labor force . accession to the wto will greatly expand our market and tap our potential .
+- got: we have the advantages of <UNK> and <UNK> our market and high - quality labor forces are facing high - tech development .
+
+- source: 铁路网 分布 也 很 不 均衡 , 全国 铁路网 54% 在 东部 , 30% 在 中部 , 西部 仅 占 16% .
+- expected: the railway grids are not evenly distributed : 54 percent of the railways are in the eastern part , 30 percent in the central part , and only 16 percent in the western part .
+- got: the <UNK> <UNK> are not <UNK> <UNK> <UNK> : <UNK> are not <UNK> percent of the central part , but the western part in the western part . the <UNK> are not <UNK> <UNK> .
+
+- source: 对于 各个 城市 来说 , 要 适应 加入 世贸 后 对外 联系 的 扩大 , 必须 进一步 加强 交通 , 电讯 , 给水 , 排水 , 电力 , 燃气 等 设施 的 规划 建设 .
+- expected: to meet the needs in the expansion of foreign exchanges after accession to the wto , all cities must further enhance the construction of transportation , telecommunication , water supply , water drainage , power supply , gas supply and other infrastructure facilities in their development plans .
+- got: to meet the needs in the needs of the needs in the needs of the needs of the wto , all cities must further enhance the construction of foreign trade , <UNK> , <UNK> , <UNK> , and in their production costs <UNK> , and power supply , water <UNK>
+
+- source: 本报 特约记者 涂学能 本报记者 顾伯良 深秋 , 华北 某地 . 总参 某 工程 兵团 组织 了 一次 高技术 条件 下 研究性 伪装 演练 .
+- expected: a certain engineer regiment under the command of the general staff headquarters organized a research camouflage training under high - tech conditions in a certain place in northern china in late autumn .
+- got: a certain <UNK> <UNK> under the <UNK> of the general staff headquarters organized a research <UNK> training under high - tech conditions in a certain place in <UNK> china in a certain place in <UNK> .
+
+- source: " 蓝军 " 空中 侦察机 运用 多种 高技术 侦察 设备 实施 航空 侦察 , 没有 发现 伪装 的 隐真 目标 .
+- expected: reconnaissance teams from the " blue army " conducted reconnaissance on the targets of the " red army " from the air using high - tech reconnaissance devices of various types and did not found any real targets under camouflage .
+- got: <UNK> <UNK> from the " <UNK> army " under <UNK> of the <UNK> of the air force <UNK> <UNK> on the targets <UNK> . "
+
+- source: 近些年来 , 随着 迷彩 作业 车 , 假 目标 制作 车 和 伪装 勘察 车 陆续 装备 部队 , 该团 防 侦察 能力 有 了 一定 提高 .
+- expected: the regiment was equipped with camouflage - painted motor vehicles , false target making vehicles , and camouflage reconnaissance vehicles one after another in recent years , and the regiment 's reconnaissance capability was thus enhanced to a certain degree .
+- got: the <UNK> was <UNK> with <UNK> - <UNK> <UNK> - <UNK> <UNK> - <UNK> <UNK> , <UNK> 's <UNK> capability was <UNK> with <UNK> , and <UNK> <UNK> in one 's <UNK> .
+
+- source: 为 实现 假 目标 从 静止 向 运动 转变 , 攻关 小组 连续 奋战 几个 月 , 因陋就简 , 革新 成功 了 能 运动 的 假 坦克 , 假 装甲车 等 假 目标 .
+- expected: to make static targets moveable , the task force engaged in tackling major technical hurdles worked without a letup for several months , made do with whatever was available , and thus succeeded in developing movable false tanks , false armored cars , and other false targets .
+- got: the <UNK> <UNK> in <UNK> <UNK> to <UNK> , the task force <UNK> in <UNK> <UNK> to <UNK> for <UNK> , <UNK> <UNK> <UNK> <UNK> , was <UNK> <UNK> <UNK> , and for <UNK> <UNK> <UNK> <UNK> .
+
+- source: 他们 革新 成功 的 单兵 伪装 烟幕 发射装置 , 组装 式 假 目标 等 成果 , 还 获得 军队 科技进步 成果 三等奖 .
+- expected: the one - man camouflage smoke launcher and assembled false target that they developed and improved won a third - class prize for military scientific and technological progress .
+- got: the one - third - class <UNK> <UNK> <UNK> <UNK> <UNK> and <UNK> <UNK> <UNK> <UNK> among the third - <UNK> <UNK> <UNK> for a third - class <UNK> , and <UNK> <UNK> <UNK> <UNK> for the third - class <UNK> .
+
+- source: 在 工程师 姜士文 的 带领 下 , 经过 一次 又 一次 试验 , 革新 成功 了 变形 伞 , 变形 树丛 等 多种 变形 遮障 .
+- expected: the task force led by engineer jiang shiwen succeeded in developing , through repeated experiments , a variety of shaped defilades , such as shaped umbrellas and shaped groves .
+- got: the task force <UNK> <UNK> in developing <UNK> <UNK> <UNK> <UNK> <UNK> by <UNK> <UNK> <UNK> , through <UNK> <UNK> <UNK> <UNK> and <UNK> <UNK> .
+
+- source: 在 朱镕基 总理 所作 的 《 政府 工作 报告 》 中 , 第一 没有 出现 的 计划指标 除了 " 增长速度 " 以外 , 还有 一个 : 粮食产量 .
+- expected: [ yan hua ] in the government work report written by chinese prime minister zhu rongji , in addition to the guiding plan of " speeding growth " was the guiding plan of food production , but it was n't included originally .
+- got: " <UNK> the government work report <UNK> by chinese <UNK> <UNK> <UNK> <UNK> in addition to the guiding plan of " was <UNK> <UNK> <UNK> , but it was <UNK> <UNK> .
+
+- source: 取消 粮食 生产 计划指标 , 部分 粮食 品种 退出 保护价 收购 范围 , 对 农业 实行 战略性 结构调整 , 这些 对 10 亿 农民 来说 , 无疑 是 件 天大 的 事 .
+- expected: canceling the guiding plan of food production , canceling price supports for some types of foods , and implementing strategic reform were major events for a billion farmers .
+- got: over the past few years , the agricultural restructuring was <UNK> for some types of <UNK> , and some types of <UNK> <UNK> <UNK> in some types of <UNK> <UNK> , and some types of resources have been <UNK> .
+
+- source: 为此 , 记者 采访 了 国务院发展研究中心 农村 经济 研究部 部长 陈锡文 研究员 .
+- expected: for this reason , this journalist interviewed chen xiwen , who is a research fellow at the state council development research center , and also is the leader of the department of agricultural economic research .
+- got: this <UNK> , director of the state economic research <UNK> , <UNK> research <UNK> at the research <UNK> this research <UNK> , said : this research <UNK> at the department of the research <UNK> .
+
+- source: 这 是否 意味着 布朗 的 担忧 没有 根据 ?
+- expected: does this mean that brown 's worries were without basis ?
+- got: does this <UNK> without basis , <UNK> without the <UNK> ?
+
+- source: 其次 是 农业 科技进步 对 粮食 增产 起 了 重要 促进作用 .
+- expected: take cereal , for example .
+- got: take <UNK> , for example .
+
+- source: 以 谷物 为例 , 1998 年 亩产 330.2 公斤 , 比 1992 年 289.5 公斤 提高 了 14% .
+- expected: in 1998 , yield was 330.2 kg per acre , compared to 1992 , when it was 289.5 kg per acre , which is a 14% increase .
+- got: in <UNK> , <UNK> <UNK> <UNK> per <UNK> , when it was <UNK> <UNK> <UNK> , which was <UNK> <UNK> to <UNK> , <UNK> for <UNK> percent of which is <UNK> per <UNK> .
+
+- source: 这 几年 粮食 丰收 , 有 上述 几 方面 的 必然性 和 偶然性 .
+- expected: these years the food harvests have been good . those circumstances and necessary measures are reasons for this .
+- got: these years the food <UNK> have been good . the grain and business has been good .
+
+- source: 但 不可否认 , 我国 农业 确实 存在 许多 问题 , 1992 ～ 1993 年 , 经济过热 时 , 农业 被 许多 地方 所 忽视 , 造成 大量 农业 资源 流失 , 一些 地方 的 资金 , 劳动力 都 涌向 了 房地产 .
+- expected: undeniably , there are many agricultural problems . between 1992 and 1993 , when the economy overheated , agriculture was ignored in many places . this caused a big loss of agricultural resources . the money and labor of some places went into real estate .
+- got: <UNK> , many agricultural resources have been <UNK> . in many places , when the <UNK> have <UNK> in many places . this regard to a big <UNK> and <UNK> resources . the economy of agricultural resources . this are a big <UNK> and labor of some places .
+
+- source: 自从 国家 实行 宏观经济 调控 以后 , 这种 情况 逐渐 扭转 .
+- expected: once the country implemented macroscopic economic reform , this situation eventually changed .
+- got: once the country <UNK> <UNK> <UNK> a situation during the country , this situation <UNK> has to change .
+
+- source: 记者 : 老百姓 认为 粮食 多 了 是 好事 , 您 怎 幺 看 目前 的 粮食 过剩 ? 陈 : 在 我国 农产品 供求 中 , 数量 矛盾 已经 缓解 , 但 粮食 的 品种 , 质量 矛盾 开始 突出 .
+- expected: how do you view this ? [ chen ] regarding requirements for our agricultural products , the problem of quantity has already lessened .
+- got: how do you view this ? [ chen ] regarding requirements for our <UNK> is facing a <UNK> <UNK> . if the problem of <UNK> is too many years ? [ chen ] this is our <UNK> <UNK> <UNK> .
+
+- source: 去年 国务院 已经 公布 : 从 2000 年 开始 , 国家 缩小 保护价 收购 范围 , 低品质 粮食 不再 纳入 保护价 .
+- expected: last year the state department announced that beginning in 2000 , our country is going to start decreasing the scope of price controls and supports , so the price of low - quality food will no longer be protected .
+- got: last year the state department announced that beginning in 2000 , our country is going to start <UNK> the price of price <UNK> and <UNK> and <UNK> for 2000 , so the price <UNK> will be <UNK> .
+
+- source: 研究 培育 适应 东北 寒冷 气候 , 在 上 冻 以前 就 成熟 的 品种 , 也 不是 件 容易 的 事 .
+- expected: but if you roast it , the kernel becomes flat and dry . it is poor quality and expensive . it is not easy to research and cultivate a new variety that can adapt to the cold northeast climate .
+- got: but if you <UNK> <UNK> the <UNK> <UNK> and <UNK> <UNK> . it is poor quality and <UNK> . it is not <UNK> to the <UNK> <UNK> <UNK> <UNK> <UNK> .
+
+- source: 出现 粮食 过剩 这种 情况 , 近年来 已经 是 第 3 了 , 1984 年 , 1990 年 各有 一次 , 但 都 没有 顺利 转化成 品质 的 提高 .
+- expected: this is the third food surplus in recent years . the years 1984 and 1990 had food surpluses .
+- got: this is the third food surplus in recent years . the years <UNK> and <UNK> had been <UNK> .
+
+- source: 记者 : 这次 农业产业 战略性 结构调整 , 与 以往 的 调整 有什幺 不同 ? 陈 : 以前 的 结构调整 只 局限 在 农业 内部 进行 , 重点 是 依靠 科技进步 , 提高 一些 农产品 的 产量 , 实现 增产增收 ; 为 适应 市场 供求 变化 调整 .
+- expected: however , this did n't successfully promote higher - quality varieties . [ yan hua ] what is the difference between the agricultural reform this time and before ? [ chen ] before , agricultural reform was limited .
+- got: however , this is one of the <UNK> <UNK> <UNK> . [ <UNK> <UNK> <UNK> <UNK> ] what is the <UNK> between the agricultural structural adjustment and before ? [ chen ] before , agricultural reform was <UNK> before ?
+
+- source: 古人 也 知道 砍树 , 烧荒 不好 , 但 人 得 吃饱 肚子 , 为了 生存 , 不得已而为之 .
+- expected: ancient people knew that logging and slash and burn land clearing were not good . but people had to feed themselves , so they had to do this .
+- got: <UNK> people <UNK> that <UNK> and <UNK> and <UNK> and <UNK> . they had to do not only to <UNK> , they had to <UNK> <UNK> .
+
+- source: 现在 , 农产品 供给 充足 , 我们 就 有 条件 做 一些 恢复 生态环境 的 工作 , 如 有 计划 地 退耕还林 , 还 草 , 还湖 等 , 使 不 适应 农业 生产 的 土地 逐步 退出 农业 生产 ; 二是 积极 发展 农产品 加工业 .
+- expected: but now , farm products are fully supplied . we now have the ability to encourage environmental ecology . for example , planting grass , protecting lakes , planned reforestation of farmland , and taking poor agricultural land out of cultivation .
+- got: but now , <UNK> products are now , but we should think of <UNK> and <UNK> . however , we should also increase the agricultural products which have a <UNK> of <UNK> to encourage environmental <UNK> .
+
+- source: 唐家璇 外长 致电 印度 外交部长 祝贺 中 印 建交 50 周年 新华社 北京 3 月 31 日电 中国 外交部长 唐家璇 今天 致电 印度 外交部长 贾 斯万 特 · 辛格 , 热烈祝贺 中印 两国 建交 50 周年 .
+- expected: beijing , 31 march ( xinhua ) - - chinese minister of foreign affairs tang jiaxuan sent a telegram to indian minister of external affairs singh jaswant , warmly congratulating the 50 th anniversary of the establishment of diplomatic relations between china and india .
+- got: beijing , <UNK> mar ( xinhua ) - - chinese foreign minister tang jiaxuan sent a <UNK> to <UNK> <UNK> <UNK> to <UNK> his <UNK> <UNK> <UNK> <UNK> to <UNK> , <UNK> <UNK> <UNK> his <UNK> to <UNK> , <UNK> to his <UNK> <UNK> <UNK> .
+
+- source: 中华人民共和国 外交部长 唐家璇 二零零零年 四月 一日 于 北京
+- expected: prc minister of foreign affairs tang jiaxuan in beijing on 1 april 2000 .
+- got: prc minister of foreign affairs tang jiaxuan in beijing on 1 april 2000 .
+
+- source: 民进党 的 竞选 委员会 主任 邱义仁 也 在座 .
+- expected: also present at the meeting was chiu yi - jen ( qiu yiren ) , director of the dpp 's electioneering committee .
+- got: also present at the meeting was <UNK> ( <UNK> <UNK> <UNK> <UNK> <UNK> ) .
+
+- source: 任何 企图 否定 " 一个 中国 " 原则 的 做法 都 是 完全 不能 接受 的 , 并 将 产生 严重后果 .
+- expected: any attempt to negate the " one - china " principle is totally unacceptable , and will surely lead to serious consequences .
+- got: any attempt to <UNK> the " one - china " principle is <UNK> <UNK> , and will surely lead to serious consequences .
+
+- source: 台湾海峡 两岸 领导人 可以 见面 会谈 , 但 见面 会谈 必须 在 " 一个 中国 " 的 原则 基础 上 进行 .
+- expected: the leaders on both sides of the taiwan strait can have meetings and talks , yet such meetings and talks ought to be conducted on the basis of the " one - china " principle .
+- got: the leaders on both sides of the taiwan strait can have meetings and talks , yet such meetings and talks , yet such meetings and talks <UNK> to be conducted on the basis of the basis of the " one - china " principle .
+
+- source: 只要 在 " 一个 中国 " 的 框架 之内 , 什 麽 问题 都 可以 谈 , 包括 台湾 方面 关心 的 各种 问题 .
+- expected: so long as it is within the framework of " one china , " everything can be discussed , including the various concerns of the taiwan side .
+- got: so long as it is within the framework of " one china , " everything can be discussed , including the various <UNK> of the taiwan side .
+
+- source: 他 说 , 只有 在 台湾 新 领导人 放弃 " 台湾独立 " 的 立场 , 承认 " 一个 中国 " 的 原则 的 情况 下 , 海峡两岸 关系 才能 取得 积极 进展 .
+- expected: he believed that only when taiwan 's new leader discards his stand of " taiwan independence " and recognizes the " one - china " principle can the cross - strait relations undergo a positive progress .
+- got: he expressed the hope that only when taiwan 's new leader <UNK> his " one - china " principle and " principle can <UNK> <UNK> the " one - china " principle . "
+
+- source: 刘晓明 指出 , 最近 台湾地区 举行 的 选举 及其 结果 改变 不了 也 不会 改变 台湾 是 中国 领土 一部分 的 事实 .
+- expected: liu xiaoping pointed out that the recent election held in the taiwan region as well as its results will not , and cannot , change the fact that taiwan is one part of the chinese territory .
+- got: chen jian pointed out that the recent election in the taiwan region as well as the fact that taiwan is a fact , which <UNK> <UNK> that the fact that taiwan is a part of chinese territory .
+
+- source: 他 说 : " 我们 将 听其言 , 观其行 .
+- expected: he indicated : " we will judge taiwan 's new leader by his deeds , not just by his words .
+- got: he said : " we will <UNK> taiwan 's new leader by his deeds , not just by his words .
+
+- source: 他 说 , " 一个 中国 " 指 的 是 世界 上 只有 一个 中国 , 台湾 是 其中 的 一部分 , 中国 的 主权 和 领土完整 是 不可分割 的 .
+- expected: " ' one china ' refers to the fact that there is only one china in this world , taiwan is one part of the chinese territory , and china 's sovereignty and territorial integrity is inseparable , " he noted .
+- got: ' one china is one of the fact that ' taiwan is one part of the chinese territory , " two - state theory , " he noted that ' one china , ' <UNK> , ' <UNK> , and this is one china 's <UNK> , " we will
+
+- source: 如果 台湾 否定 " 一个 中国 " 原则 , 试图 把 台湾 从 中国 领土 上 分割 出去 , 和平解决 台湾 问题 的 基础 将 不复存在 .
+- expected: however , if taiwan negates the " one - china " principle and attempts to separate taiwan from the chinese territory , then the basis for a peaceful settlement of the taiwan issue will no longer exist .
+- got: however , if taiwan <UNK> to the " one - china " principle , then the taiwan issue will be no longer be resolved <UNK> .
+
+Bleu Score = 40.410132374461384
