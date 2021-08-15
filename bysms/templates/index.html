@@ -60,22 +60,29 @@
                 var pinyin1=data.data.pinyin;
 				$(".targetText")[0].innerHTML=res1;
                 $("#pinyinField")[0].innerHTML=pinyin1;
+                $("#pinyinField1")[0].innerHTML=" ";
 				console.log(res1);
                 console.log(pinyin1);
 			}
             if(data.status == 200 && data.msg == "sentence query runs successfully."){
                 var res2=data.data;
 				$(".targetText")[0].innerHTML=res2;
+                $("#pinyinField")[0].innerHTML=" ";
+                $("#pinyinField1")[0].innerHTML=" ";
 				console.log(res2);
             }
             if(data.status == 200 && data.msg == "chinese sentence query runs successfully."){
                 var res3=data.data;
 				$(".targetText")[0].innerHTML=res3;
+                $("#pinyinField")[0].innerHTML=" ";
+                $("#pinyinField1")[0].innerHTML=" ";
 				console.log(res3);
             }
             if(data.status == 200 && data.msg == "translate failed"){
                 var res4=data.data;
 				$(".targetText")[0].innerHTML=res4;
+                $("#pinyinField")[0].innerHTML=" ";
+                $("#pinyinField1")[0].innerHTML=" ";
 				console.log(res4);
             }
             if(data.status == 200 && data.msg == "english word query runs successfully."){
@@ -83,6 +90,7 @@
                 var pinyin2=data.data.pinyin;
 				$(".targetText")[0].innerHTML=res5;
                 $("#pinyinField1")[0].innerHTML=pinyin2;
+                $("#pinyinField")[0].innerHTML=" ";
 				console.log(res5);
                 console.log(pinyin2);
             }
