@@ -1,0 +1,641 @@
+- source: 你 认为 你 的 书面 英语 和 口语 熟练程度 如何 ？
+- expected: How do you think of your proficiency in written and spoken English?
+- got: How do you think of your English or English can be chosen by you?
+
+- source: 她 的 英语口语 不是 十分 好 ， 可 她 的 意思 可以 理解 得 很 清楚 。
+- expected: Her spoken English is not very good, but her meaning shone through without doubt.
+- got: Her spoken English is not very good, but her meaning could understand without by without writing.
+
+- source: 天空 中飘着 几朵 云 ， 但 阳光灿烂 。
+- expected: There are some clouds in the sky,but the sun is shining.
+- got: There are some clouds in the and the sun are the the before it is the agency pattern in the mud.
+
+- source: 我 和 妻子 沿 河岸 走 着 。
+- expected: My wife and I are walking along the banks of the river.
+- got: My wife and I are walking along the banks of the river.
+
+- source: 萨姆 ： 你 打算 如何 处理 那共瓶 ？
+- expected: SAM: What are you going to do with that vase, Penny?
+- got: a way to go with that little friend and make it.
+
+- source: 萨姆 ： 我 准备 把 它 入 在 这儿 ， 放在 窗前 。
+- expected: SAM: I'm going to put it here,in front of the window.
+- got: in the to put it out at this important minute.
+
+- source: 1 / 4   磅 茶叶 和 一 听 烟丝 。
+- expected: A quarter of pound of tea and a tin of tobacco.
+- got: A quarter of pound of tea and a tin of that's off.
+
+- source: 你 怎么 知道 萨姆不常 沏茶 ？
+- expected: How do you know Sam doesn't make the tea very often?
+- got: How do you know Sam doesn't make the little horse very the techniques very the techniques work?
+
+- source: 萨姆 ： 茶壶 我 看见 了 ， 但 茶叶 没 看到 。
+- expected: SAM: I can see the teapot,but I can't see the tea.
+- got: The little blue one bear can see me at the in the summer but I can't see it.
+
+- source: 鲍勃 :   请 你 把 这 封信 给 老板 打 一下 可以 吗 ， 帕梅拉 ？
+- expected: BOB: Can you type this letter for the boss please, Pamela?
+- got: a letter to the boss say, can you type me for this get go - forward work.
+
+- source: 吉姆 ： 北部 的 天气 常常 寒冷 ， 东部 则 常常 利风 。
+- expected: JIM: The weather's often cold in North and windy in the East.
+- got: in the winter and cold in the West. And so,
+
+- source: 西部 常 下雨 ， 南部 有时 则 很 暖和 。
+- expected: It's often wet in the West and sometimes warm in the south.
+- got: It's often wet in the West and sometimes warm in the west.
+
+- source: 早上 ， 索耶 先生 去 上班 ， 孩子 们 去 上学 。
+- expected: In the morning, Mr.Sawyer goes to work and the children go to school.
+- got: In the morning, and I go to work in the weekend.
+
+- source: 晚上 ， 孩子 们 总是 做作业 ， 然后 去 睡觉 。
+- expected: At night, the children always do their homework and then they go to bed.
+- got: At night, the children always do their bed trying to find them.
+
+- source: 索耶 先生 总是 读 报纸 ， 但 有时 和 他 的 妻子 一起 看电视 。
+- expected: Mr.Sawyer usually reads his newspaper, but sometimes he and his wife watch television.
+- got: in fact, Mr. the newspaper usually goes in TV and TV.
+
+- source: 孩子 们 每天 都 乘 小汽车 去 上学 ， 而 今天 ， 他们 正 步行 上学 。
+- expected: The children go to school by car every day, but today, they are going to school on foot.
+- got: The children go to school by car every day, but today, they are going to school on foot.
+
+- source: 上午 ， 索耶 夫人 通常 是 呆 在 家里 的 ， 但 今天上午 ， 她 正 去 商店 买 东西 。
+- expected: Mrs.Sawyer usually stays at home in the morning, but this morning, she is going to the shops.
+- got: in the afternoon, but at find she is going to spend the shop this morning.
+
+- source: 下午 ， 索耶 夫人 通常 是 在 客厅 里 喝茶 。
+- expected: In the afternoon, Mrs.Sawyer usually drinks tea in the living room.
+- got: In the afternoon, he usually in the living room, in the life department.
+
+- source: 晚上 ， 孩子 们 通常 是 做作业 ， 而 今天 晚上 ， 他们 没 做作业 。
+- expected: In the evening, the children usually do their homework, but this evening, they are not doing their homework.
+- got: In the evening, the children usually do their rather work today and they go in the evening.
+
+- source: 售货员 ： 您 要 大 号 的 还是 小号 的 ？
+- expected: SHOP ASSISTANT: Do you want the large size or the small size?
+- got: The shop was put to a small box the next time you approached the club.
+
+- source: 医生 ： 他 得 了 重感冒 ， 威廉斯 先生 ， 因此 他 必须 卧床 一周 。
+- expected: DOCTOR: He has a bad cold,Mr.Williams,so he must stay in bed for a week.
+- got: in his bad cold water has been
+
+- source: 他 每天 可以 起来 两个 小时 ， 但 您 必须 保持 房间 温暖 。
+- expected: He can get up for about two hours each day, but you must keep the room warm.
+- got: He can get up for about two hours each day, but you must keep the room warm.
+
+- source: 吉尔 ： 我能 带上 前门 的 钥匙 吗 ？
+- expected: JILL: Can I have the key to the front door please?
+- got: The summer my her final night is the new in that water.
+
+- source: 有 英国 、 法国 、 德国 、 意大利 和 日本 的 汽车 。
+- expected: There were English cars, French cares, German cars,Italian cars,American cars and Japanese cars.
+- got: He has the English word in Britain, Italy, the German and French are leading in England.
+
+- source: 他 在 第 15 号 车里 ， 其他 5 辆 汽车 跟 在 他 后面 。
+- expected: He was in car number fifteen,Five other cars were just behind him.
+- got: He was in car number of times and he's moving away at the bus stop.
+
+- source: 在 回家 的 途中 ， 我 妻子 对 我 说 ： “ 别开 得 这样 快 ！ 你 可不是 比利 . 斯图尔特 ！ ”
+- expected: On the way home, my wife said to me, 'Don't drive so quickly!You're not Billy Stewart!'
+- got: On the way home, my wife said to me, but you said no to me, set But can drive to little to little so the the experience her.
+
+- source: 他 昨天 给 我 打 了 4 次 电话 前天 打 了 3 次 。
+- expected: He telephoned me four times yesterday, and three times the day before yesterday.
+- got: He picked me up four times yesterday, and three times the phone before yesterday.
+
+- source: 波淋 ： 他 说 ： “ 波淋 正在 打信 ， 她 现在 不能 同 你 讲话 ！ ”
+- expected: PAULINE: He said, "Pauline is typing typing letters.She can't speak to you now!"
+- got: in his the
+
+- source: 她 对 伦敦 不 很 熟悉 ， 因此 迷了路 。
+- expected: She does not know London very well, and she lost her way.
+- got: She does not know London very well, and she lost her way.
+
+- source: “ 对不起 ， 您 能 告诉 我 到 国王 街 怎么 走 吗 ？ ” 她 说 。
+- expected: 'Excuse me,' she said,'Can you tell me the way to King Street, please?'
+- got: I told her to speak to him and say,
+
+- source: 然后 他 把手 伸进 了 衣袋 ， 掏出 了 一本 常用语 手册 。
+- expected: Then he put his hand into pocket, and took out a phrasebook.
+- got: Then he put his hand into and you took out a and from and by of of of of of of of of of of process a but to now,
+
+- source: 售货员 ： 一个月 前 我们 有 这要 的 鞋 ， 但是 现在 没有 了 。
+- expected: SHOP ASSISTANT: We had some shoes like those a month ago,but we don't have any now.
+- got: The shop assistant is, but we have the shoes that have given you a month ago.
+
+- source: 这鞋 在 去年 和 前年 时兴 。
+- expected: They were in fashion last year and the year before last.
+- got: They were in fashion last year and the year before last.
+
+- source: 护士 ： 您 在 4 月 24 日 星期一 上午 10 点钟 来行 吗 ？
+- expected: NURSE: Can you come at 10 a.m. on Monday, April 24th?
+- got: a check at 10 a.m. on your way aboard here from the after April 10 th.
+
+- source: 我们 的 茶叶 和 咖啡 不多 了 ， 糖 和 果酱 也 没有 了 。
+- expected: We haven't got much tea or coffee, and we haven't got any sugar or jam.
+- got: We haven't got much tea or coffee, and we haven't got any sugar or he's lost.
+
+- source: 我们 番茄 不多 了 ， 但 土豆 还有 不少 。
+- expected: We haven't got many tomatoes,but we've got a lot of potatoes.
+- got: We haven't got many and haven't got a lot of need.
+
+- source: 卡罗尔 ： 唉 ， 今晚 你们 又 要 吃 烤牛肉 和 土豆 了 ！
+- expected: CAROL: Well, you're going to have roast beef and potatoes again tonight!
+- got: a sure day, you're going to he's going to he's going to he's goods again tonight.
+
+- source: 我们 到 车库 去 看 一下 吧 。
+- expected: Let's go into the garage and have a look at it.
+- got: Let's go into the garage and have a look at it.
+
+- source: 詹尼 ： 我 想 他们 将会 在 后天 搬进 来 吧 。
+- expected: JENNY: I think that they'll move in the day after tomorrow.
+- got: in the day I think they'll move in the day after tomorrow.
+
+- source: 他 只有 41 岁 ， 但他却 过 世界 上 几乎 每 一个 国家 。
+- expected: He's only forty-one years old, and he has already been to nearly every country in the world.
+- got: He's only a and he was in the world toward every five years.
+
+- source: 乔治 ： 肯 ， 我们 现在 最好 回 车站 去 。
+- expected: GEORGE: We had better go back to the station now, Ken.
+- got: the engine will take you right to the station now.
+
+- source: 霍尔 先生 ： 几天 前 我 把 一只 手提箱 忘 在 开往 伦敦 的 火车 上 了 。
+- expected: MR.MALL: I left a suitcase on the train to London the other day.
+- got: The money I had been grade a few days ago, and I left in London.
+
+- source: 霍尔 先生 ： 是 只 蓝色 的 小箱子 ， 上面 有 拉链 。
+- expected: MR.MALL: It's a small blue case and it's got a zip.
+- got: the blue has a blue the little bit it's got a in its the it's not long.
+
+- source: 箱 把 上 有 一 标签 ， 上面 写 着 我 的 姓名 和 住址 。
+- expected: There's a label on the handle with my name and address on it.
+- got: There's a label on the handle with my name and address on it.
+
+- source: 彭妮 ： “ 我刚 到 苏格兰 ， 我现 住 在 一家 青年 招待所 。 ”
+- expected: PENNY: 'I have just arrive in Scotland and I'm staying at a Youth Hostel.'
+- got: a you have been in Scotland and I'm staying at a Youth the airport.
+
+- source: 加里 ： 英语 和 数学试题 对 我 来说 不 很 容易 。
+- expected: GARY: The English and Maths papers weren't easy enough for me.
+- got: The English English teacher can't play I through. The latest teacher.
+
+- source: 坐在 我 旁边 的 那个 人 只 在 试卷 顶端 写 自己 的 名字 。
+- expected: The guy next to me Wrote his name at the top of the paper.
+- got: The guy next to me from the lead company called the top - grade name.
+
+- source: 加里 ： 然后 他 就 坐在 那里 ， 对 着 考卷 看 了 3 个 小时 。
+- expected: GARY: Then he sat there and looked at it for three hours!
+- got: in addition, he sat down for three hours and looked at it for three hours.
+
+- source: 它 比 那件 蓝色 的 还要 小 。
+- expected: LADY: I'm afraid this green dress it too small for me as well.
+- got: as you can see they're bit brown and I won't go over that little bit.
+
+- source: 但 必须 是 我 的 尺寸 。
+- expected: I want a dress like that one, but it must be my size.
+- got: I want a dress like that one, but it must be my size.
+
+- source: 您 可以 先付 30 英镑 定金 ， 然后 每月 14 镑 , 3 年 付清 。
+- expected: You can pay a deposit of thirty pounds, and then fourteen pounds a month for three years.
+- got: You can pay a deposit of thirty dollars. Then we'll pay in fifteen months.
+
+- source: 今天 早晨 我 丈夫 走进 饭厅 时 ， 他 把 一些 硬币 掉 在 地上 了 。
+- expected: When my husband was going into the dining room this morning, he dropped some coins on the floor.
+- got: When my husband was going into the dining room this morning, he dropped some coins on the floor.
+
+- source: 我们 虽然 找 了 ， 但 没有 把 它们 全部 找到 。
+- expected: We looked for them, but we could not find them all.
+- got: We looked for them, but we could not find them all.
+
+- source: 正当 我们 吃 早饭 时 ， 我们 的 小男孩 汤米 在 地上 找到 两枚 小 硬币 。
+- expected: While we were having breakfast, our little boy, Tommy, found two small coins on the floor.
+- got: While we were having It's having much small coins at his house he found his yard.
+
+- source: 我们 俩 都 试图 把 这 两枚 硬币 拿 出来 ， 但太迟 了 。
+- expected: We both tried to get the coins, but it was too late.
+- got: We both tried to get the ticket because the cold car was too late.
+
+- source: 那天 下午 的 晚些时候 ， 当 我 正 做 家务 时 ， 我 丈夫 从 办公室 打 来 电话 。
+- expected: Late that morning, when I was doing the housework, My husband phoned me from the office.
+- got: At that afternoon I was doing the telephone when I was doing business with my husband.
+
+- source: “ 我 不 知道 ” ， 我 回答 说 ， “ 今天上午 汤米 去 了 3 次 厕所 了 ， 但 我 还 没 看到 硬币 ！ ”
+- expected: 'I don't know,' I answered, 'Tommy's been to the toilet three times this morning, but I haven't had any change yet!'
+- got: the big phone bill that I should have arrived this morning three times, but I haven't had any change my a deal.
+
+- source: 当 我 的 朋友 乔治 在 床上 看书 时 ， 两个 小偷 爬进 了 他 的 厨房 。
+- expected: While my friend, George, was reading in bed, two thieves climbed into his kitchen.
+- got: While my friend, was reading in bed, two thieves climbed into his kitchen.
+
+- source: 他们 进 到 屋里 后 ， 走进 了 饭厅 。
+- expected: After they had entered the house, they went into the dining room.
+- got: After they entered the house, they went into the dining room.
+
+- source: 饭厅 很 暗 ， 于是 他们 打开 了 手电筒 。
+- expected: The dining room was very dark, so they turned on a torch.
+- got: The dining room was very dark, so they turned on a the necessary limit.
+
+- source: 小偷 扔下 了 手电筒 ， 飞快 地 逃走 了 。
+- expected: The thieves dropped the torch and ran away as quickly as they could.
+- got: The thieves dropped the and quickly ran into the and quickly ran away.
+
+- source: 顾客 ： 半小时 以前 我 在 这里 买 了 两本 很贵 的 辞典 ， 但是 我 忘 了 拿走 。
+- expected: CUSTOMER: I bought two expensive dictionaries here half and hour ago, but I forgot to take them with me.
+- got: in half hours I bought them half and take them to the cannot forget but take them off.
+
+- source: 经理 ： 卡罗琳 ， 半小时 前 你 接待 过 这位 先生 吗 ？
+- expected: MANAGER: Did you serve this gentleman half an hour ago, Caroline?
+- got: the manager put me in an hour, would you say it's a great in the work?
+
+- source: 这 是 我 到 澳大利 来 旅行 时 拍 的 一张 照片 。
+- expected: This is a photograph I took during my trip to Australia.
+- got: This is a photograph I took during my trip to Australia.
+
+- source: 莉兹 ： 当 我 还是 学生 时 ， 她 就是 个 著名 的 演员 了 。
+- expected: LIZ: She was a famous actress when I was still at school.
+- got: in her office when I was still at the same time.
+
+- source: 马丁 ： 加里 ， 今年 你们 打算 去 哪里 度假 ？
+- expected: MARTIN: Where are you going to spend your holidays this year,Gary?
+- got: a few days, you don't have to go forward to holiday.
+
+- source: 我 妻子 想到 埃及 去 ， 我 也 想 去 那儿 。
+- expected: My wife wants go to Egypt,and I'd like to there, too.
+- got: My wife wants go to the ceremony of myself, my Non - States again.
+
+- source: 末了 ， 我们 呆 在 家里 来 照看 一切 。
+- expected: in the end, we stay at home and look after everything!
+- got: in the end, we stay at home and look after everything inside out.
+
+- source: 我 早就 不想 再 拍片子 了 。
+- expected: I don't want to make another film for a long time.
+- got: I don't want to make another film for a long time.
+
+- source: 她 告诉 记者 她 感到 很 疲劳 ， 早就 不想 再 拍电影 了 。
+- expected: She told reporters she felt very tired and didn't want to make another film for a long time.
+- got: She told her reporter was in heart - to - explain it soon after the film accident that she felt really lost.
+
+- source: 今天 在 伦敦 旅馆 ， 马什 小姐 告诉 记者 她 可能 要 退休 。
+- expected: At her London Hotel today Miss Marsh told reporters she might retire.
+- got: At her London meetings her tomorrow reporters might have her to don't speak her and repair her give her a condition for her.
+
+- source: 她 说 她 的 未婚夫 不会 再 让 她 拍电影 。
+- expected: She said her future husband would not let her make another film.
+- got: She said her future husband would not let her make another film.
+
+- source: 然后 她 把 我们 介绍 给 卡洛斯 ， 并 告诉 我们 说 他们 下星期 结婚 。
+- expected: Then she introduced us to Carlos and told us they would get married next week.
+- got: Then she introduced us to our partners and tell them that we had been married next week.
+
+- source: 如果 朱莉 有 那 笔钱 ， 她 想 做 什么 呢 ？
+- expected: What would Julie like to do, if she had the money?
+- got: What would she have done in the had to been the
+
+- source: 要是 你 赢 了 许多 钱 ， 你 打算 做 什么 呢 ？
+- expected: What will you do if you win a lot of money?
+- got: What will you do if you win a lot of time or have you?
+
+- source: 布赖恩 ： 要是 我 赢 了 许多 钱 ， 我 给 你 买件 貂皮大衣 。
+- expected: BRIAN: If I win a lot of money I'll buy you a mink coat.
+- got: The ship backed me out and I would buy a a look at you.
+
+- source: 要是 我们 赢 了 很多 钱 ， 我们 就 去 周游世界 ， 并且 住 最好 的 旅馆 。
+- expected: If we win a lot of money,we'll travel round the world and we'll stay at the best hotels.
+- got: If we win a lot of that money and leave us in the world the best of our ever the the world.
+
+- source: 然后 我们 返回 家园 ， 在 乡下 买幢 大房子 。
+- expected: Then we'll return home and buy a big house in the country.
+- got: Then we'll return home and buy a big house in the country.
+
+- source: 朱莉 ： 但是 如果 我们 把 所有 钱 都 花光 了 ， 我们 又 会 变穷 的 。
+- expected: JULIE: But if we spend all that money,we'll be poor again.
+- got: just put all we can be into a poor bottom.
+
+- source: 布赖恩 ： 如果 我们 花光 了 所有 钱 ， 我们 设法 在 足球赛 赌注 上 再赢 一次 。
+- expected: BRIAN: If we spend all the money we'll try and win the football pools again.
+- got: a few of us spend and we'll try all the football pools again.
+
+- source: 格雷厄姆 . 特纳 ： 告诉 玛丽 ， 我们 今晚 吃饭 将 晚到 一会儿 。
+- expected: GRAHAM TURNER: Tell Mary we'll be late for dinner this evening.
+- got: The the York But Mary the lady asks us this evening tonight.
+
+- source: 我 说 过 我 6 点到 你家 ， 但 老板 要 我 加班 。
+- expected: I said I would be at your house at six o'clock, but the boss want me to do some extra work.
+- got: I said I would be at your house at six a.m. but I would do better work to do it.
+
+- source: 喔 ， 顺便 问一问 ， 我 妻子 想 知道 玛丽 是否 需要 帮忙 。
+- expected: Oh, and by the way,my wife wants to know if Mary needs any help.
+- got: Oh, and by the man I want to find out if Mary needs any help.
+
+- source: 格雷厄姆 . 特纳 ： 你 在 海外 工程 公司 上班 ， 是 吗 ？
+- expected: GRAHAM TURNER: You work for the Overseas Engineering Company, don't you?
+- got: in the So, you work that you have this love station today.
+
+- source: 我 是 电话 工程师 约翰 . 史密斯 ， 我 正在 修理 您 的 电话线 。
+- expected: I'm John Smith the telephone engineer and I'm repairing your telephone line.
+- got: I'm John Smith the telephone engineer and I'm repairing your telephone line.
+
+- source: 上周 ， 我 4 岁 的 女儿 萨莉 被 邀请 去 参加 一个 儿童 聚会 。
+- expected: Last week, my four-year-old daughter, Sally, was invited to a children's party.
+- got: Last week I was invited to a 4 - year - old daughter to attend a party.
+
+- source: 萨莉 非常 激动 ， 因为 她 从未 乘 过 火车 。
+- expected: Sally was very excited because she had never travelled on a train before.
+- got: Standing on her most extreme day, she had never entered the train.
+
+- source: 她 靠 车窗 坐 着 ， 对 她 所 看到 的 一切 都 要 问个 明白 。
+- expected: She sat near the window and asked questions about everything she saw.
+- got: She sat near the window and asked questions about everything she said.
+
+- source: 突然 ， 一个 中年妇女 上 了 火车 ， 坐在 萨莉 的 对面 。
+- expected: Suddenly, a middle-age lady got on the train and sat opposite Sally.
+- got: doesn't go on the train and the train sat in the afternoon.
+
+- source: 那位 妇女 穿着 一件 蓝色 的 大衣 ， 戴着 一顶 大而 滑稽 的 帽子 。
+- expected: The lady was dressed in a blue coat and a large, funny hat.
+- got: The lady was dressed in a blue coat and a large, funny hat.
+
+- source: 火车 开出 车站 后 ， 那位 妇女 找开 了 手提包 ， 拿出 了 粉盒 。
+- expected: After the train had left the station, the lady opened her handbag and took to her power compact.
+- got: After the train had left the station, the lady opened her have turned her name.
+
+- source: 我 住 在 一个 由 美丽 的 树林 环绕 的 古老 的 小镇 上 。
+- expected: I live in a very old town which is surrounded by beautiful woods.
+- got: I live in a very old town which is surrounded by beautiful woods.
+
+- source: 每适 星期天 ， 有许 许多 人 从 城里 来 观赏 我们 的 小镇 ， 并 在 树林 中 散步 。
+- expected: On Sundays, hundreds of people come from the city to see our town and to walk through the woods.
+- got: On his way from New York to see many people and across the town have to walk through the woods.
+
+- source: 游客 已 被 告知 要 保持 树林 的 整洁 。
+- expected: Visitors have been asked to keep the woods clean and tidy.
+- got: The tourists has been lit out for the home factory calls all through the woods.
+
+- source: 树下 都 已 设置 了 废物 筐 ， 但是 人们 仍 到处 扔 垃圾 。
+- expected: Litter baskets have been placed under the trees, but people still throw their rubbish everywhere.
+- got: The And take have covered the goat and stood in front of the Africa too.
+
+- source: 废物 筐 是 空 的 ， 而 满地 都 是 纸片 、 烟头 、 旧 轮胎 ， 空 瓶子 和 生锈 的 空 罐头盒 。
+- expected: The little baskets were empty and the ground was covered with pieces of paper, cigarette ends, old tyres, empty bottles and rusty tins.
+- got: The little Air is empty and the ground was covered with pieces of paper, cigarette - empty empty empty pieces and cigarette videos.
+
+- source: 当 伦敦 动物园 接到 报告 说 ， 在 伦敦 以南 45 英里 处 发现 一只 美洲狮 时 ， 这些 报告 并 没有 受到重视 。
+- expected: When reports came into London Zoo that a wild puma had been spotted forty-five miles south of London, they were not taken seriously.
+- got: When reports came into London and the reports of a wild and you were doing rarely been the report before midnight.
+
+- source: 专家 证实 ， 美洲狮 非 被 逼 得 走投无路 ， 是 决不会 伤人 的 。
+- expected: Experts confirmed that a puma will not attack a human being unless it is cornered.
+- got: Experts confirmed that a But in effect would be due to a human being, it would be never quite and be paid.
+
+- source: 无论 它 走 哪儿 ， 一路上 总会 留下 一串 死鹿 及 死 兔子 之类 的 小 动物 。
+- expected: Wherever it went, it left behind it a trail of dead deer and small animals like rabbits.
+- got: fill it of behind it and always there of small deer and small animals like that of dead fish.
+
+- source: 在 许多 地方 看见 爪印 ， 灌木丛 中 发现 了 粘 在 上面 的 美洲狮 毛 。
+- expected: Paw prints were seen in a number of places and puma fur was found clinging to bushes.
+- got: in many places and The head of and pots of the first the state was found the form of so and you were to features of a the form of
+
+- source: 有人 抱怨 说 夜里 听见 “ 像 猫 一样 的 叫声 ” ； 一位 商人 去 钓鱼 ， 看见 那 只 美洲狮 在 树上 。
+- expected: Several people complained of "cat-like noises' at night and a businessman on a fishing trip saw the puma up a tree.
+- got: Someone often complained of the woman as if he were seen the woman in a fish like a the and caught tiger without a it's just a the product of
+
+- source: 专家 们 如今 已经 完全 肯定 那 只 动物 就是 美洲狮 ， 但 它 是从 哪儿 来 的 呢 ？
+- expected: The experts were now fully convinced that the animal was a puma, but where had it come from?
+- got: The experts were now fully convinced that the animal was a bit of a living.
+
+- source: 搜寻 工作 进行 了 好几个 星期 ， 但 始终 未能 逮住 那 只 美洲狮 。
+- expected: The hunt went on for several weeks, but the puma was not caught.
+- got: The hunt went on for several weeks, but the hunt were not so the talk of the accident.
+
+- source: 想到 在 宁静 的 乡村 里 有 一头 危险 的 野兽 继续 逍遥 流窜 ， 真 令人担心 。
+- expected: It is disturbing to think that a dangerous wild animal is still at large in the quiet countryside.
+- got: The dangerous wild animal is still sure that it is at large in the quiet countryside.
+
+- source: 我们 教区 的 牧师 总是 为 各种各样 的 事 筹集资金 ， 但 始终 未能 筹足 资金 把 教堂 的 钟 修好 。
+- expected: Our vicar is always raising money for one cause or another, but he has never managed to get enough money to have the church clock repaired.
+- got: Our woman is always raising an debt or have to make decisions in the church after which they have never been able to have any money to have explosive an
+
+- source: 教堂 的 钟 很大 ， 以前 不分昼夜 打点 报时 ， 但 很多年 前 遭到 毁坏 ， 从此 便 无声无息 了 。
+- expected: The big clock which used to strike the hours day and night was damaged many years ago and has been silent ever since.
+- got: The big clock which used to strike the hours day and night was damaged many years ago and has been silent ever since.
+
+- source: 一天 夜里 ， 我们 的 牧师 突然 被 惊醒 了 ， 大钟 又 在 “ 打点 ” 报时 了 ！
+- expected: One night, however, our vicar work up with a start: the clock was striking the hours!
+- got: One night, however, our ministers were talking about the have been a and beautiful driver of the and the work done by the and exciting night - all night.
+
+- source: 他 一 看表 ， 才 1 点钟 ， 可是 那钟 一边 敲 了 13 下 才 停 。
+- expected: Looking at his watch, he saw that it was one o'clock, but the bell struck thirteen times before it stopped.
+- got: Looking at his knife and one saw it that it was one the knock at top it plate can.
+
+- source: 牧师 拿 着 一支 电筒 走上 钟楼 想 去 看看 究竟 发生 了 什么 事情 。
+- expected: Armed with a torch, the vicar went up into the clock tower to see what was going on.
+- got: The priest walked into the and looked at it up like a to see what happened.
+
+- source: 借着 电筒 光 ， 他 看见 一个 人 ， 马上 认出 那 是 本地 杂货店 主 比尔 . 威尔 金斯 。
+- expected: In the torchlight, he caught sight of a figure whom he immediately recognized as Bill Wilkins, our local grocer.
+- got: In the him And, as he saw the and hired Bill put his hand over from the local the local fire store site, that immediately recognized the local teacher.
+
+- source: “ 你 究竟 在 这 上面 干什么 ， 比尔 ？ ”   牧师 惊讶 地问 。
+- expected: 'Whatever are you doing up here Bill?'asked the vicar in surprise.
+- got: a head airplane at feet is having Bill The and Bill The see he is doing books.
+
+- source: “ 好几个 星期 了 ， 我 天天 夜里 到 钟楼 上来 。 嗯 ， 我 是 想 让 你 大吃一惊 。 ”
+- expected: 'I've been coming up here night after night for weeks now.You see, I was hoping to give you a surprise.'
+- got: She went down to me after night - to - night in the
+
+- source: “ 也许 同时 你 把 村里 所有 的 人 都 吵醒 了 。 不过 ， 钟 又 能 报时 了 ， 我 还是 很 高兴 的 。 ”
+- expected: 'You've probably woken up everyone in the village as well.Still, I'm glad the bell is working again.'
+- got: in the night town is neither here nor the you might be can be can be can although industry at the night seat of the up at night.
+
+- source: “ 不错 ， 钟能 报时 了 ， 但是 ， 恐怕 每到 1 点钟 ， 它 总要 敲 13 下 ， 对此 我 已 无能为力 了 。 ”
+- expected: 'It's working all right, but I'm afraid that at one o'clock it will strike thirteen times and there's nothing I can do about it."
+- got: the star asked me, but I'm afraid that you will remember every one and I ever listen to it."
+
+- source: “ 13 下 是 不如 1 下好 ， 但 总比 1 下 也 不 敲强 。 来 ， 咱们 下楼去 喝杯 茶 吧 。 ”
+- expected: "Thirteen is not as good as one, but it's better than nothing.Now let's go downstairs and have a cup of tea.'
+- got: the same player is right and has a cup of little in place.
+
+- source: 不久 之前 ， 在 爱琴海 的 基亚岛 上 ， 考古工作者 有 一项 有趣 的 发现 。
+- expected: Some time ago, and interesting discovery was made by archaeologists on the Aegean island of Kea.
+- got: Some time ago, and interesting discovery was made by in the and interesting progress of the don't look of it.
+
+- source: 一个 美国 考古队 在 阿伊 亚 . 依 里尼 海角 的 一座 古城 里 考察 了 一座 庙宇 。
+- expected: An American team explored a temple which stands in an ancient city on the promontory of Ayia Irini.
+- got: An American team explored a temple which stands in an ancient city on the and leading city.
+
+- source: 这座 古城 肯定 一度 很 繁荣 ， 因为 它 曾 享有 高度 的 文明 。
+- expected: The city at one time must have been prosperous, for it enjoyed a high level of civilization.
+- got: The city at one time must have been a of great civilization.
+
+- source: 城里 甚至 还 敷设 了 排水系统 ， 因为 在 狭窄 的 街道 底下 发现 了 许许多多 陶土 制作 的 排水管道 。
+- expected: The city was equipped with a drainage system, for a great many clay pipes were found beneath the narrow streets.
+- got: The city was equipped with a today brick that was found iron brick at the brick of a brick wall.
+
+- source: 考古工作者 考察 的 这座 庙宇 从 公元前 15 世纪 直到 罗马 时代 一直 是 祭祀 祈祷 的 场所 。
+- expected: The temple which the archaeologists explored was used as a place of worship from the fifteenth century B.C.until Roman times.
+- got: The temple which the and New York palace was used as a place of and a and a grade end - world.
+
+- source: 在 庙 中 最 神圣 的 一间 殿堂 里 发现 了 15 尊陶 雕像 的 碎片 。
+- expected: In the most sacred room of temple, clay fragments of fifteen statues were found.
+- got: In the most sacred room of After him dead "I'm tumor of
+
+- source: 每 一尊 雕像 代表 一位 女神 ， 而且 一度 上 过色 。
+- expected: Each of these represented a goddess and had, at one time, been painted.
+- got: Each of these represented a and been described as an and at his been have been For one and been don't right.
+
+- source: 她 的 脑袋 一定 是 在 古希腊 罗马 时代 就 为 人 所 发现 ， 并 受到 精心 的 保护 。
+- expected: This head must have been found in Classical times and carefully preserved.
+- got: Her head must have been found in all her life and is regarded as a man by the time she lived.
+
+- source: 考古工作者 把 这些 碎片 重新 拼装 起来 后 ， 惊奇 地 发现 那位 女神 原来 是 一位 相貌 十分 摩登 的 女郎 。
+- expected: When the archaeologists reconstructed the fragments, they were amazed to find that the goddess turned out to be a very modern-looking woman.
+- got: When the and the palace was amazed to find that the American the and found he had been so crazy that the and found the and been watch had been
+
+- source: 她 身高 3 英尺 ， 双手 叉腰 。
+- expected: She stood three feet high and her hands rested on her hips.
+- got: She stood three feet high and her hands like her.
+
+- source: 尽管 上 了 年纪 ， 但 体态 确实 优美 ， 不过 ， 考古工作者 至今 未能 确定 这位 女神 的 身份 。
+- expected: Despite her great age, she was very graceful indeed,but, so far, the archaeologists have been unable to discover her identity.
+- got: Despite her great age, she was very strange at the heart and death of her the to says she was very the is never had been as great dreamed of
+
+- source: 如今 ， 从事 体力劳动 的 人 的 收入 一般 要 比 坐 办公室 的 人 高出 许多 。
+- expected: These days, people who do manual work often receive far more money than people who work in offices.
+- got: These days, people who do manual work often receive far more money than people who work in an office.
+
+- source: 坐 办公室 的 之所以 常常 被称作 “ 白领 工人 ” ， 就是 因为 他们 通常 是 穿着 硬领 白衬衫 ， 系着 领带 去 上班 。
+- expected: People who work in offices are frequently referred to as "white-collar workers' for the simple reason that they usually wear a collar and tie to go to work.
+- got: People who work in offices are frequently referred to as and used by the simple team to as them were called in work.
+
+- source: 许多 人 常常 情愿 放弃 较 高 的 薪水 以 换取 做 白领 工人 的 殊荣 ， 此 乃 人之常情 。
+- expected: Such is human nature, that a great many people are often willing to sacrifice higher pay for the privilege of becoming white-collar workers.
+- got: Such is human nature, that a great many people are often willing to accede to their privilege for the privilege of becoming more than the great knows than the feels
+
+- source: 而 这 常常 会 引起 种种 奇怪 的 现象 ， 在 埃尔斯 米尔 公司 当 清洁工 的 艾尔弗雷德 . 布洛斯 就是 一个 例子 。
+- expected: This can give rise to curious situations, as it did in the case of Alfred Bloggs who worked as a dustman for the Ellesmere Corporation.
+- got: This can give rise to curious to curious the feelings of Joe in the future.
+
+- source: 艾尔弗 结婚 时 ， 感到 非常 难为情 ， 而 没有 将 自己 的 职业 告诉 妻子 。
+- expected: When he got married, Alf was too embarrassed to say anything to his wife about his job.
+- got: When he got married, his wife had no idea and went to have his wife have to have a career without me.
+
+- source: 每天 早晨 ， 他 穿 上 一身 漂亮 的 黑色 西装 离家 上班 ， 然后 换上 工作服 ， 当 8 个 小时 清洁工 。
+- expected: Every morning, he left home dressed in a smart black suit and then changed into overalls and spent the next eight hours as a dustman.
+- got: Every morning, he left home dressed in a smart black suit and then changed into the job as a useful mere hour as he went into work.
+
+- source: 晚上 回家 前 ， 他 洗个 淋浴 ， 重新 换上 那 身 黑色 西服 。
+- expected: Before returning home at night,he took a shower and changed back into his suit.
+- got: Before returning home at night, he changed his deep and changed his breath.
+
+- source: 两年 多 以来 ， 艾尔弗 一直 这样 ， 他 的 同事 也 为 他 保守 秘密 。
+- expected: Alf did this for over two years and his fellow dustmen kept his secret.
+- got: But now he's go again for his and have his fellow his fellow talk for him.
+
+- source: 他 将来 挣 的 钱 只有 他 现在 的 一半 ， 不过 他 觉得 ， 地位 升高 了 ， 损失 点儿 钱 也 值得 。
+- expected: He will be earning only half as much as he used to, but he feels that his rise in status is well worth the loss of money.
+- got: He will be earning only half as much as he used to, but he feels that his rise in status is well worth the loss of money.
+
+- source: 从此 ， 艾尔弗 可以 一天到晚 穿 西服 了 ， 别人 将 称呼 他 为 “ 布洛 格斯 先生 ” ， 而 不再 叫 他 “ 艾尔弗 ” 了 。
+- expected: From now on, he will wear a suit all day and others will call him'Mr.Bloggs', not'Alf'.
+- got: From now on, he will wear a suit all day and others will call his brother a horse and play a driver for him.
+
+- source: 报刊杂志 的 编辑 常常 为了 向 读者 提供 成立 一些 关紧 要 的 事实 和 统计数字 而 走向 极端 。
+- expected: Editors of newspapers and magazines often go to extremes to provide their reader with unimportant facts and statistics.
+- got: An newspaper woman and reader often called The reader to provide their and their of of of and you to the supply of the supply of the skin of the
+
+- source: 去年 ， 一位 记者 受 一家 有名 的 杂志 的 委托 写 一篇 关于 非洲 某个 新 成立 共和国 总统府 的 文章 。
+- expected: Last year a journalist had been instructed by a well-known magazine to write an article on the president's palace in a new African republic.
+- got: Last year a journalist had been instructed by a reporter to write an article on the president's cities to write a new report.
+
+- source: 稿子 寄来 后 ， 编辑 看 第一句 话 就 拒绝 予以 发表 。
+- expected: When the article arrived, the editor read the first sentence and then refuse to publish it.
+- got: When the article arrived, the editor read the first sentence and then refuse to publish it.
+
+- source: 文章 的 开头 是 这样 的 ： “ 几百 级 台阶 通向 环绕 总统 的 高墙 。 ”
+- expected: The article began: 'Hundreds of steps lead to the high wall which surrounds the president's palace'.
+- got: The article the mark came down with high proposed. There is an grade of push the president's beginning of the president's life.
+
+- source: 编辑 立即 给 那位 记者 发 去 传真 ， 要求 他 核实 一下 台阶 的 确切 数字 和 围墙 的 高度 。
+- expected: The editor at once sent the journalist a fax instructing him find out the exact number of steps and the height of the wall.
+- got: The editor at once sent the journalist a that shares the height and height of the wall.
+
+- source: 他 给 记者 先后 发 去 两份 传真 ， 但 对方 毫无 反应 。
+- expected: He sent the journalist two more faxes, but received no reply.
+- got: He sent the journalist two more than the other boss but didn't accept the answer.
+
+- source: 于是 他 又 发 了 一份 传真 ， 通知 那位 记者 说 ， 若 再 不 迅速 答复 ， 将 被 解雇 。
+- expected: He sent yet another fax informing the journalist that if he did not reply soon he would be fired.
+- got: He sent yet another to his reply and would be sent at an early the moment.
+
+- source: 但 记者 还是 没有 回复 ， 编辑 无奈 ， 勉强 按 原样 发稿 了 。
+- expected: When the journalist again failed to reply, the editor reluctantly published the article as it had originally been written.
+- got: When the journalist again failed to report the seen the editor as it was originally ago again.
+
+- source: 一周 之后 ， 编辑 终于 接到 记者 的 传真 。
+- expected: A week later, the editor at last received a fax from the journalist.
+- got: A week later, the editor at last received a in a the editor of happened at last.
+
+- source: 那个 可怜 的 记者 不仅 被捕 了 ， 而且 还 被 送 进 了 监狱 。
+- expected: Not only had the poor man been arrested, but he had been sent to prison as well.
+- got: Not only had the poor man been sent to prison as many press battle as he had ever seen.
+
+- source: 皮卡迪 利 大街 附近 的 一条 著名 拱廊 街道 上 ， 几家 高档 商店 刚刚开始 营业 。
+- expected: The expensive shops in a famous near Piccadilly were just "opening.
+- got: The expensive shops in a famous near - perfect street near A in a famous country near - called
+
+- source: 在 早晨 的 这个 时候 ， 拱廊 街上 几乎 空无一人 。
+- expected: At this time of the morning, the arcade was almost empty.
+- got: At this time of the morning, the is almost have a simply and almost no introduce air.
+
+- source: 珠宝店 主 泰勒 先生 正在 欣赏 新 布置 的 橱窗 。
+- expected: Mr.Taylor, the owner of a jewellery shop was admiring a new display.
+- got: A is on the head of a and log new that was It enjoyed by to you at present.
+
+- source: 他 手下 两名 店员 从 早上 8 点 就 开始 忙碌 ， 这时 刚刚 布置 完毕 。
+- expected: Two of his assistants had been working busily since eight o'clock and had only just finished.
+- got: Two of his The women were guide to the have been doing this morning.
+
+- source: 钻石项链 、 戒指 漂亮 地 陈列 在 黑色 丝绒 上面 。
+- expected: Diamond necklaces and rings had been beautifully arranged on a background of black velvet.
+- got: The man and had beautifully arranged films on a beautiful ring of leaders on black tape.
+
+- source: 泰勒 先生 站 在 橱窗 外 凝神 欣赏 了 几分钟 就 回到 了 店里 。
+- expected: After gazing at the display for several minutes, Mr.Taylor went back into his shop.
+- got: After tomorrow all been waiting for Mr. in the store for several minutes, he set back the shop.
+
+- source: 一人 留在 驾驶座 上 ， 另外 两个 用 黑色 长筒 丝袜 蒙面 的 人 跳 下车 来 。 他们 用 铁棒 把 商店 橱窗 的 玻璃 砸碎 。
+- expected: One man stayed at the wheel while two others with black stocking over their faces jumped out and smashed the window of the shop with iron bars.
+- got: One man stayed at the wheel while two others with black goat and jumped out at the window of the shop with iron in their Africa and rolled purchase of
+
+- source: 他 与 店员 动手 向 窗外 投掷 家具 。
+- expected: He and his staff began throwing furniture out of the window.
+- got: He and his staff began throwing furniture out of the window.
+
+- source: 一个 窃贼 被 一尊 很重 的 雕像 击中 ， 但 由于 他 忙 着 抢 钻石 首饰 ， 竟连 疼痛 都 顾不上 了 。
+- expected: One of the thieves was struck by a heavy statue, but he was too busy helping himself to diamonds to notice any pain.
+- got: One of the thieves was struck by a heavy and he was unable to notice any pain while he was waiting for the heart of the liver.
+
+- source: 这场 抢劫 只 持续 了 3 分钟 ， 因为 窃贼 争先恐后 地 爬 上 轿车 ， 以 惊人 的 速度 开跑 了 。
+- expected: The raid was all over in three minutes, for the men scrambled back into the car and it moved off at a fantastic speed.
+- got: The tax was all over three minutes, for the men moved off the rate for three minutes, and it was standing in the keep long.
+
+- source: 就 在 轿车 离开 的 时候 ， 泰勒 先生 从 店里 冲 了 出来 ， 跟 在 车后 追赶 ， 一边 还 往 车上 扔 烟灰缸 、 花瓶 。
+- expected: Just as it was leaving, Mr.Taylor rushed out and ran after it throwing ashtrays and vases.
+- got: Just as it was out that he walked into the car and ran his someone on. Then he walked into the car and ran the shelf.
+
+- source: 他们 已带 着 价值 数千 镑 的 首饰 逃之夭夭 了 。
+- expected: They had got away with thousands of pounds worth of diamonds.
+- got: They had got away with thousands of pounds worth of dollars.
+
+- source: 你 有没有 把 裤子 塞 洗衣机 ， 然后 又 想起 在 裤子 的 后 兜 有 一张 大 面值 的 纸币 ？
+- expected: Have you ever put your trousers in the washing machine and then remembered there was a large bank note in your back pocket?
+- got: Have you ever put your trousers in the washing machine and then remembered there was a large bank note in your back want and then remembered there had to their
+
+- source: 当 你 把 裤子 抢救出来 时 ， 你 有没有 发现 那张 纸币 已经 变得 比 白纸 还白 ？
+- expected: When you rescued your trousers, did you find the note was whiter than white?
+- got: When you rescued your all me. She had at least entered the and looked at you really,
+
+Bleu Score = 37.785771138812116
