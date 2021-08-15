@@ -49,7 +49,7 @@ def word(request):
             res = urllib.request.urlopen(req)
             data = res.read()
             data = data.decode('utf-8')
-            # 打印抓取的内容
+
             bs = BeautifulSoup(data, "lxml")
             info_temp = bs.select('p', limit=1000)  # 提取网页文字中的前500个字符
             infoStr = ''
@@ -73,7 +73,7 @@ def word(request):
                 tempResult = tempResult + item['dst']
 
             data = {"content": infoStr, "definitions": tempResult}
-            return JsonResponse({"status": 200, "data": data, "msg": "word query runs successfully."})
+            return JsonResponse({"status": 200, "data": data, "msg": "url is translated successfully."})
         else:
             word = req.get("word")
             for ch in word:

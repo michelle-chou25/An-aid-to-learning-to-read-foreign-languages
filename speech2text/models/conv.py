@@ -7,27 +7,27 @@ from .base import MASRModel
 import speech2text.feature
 import speech2text.config
 
-# 单个卷积层
+# conv unit
 class ConvBlock(nn.Module):
     def __init__(self, conv, p):
         super().__init__()
         self.conv = conv
-        nn.init.kaiming_normal_(self.conv.weight)  # 用kaiming正态分布初始化卷积层参数
-        self.conv = weight_norm(self.conv)  # a reparameterization method，加速网络收敛
-        # 激活函数1维GLU  是Relu激活单元：(X * W + b)，加上一个Sigmoid激活单元：O(X * V + c)构成的gate unit
-        # 详解见肖桐的书9.3.3
+        nn.init.kaiming_normal_(self.conv.weight)  # initilize parameters by kaiming norm distribution
+        self.conv = weight_norm(self.conv)  # a reparameterization to speed up the convergence
+        # 1 dimentsion GLU, made from a Relu+Sigmoid
         self.act = nn.GLU(1)
         # self.act = nn.Hardtanh()
-        self.dropout = nn.Dropout(p, inplace=True)  # 每次都随机让一些神经元不参与运算，也就是达到局部连接的作用, dropout设为0.3到0.5
+        #  randomly exclude some neurons from the computation, that is, to achieve local connection.
+        self.dropout = nn.Dropout(p, inplace=True)
 
-    def forward(self, x): # 传播
+    def forward(self, x):  # propogation
         x = self.conv(x)
         x = self.act(x)
         x = self.dropout(x)
         return x
 
 
-# 门控卷积神经网络,inherit from MASRModel,rewrite predict()
+# GLU CNN,inherit from MASRModel,rewrite predict()
 class GatedConv(MASRModel):
     """ This is a model between Wav2letter and Gated Convnets.
         The core block of this model is Gated Convolutional Network"""
@@ -40,11 +40,13 @@ class GatedConv(MASRModel):
         self.name = name
         output_units = len(vocabulary)
         modules = []
-        modules.append(ConvBlock(nn.Conv1d(20, 500, 48, 2, 97), 0.2)) # 输入层
+        modules.append(ConvBlock(nn.Conv1d(20, 500, 48, 2, 97), 0.2)) # input layer
 
-        # 隐藏层，3×3，这是最小的能够捕获像素八邻域信息的尺寸。
-        # 有更多的非线性（更多层的非线性函数，使用了3个非线性激活函数），使得判决函数更加具有判决性。
-        # 可以表达出输入数据中更多个强力特征，使用的参数也更少。
+        #  refers to image recogtion tasks, 3 × 3 is the smallest size that
+        #  can capture pixels in its eight neighbor information.
+        #     On the other hand, it has better nonlinearity here since more nonlinear activation functions are adopted,
+        #     which makes the decision function more decisive. It can express more powerful features from the input data
+        #     with less parameters.
         for i in range(7):
             modules.append(ConvBlock(nn.Conv1d(in_channels=250, out_channels=500, kernel_size=7, stride=1), p=0.3))
 
@@ -52,7 +54,7 @@ class GatedConv(MASRModel):
 
         modules.append(ConvBlock(nn.Conv1d(1000, 2000, 1, 1), 0.5))
 
-        modules.append(weight_norm(nn.Conv1d(1000, output_units, 1, 1))) # 输出层
+        modules.append(weight_norm(nn.Conv1d(1000, output_units, 1, 1))) # output layer
 
         self.cnn = nn.Sequential(*modules)
 
@@ -71,10 +73,10 @@ class GatedConv(MASRModel):
         # wav = feature.load_audio(path)
         # spec = feature.spectrogram(wav)
         spec = speech2text.feature.spectrogram(path)
-        spec.unsqueeze_(0) # 维数扩张
-        x_lens = spec.size(-1)  # MFCC特征的列数
-        out = self.cnn(spec) # 声学模型的结果:音素
-        out_len = torch.tensor([out.size(-1)])  # 音素的列数
+        spec.unsqueeze_(0) # dimension expansion
+        x_lens = spec.size(-1)  # number of columns of MFCC
+        out = self.cnn(spec) # out is the probabilities of each syllable
+        out_len = torch.tensor([out.size(-1)])  # number of characters
         text = self.decode(out, out_len)
         self.train()
         return text[0]

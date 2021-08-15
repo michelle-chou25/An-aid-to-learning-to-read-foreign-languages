@@ -34,7 +34,7 @@ def train(
     if tensorboard:
         writer = SummaryWriter()
     train_dataset = data.MASRDataset(train_index_path, labels_path)
-    # batchs = (len(train_dataset) + batch_size - 1) // batch_size #计算有多少个batch需要训练
+    # batchs = (len(train_dataset) + batch_size - 1) // batch_size
     
     dev_dataset = data.MASRDataset(dev_index_path, labels_path)
     # train_dataloader = data.MASRDataLoader(
@@ -53,7 +53,7 @@ def train(
         lr=learning_rate,
         momentum=momentum,
         nesterov=True,
-        weight_decay=weight_decay, #权重衰减
+        weight_decay=weight_decay,  #  weight decay to avoid overfitting
     )
     ctcloss = CTCLoss()
     # lr_sched = torch.optim.lr_scheduler.ExponentialLR(optimizer, 0.985)
@@ -65,22 +65,24 @@ def train(
         train_dataloader = train_dataloader_shuffle
         train_steps = len(train_dataloader)
         # lr_sched.step()
-        # 每个epoch需要一个内部回路来反向传播求梯度，更新参数
+        # update parameters by using backward propagation
         for step, (x, y, x_lens, y_lens) in enumerate(train_dataloader):
             x = x.cuda()
             out, out_lens = model(x, x_lens)
             out = out.transpose(0, 1).transpose(0, 2)
             # loss=ctcloss(input=out, target=y, input_lengths=out_lens, target_lengths=y_lens)
-            loss = ctcloss(out, y, out_lens, y_lens) #知道当前loss是多少
+            loss = ctcloss(out, y, out_lens, y_lens) #get the current loss
             
             #  backward propagation and optimizer
-            optimizer.zero_grad() #将梯度清0，避免使用的grad和上一个mini batch有关
-            #  反向传播更新梯度
+            # initialize the gradient as zero to avoid the gradient
+            # it uses is related to the previous batch,
+            optimizer.zero_grad()
+            #  use backward to propagation update gradient
             loss.backward() 
-            #  梯度截断，将梯度约束在某一个区间之内，防止梯度爆炸
-            #  在训练的过程中，在优化器更新之前进行梯度截断操作。
+            #  clip fradient，The gradient is constrained in a certain interval to prevent the gradient explosion
+            # Perform gradient truncation before optimizer update during training.
             nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm) 
-            optimizer.step() #更新参数
+            optimizer.step() # update parameters
             epoch_loss += loss.item()
             gstep += 1
             print(
@@ -101,23 +103,23 @@ def train(
             writer.add_scalar("cer/epoch", cer, epoch+1)
             writer.add_scalar("loss/epoch", loss, epoch+1)
         if (epoch+1) % 5 == 0:
-            torch.save(model, "pretrained/model_{}.pth".format(epoch)) # 每隔5个epoch保存一个预训练模型
+            torch.save(model, "pretrained/model_{}.pth".format(epoch)) # save a pretrained model every 5 epochs
 
 def eval(model, dataloader):
-    # 用于测试合和预测， 为了排除Batch Normalization和Dropout对测试影响
-    # 将model改为eval模式后，BN的参数固定，并采用之前训练好的全局的mean和std
+    # eval() is used to testing and predicting, to avoid
+    # the influence that batch normalization and dropout have on testing/predicting.
+    # in evaluation model, BN is fixed, and the mean and std are those trained previously.
     model.eval()
     decoder = GreedyDecoder(dataloader.dataset.labels_str)
-    cer = 0  # 字符错误率
+    cer = 0  # CER
     print("decoding")
-    #  no_grad()用于停止autograd的工作，
-    # 更进一步加速和节省gpu空间（因为不用计算和存储梯度），
-    # # 从而可以更快计算，也可以跑更大的batch来测试
+    #  no_grad() stop auto_grad and save the GPU resource and speed up computing,
+    #  therefore bigger batch is possible to use
     with torch.no_grad():
         for i, (x, y, x_lens, y_lens) in tqdm(enumerate(dataloader)):
-            x = x.cuda()  # x卷积后的结果
+            x = x.cuda()  # x is the result after conv
             outs, out_lens = model(x, x_lens)
-            outs = F.softmax(outs, 1) # 对n维输入张量运用Softmax函数, dim=0为按列计算，dim=1为按行计算
+            outs = F.softmax(outs, 1) # conver outs to probability, dim=0, by column，dim=1 by rows
             outs = outs.transpose(1, 2)
             ys = []
             offset = 0
@@ -125,8 +127,10 @@ def eval(model, dataloader):
                 ys.append(y[offset : offset + y_len])
                 offset += y_len
             out_strings, out_offsets = decoder.decode(outs, out_lens)
-            y_strings = decoder.convert_to_strings(ys)  # 解码后的text
-            #  zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。
+            y_strings = decoder.convert_to_strings(ys)  # decoded text
+            #  zip() is used to take the iteratable object as a parameter,
+            #  package the corresponding elements in the object into tuples,
+            #  and then return a list composed of these tuples.
             for pred, truth in zip(out_strings, y_strings):
                 trans, ref = pred[0], truth[0]
                 # get character error rate by calculating Levenshtein distance
@@ -136,10 +140,10 @@ def eval(model, dataloader):
     return cer
 
 if __name__ == "__main__":
-    vocabulary = joblib.load(LABEL_PATH) # vocabulary：训练集中的全部汉字
+    vocabulary = joblib.load(LABEL_PATH)  # vocabulary：all characters in corpus
     vocabulary = "".join(vocabulary)
     model = GatedConv(vocabulary)
-    model.cuda() # 把模型从CPU迁移到GPU上
+    model.cuda() # trasnfer model from CPU to GPU
     train(model)
     # model.to_train()
     # model.fit()

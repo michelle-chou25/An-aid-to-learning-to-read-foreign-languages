@@ -9,8 +9,9 @@ from speech2text.config import pretrained_model_path
 
 # modify pretrained_model_path to relative path if don't want to have ",,"
 model = GatedConv.load(os.path.join('..', pretrained_model_path))
-text = model.predict("../data_aishell/BAC009S0765W0130.wav")
+# text = model.predict("../data_aishell/BAC009S0765W0130.wav")
+text = model.predict("../data_aishell/wav/test/S0764/BAC009S0764W0121.wav")
 
 print("")
-print("识别结果:")
+print("recognized result:")
 print(text)

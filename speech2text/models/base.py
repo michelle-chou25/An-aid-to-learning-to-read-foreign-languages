@@ -29,8 +29,8 @@ class MASRModel(nn.Module):
 
     # -> texts: list, len(list) = B
 
-    def _default_decode(self, yp, yp_lens):  # yp：cnn生成的音素张量， yp_lens：音素张量的长度
-        idxs = yp.argmax(1) # 按列查找最大元素
+    def _default_decode(self, yp, yp_lens):  # yp：tensor of cnn's output， yp_lens：tensor's length
+        idxs = yp.argmax(1) # find the maximum element in each column
         texts = []
         for idx, out_len in zip(idxs, yp_lens):
             idx = idx[:out_len]

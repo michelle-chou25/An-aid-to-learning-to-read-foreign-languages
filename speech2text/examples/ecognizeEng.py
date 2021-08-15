@@ -34,7 +34,7 @@ def play_audio(wave_path):
 play_audio("../data_aishell/output.wav")
 
 
-# speech recognition
+# English speech recognition by using Google API
 import speech_recognition as sr
 # say = 'say something more than 5 words'
 r = sr.Recognizer()
@@ -43,10 +43,10 @@ harvard = sr.AudioFile('../data_aishell/output.wav')
 with harvard as source:
     r.adjust_for_ambient_noise(source, duration=0.5)
     audio = r.record(source)
-test = r.recognize_google(audio_data=audio, language="cmn-Hans-CN", show_all=True)
+# test = r.recognize_google(audio_data=audio, language="cmn-Hans-CN", show_all=True)
 #English
-# test = r.recognize_google(audio_data=audio, language="en-US", show_all=True)
-result = test['alternative'][0]
+test = r.recognize_google(audio_data=audio, language="en-US", show_all=True)
+result = test['alternative'][0]  #
 
 print("recognized result: ", result)
 
