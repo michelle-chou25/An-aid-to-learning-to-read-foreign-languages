@@ -1,8 +1,13 @@
 import os
 import sys
-from speech2text.examples.recordaudio import record_audio
-from speech2text.models.conv import GatedConv
-from speech2text.config import pretrained_model_path
+path = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(path)
+sys.path.append(os.getcwd())
+sys.path.append("./")
+
+from recordaudio import record_audio
+from models.conv import GatedConv
+from config import pretrained_model_path
 
 sys.path.append("..")
 model = GatedConv.load(os.path.join('..', pretrained_model_path))
@@ -11,5 +16,4 @@ print("Recognizing...")
 text = model.predict("../data_aishell/output.wav")
 
 print("")
-print("识别结果:")
-print(text)
+print("Rercognized result:", text)
