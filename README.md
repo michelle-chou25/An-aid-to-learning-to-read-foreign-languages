@@ -16,12 +16,19 @@ requirements file is to store all the packages and testing softwares needed to i
 
 # Installation
 To use this project, first clone the repo on your device using the command below:
+
 ```git clone https://github.com/michelle-chou25/An-aid-to-learning-to-read-foreign-languages.git```
+
 Then according to the requirements file to install packages and testing softwares.
+
 Then using the command below (enter into bysms folder):
+
 ```cd /Users/username/VScodeProjects/ProjectName/bysms```
+
 After the Django server part and MongoDB part start, input the URL http://127.0.0.1:8000/view/ in the browser
+
 (the port number 8000 needs to be change into the default port number of the used computer).
+
 Then the word query and sentence translation can be done in the FrontEnd part.
 
 The Google Drive link for trained Machine Translation models are as follows: 
