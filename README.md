@@ -49,8 +49,7 @@ https://drive.google.com/drive/folders/1UXjT5NN3JdNIImfNdWg3bHCXCNIPi9Ne?usp=sha
 listed in requirements file
 
 # Contributors
-Ruochen Xue 
-Nanjun Zhou
+Ruochen Xue & Nanjun Zhou
 
 
 
