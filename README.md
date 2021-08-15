@@ -6,7 +6,7 @@ The main content of this project is to build a simple Chinese-English translatio
 
 # Table of contents
 Algorithm folder is to store different finished machine translation algoirthms.
-Corpus folder is to store different corpura used in machine translation.
+Corpus folder is to store different corpora used in machine translation.
 Demo_FrontEnd folder is used to make representation for demo.
 bysms folder is to store the whole system embedded into Django framework.
 database folder is to store the files related to databese format converting.
@@ -31,7 +31,7 @@ After the Django server part and MongoDB part start, input the URL http://127.0.
 
 Then the word query and sentence translation can be done in the FrontEnd part.
 
-## Corpura
+## Corpora
 The Google Drive link for trained Machine Translation models are as follows: 
 (Format: Corpus name_Algorithm name_Translation direction)
 1.	Corpus1w_Transformer_Chinese-English:
