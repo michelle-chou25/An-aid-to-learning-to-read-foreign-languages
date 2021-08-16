@@ -31,7 +31,7 @@ After the Django server part and MongoDB part start, input the URL http://127.0.
 
 Then the word query and sentence translation can be done in the FrontEnd part.
 
-## Corpora
+## Machine Translation Model
 The Google Drive link for trained Machine Translation models are as follows: 
 (Format: Corpus name_Algorithm name_Translation direction)
 1.	Corpus1w_Transformer_Chinese-English:
@@ -44,6 +44,10 @@ https://drive.google.com/drive/folders/1-P3U4B7RNtwdeeM0KjpyfHB7Aji4s8nq?usp=sha
 https://drive.google.com/drive/folders/1-R4lTnch3UEF_BQTAeUS74Yk9lSH5jIj?usp=sharing
 5.	Seq2seq_testcorpus_ seq2seq+attention_Chinese-English:
 https://drive.google.com/drive/folders/1UXjT5NN3JdNIImfNdWg3bHCXCNIPi9Ne?usp=sharing
+
+## Corpora
+All used machine translation corpora can be downloaded by this link (after the corpora downloaded, put the corpora into Corpus folder)
+https://drive.google.com/file/d/1lAh29Qxmo1oqa9WphnU3K7L4CNGRVv4L/view?usp=sharing
 
 ## Requirement package
 listed in requirements file
