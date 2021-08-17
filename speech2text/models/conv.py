@@ -4,8 +4,8 @@ import torch.nn as nn
 from torch.nn.functional import hardtanh
 from torch.nn.utils import weight_norm
 from .base import MASRModel
-import speech2text.feature
-import speech2text.config
+import feature
+import config
 
 # conv unit
 class ConvBlock(nn.Module):
@@ -14,7 +14,7 @@ class ConvBlock(nn.Module):
         self.conv = conv
         nn.init.kaiming_normal_(self.conv.weight)  # initilize parameters by kaiming norm distribution
         self.conv = weight_norm(self.conv)  # a reparameterization to speed up the convergence
-        # 1 dimentsion GLU, made from a Relu+Sigmoid
+        # 1-D GLU, made from a Relu+Sigmoid
         self.act = nn.GLU(1)
         # self.act = nn.Hardtanh()
         #  randomly exclude some neurons from the computation, that is, to achieve local connection.
@@ -29,8 +29,8 @@ class ConvBlock(nn.Module):
 
 # GLU CNN,inherit from MASRModel,rewrite predict()
 class GatedConv(MASRModel):
-    """ This is a model between Wav2letter and Gated Convnets.
-        The core block of this model is Gated Convolutional Network"""
+    """ This is a speechmodel between Wav2letter and Gated Convnets.
+        The core block of this speechmodel is Gated Convolutional Network"""
 
     def __init__(self, vocabulary, blank=0, name="masr"):
         """ vocabulary : str : string of all labels such that vocaulary[0] == ctc_blank  """
@@ -67,12 +67,12 @@ class GatedConv(MASRModel):
                 ) // module.stride[0] + 1
         return x, lens
 
-    # prediction without language model
+    # prediction without language speechmodel
     def predict(self, path):
         self.eval()
         # wav = feature.load_audio(path)
         # spec = feature.spectrogram(wav)
-        spec = speech2text.feature.spectrogram(path)
+        spec = feature.spectrogram(path)
         spec.unsqueeze_(0) # dimension expansion
         x_lens = spec.size(-1)  # number of columns of MFCC
         out = self.cnn(spec) # out is the probabilities of each syllable

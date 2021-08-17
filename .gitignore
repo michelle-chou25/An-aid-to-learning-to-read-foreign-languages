@@ -131,3 +131,5 @@ speech2text/pretrained/model_99.pth
 speech2text/error
 Corpus/
 results/
+bysms/speech2text/
+bysms/speech/

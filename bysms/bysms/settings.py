@@ -58,7 +58,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'), 
-                 os.path.join(BASE_DIR, 'Transformer')],      # 修改位置
+                 os.path.join(BASE_DIR, 'Transformer'),
+                 os.path.join(BASE_DIR, 'speech2text')],      # 修改位置
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -68,7 +68,7 @@ class Decoder(object):
                             is the probability of character c at time t
             sizes(optional): Size of each sequence in the mini-batch
         Returns:
-            string: sequence of the model's best guess for the transcription
+            string: sequence of the speechmodel's best guess for the transcription
         """
         raise NotImplementedError
 
@@ -123,7 +123,7 @@ class GreedyDecoder(Decoder):
             probs: Tensor of character probabilities from the network. Expected shape of batch x seq_length x output_dim
             sizes(optional): Size of each sequence in the mini-batch
         Returns:
-            strings: sequences of the model's best guess for the transcription on inputs
+            strings: sequences of the speechmodel's best guess for the transcription on inputs
             offsets: time step per character predicted
         """
         _, max_probs = torch.max(probs, 2)

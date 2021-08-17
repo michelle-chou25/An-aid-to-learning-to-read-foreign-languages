@@ -8,272 +8,376 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translation Tool</title>
-    <!-- JS -->
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
-    <script src="../static/js/md5.js"></script>
-    <!-- Bootstrap CSS -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <!--index style-->
-    <link rel="stylesheet" href="../static/css/index.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/footer.css"/>
-    
-    <script>
-       	$(document).ready(function(){
-	
-	var appid = '20210625000871960';
-	var key = '0QMEkNIdfW2LudZqhD4U';
-	var salt = (new Date).getTime();
-	var from = 'auto';
-	var to = 'auto';
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Translation Tool</title>
+		<!-- JS -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+		<script src="../static/js/md5.js"></script>
+		<script src="../static/js/record.js"></script>
+		<!-- Bootstrap CSS -->
+		<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+		<!--index style-->
+		<link rel="stylesheet" href="../static/css/index.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/footer.css" />
+	</head>
+	<body style="background-color: aliceblue;">
+		<div class="app">
+			<!-- <button class="record-btn">record</button> -->
+			<!-- <audio controls class="audio-player"></audio> -->
+		</div>
 
+		<div class="my-container">
+			<div class="banner" style="background-color: aliceblue;">
+				<div class="title-section mt-5 mb-5">
+					<div class="my-title">
+						<h1 class="display-4">Translation Tool</h1>
+						<p>This tool aims to design a webpage for English speakers, who expect to obtain translation
+							from
+							Chinese to English together with more linguistic information.
+						</p>
 
-// word translation
-	$(".iconBtn.darkBtn").click(function(){
-		var query = $("#sourceInputField").val();
-        // var sourcebutton_list = document.getElementsByName("mainButton1");
-        var sourcediv = document.getElementById("sourceLang");
-        var sourcebutton = document.getElementById("mainButton1");
-        if (sourcediv.contains(sourcebutton)) {
-            sourcebutton_id = "mainButton1";
-        }
-        else {
-            sourcebutton_id = "mainButton2";
-        }
-		console.log(query)
-        console.log(sourcebutton_id)
-		$.ajax({
-		url: 'http://127.0.0.1:8000/wordtrans/',
-		dataType:"json",
-		type: 'POST',
-		contentType: "application/json;charset=UTF-8",
-		async: true,
-		//data: JSON.stringify({word: query}),
-        data: JSON.stringify({word: query, id: sourcebutton_id}),
-		success: function (data) {
-			console.log(data);
-			if(data.status == 200 && data.msg == "word query runs successfully."){
-				var res1=data.data.definitions;
-                var pinyin1=data.data.pinyin;
-				$(".targetText")[0].innerHTML=res1;
-                $("#pinyinField")[0].innerHTML=pinyin1;
-                $("#pinyinField1")[0].innerHTML=" ";
-				console.log(res1);
-                console.log(pinyin1);
-			}
-            if(data.status == 200 && data.msg == "sentence query runs successfully."){
-                var res2=data.data;
-				$(".targetText")[0].innerHTML=res2;
-                $("#pinyinField")[0].innerHTML=" ";
-                $("#pinyinField1")[0].innerHTML=" ";
-				console.log(res2);
-            }
-            if(data.status == 200 && data.msg == "chinese sentence query runs successfully."){
-                var res3=data.data;
-				$(".targetText")[0].innerHTML=res3;
-                $("#pinyinField")[0].innerHTML=" ";
-                $("#pinyinField1")[0].innerHTML=" ";
-				console.log(res3);
-            }
-            if(data.status == 200 && data.msg == "translate failed"){
-                var res4=data.data;
-				$(".targetText")[0].innerHTML=res4;
-                $("#pinyinField")[0].innerHTML=" ";
-                $("#pinyinField1")[0].innerHTML=" ";
-				console.log(res4);
-            }
-            if(data.status == 200 && data.msg == "english word query runs successfully."){
-                var res5=data.data.simplified;
-                var pinyin2=data.data.pinyin;
-				$(".targetText")[0].innerHTML=res5;
-                $("#pinyinField1")[0].innerHTML=pinyin2;
-                $("#pinyinField")[0].innerHTML=" ";
-				console.log(res5);
-                console.log(pinyin2);
-            }
-		}
-	});
-	})
-})
+						<div class="webappLayout">
+							<div id="react-webapp">
+								<div class="translateWebApp">
+									<div class="translateHolder">
+										<div class="translateBox source">
+											<div class="boxTop">
+												<div id="sourceLang">
+													<button type="button" id="mainButton1" onclick="exchange()" class="aut-but">
+														<img class="flag"
+															src="https://itranslate-webapp-production.web.app/images/zh-CN.svg"
+															alt="zh-CN">
+														Chinese
+														<img class="arrowdown"
+															src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg"
+															alt="switch">
+													</button>
+													<button class="iconBtn Btn" type="button" data-button="btn-switch">
+														<img src="https://itranslate-webapp-production.web.app/images/icon-switch.svg"
+															alt="switch" onclick="exchange()">
+													</button>
+													<button class="iconBtn Btn record-btn" type="button"
+														data-button="btn-switch">
+														<img src="../static/img/microphone.png">
+													</button>
+													<input onclick="playRecording()" type="button" value="Play" />
+													<audio controls autoplay class="audio-player"></audio>
+												</div>
+												<div class="langHistoryHolder">
 
-    //audio function for input
-    function doTTS1() {
-    var ttsDiv = document.getElementById('bdtts_div_id');
-    var ttsAudio = document.getElementById('tts_autio_id');
-    var ttsText = document.getElementById('sourceInputField').value;
+													<!-- <button type="button" class="historyBtn">Spanish</button> -->
 
-    ttsDiv.removeChild(ttsAudio);
-    var au1 = '<audio id="tts_autio_id" autoplay="autoplay">';
-    var sss = '<source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&per=3&spd=5&text=' + ttsText + '" type="audio/mpeg">';
-    var eee = '<embed id="tts_embed_id" height="0" width="0" src="">';
-    var au2 = '</audio>';
-    ttsDiv.innerHTML = au1 + sss + eee + au2;
+													<!-- Confirm button -->
+													<!-- <button type="button" class="historyBtn">Confirm</button> -->
+												</div>
 
-    ttsAudio = document.getElementById('tts_autio_id');
-
-    ttsAudio.play();
-  }
-
-      //audio function for output
-    function doTTS2() {
-    var ttsDiv = document.getElementById('bdtts_div_id1');
-    var ttsAudio = document.getElementById('tts_autio_id1');
-    var ttsText = $(".targetText")[0].innerHTML;
-    console.log(ttsText);
-    
-    ttsDiv.removeChild(ttsAudio);
-    var au1 = '<audio id="tts_autio_id1" autoplay="autoplay">';
-    var sss = '<source id="tts_source_id1" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&per=3&spd=5&text=' + ttsText + '" type="audio/mpeg">';
-    var eee = '<embed id="tts_embed_id1" height="0" width="0" src="">';
-    var au2 = '</audio>';
-    ttsDiv.innerHTML = au1 + sss + eee + au2;
-
-    ttsAudio = document.getElementById('tts_autio_id1');
-
-    ttsAudio.play();
-  }
-
-     //copy text
-  function copyText() {
-  var text = $(".targetText")[0].innerHTML;
-  var input = document.getElementById("input");
-  input.value = text; // 修改文本框的内容
-  input.select(); // 选中文本
-  document.execCommand("copy"); // 执行浏览器复制命令
-  alert("copy success");
- }
-    
-    //exchange source and target language
-  function exchange() {
-    var sourcediv = document.getElementById("sourceLang");
-    var sourcebutton = document.getElementById("mainButton1");
-    if (sourcediv.contains(sourcebutton)) {
-        $("#mainButton1").appendTo("#targetLang");
-        $("#mainButton2").prependTo("#sourceLang");
-    }
-    else {
-        $("#mainButton2").appendTo("#targetLang");
-        $("#mainButton1").prependTo("#sourceLang");
-    }
-  }  
-   
-    </script>
-</head>
-
-<body style="background-color: aliceblue;">
-    <div class="my-container">
-        <div class="banner"  style="background-color: aliceblue;">
-            <div class="title-section mt-5 mb-5">
-                <div class="my-title">
-                    <h1 class="display-4">Translation Tool</h1>
-                    <p>This tool aims to design a webpage for English speakers, who expect to obtain translation from
-                        Chinese to English together with more linguistic information.
-                    </p>
-                    <div class="webappLayout">
-                        <div id="react-webapp">
-                            <div class="translateWebApp">
-                                <div class="translateHolder">
-                                    <div class="translateBox source">
-                                        <div class="boxTop">
-                                            <div id="sourceLang">
-                                                <button type="button", id="mainButton1", name="mainButton1">
-                                                    <img class="flag" src="https://itranslate-webapp-production.web.app/images/zh-CN.svg" alt="zh-CN">
-                                                    Chinese     
-                                                <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
-                                                </button>
-                                                <button class="iconBtn Btn" type="button" data-button="btn-switch">
-                                                 <img src="https://itranslate-webapp-production.web.app/images/icon-switch.svg" alt="switch" onclick="exchange()">
-                                                </button>
-                                            </div>
-                                            <div class="langHistoryHolder">
-                                                <!-- <button type="button" class="historyBtn">Spanish</button> -->
-                                                
-                                                <!-- Confirm button -->
-                                                <!-- <button type="button" class="historyBtn">Confirm</button> -->
-                                            </div>
-
-                                            <!-- translation convert -->
-                                            <button class="iconBtn darkBtn" type="button" data-button="btn-switch">
-                                                Translate
-                                                <!-- <img src="https://itranslate-webapp-production.web.app/images/icon-switch.svg" alt="switch"> -->
-                                            </button>
-                                        </div>
-                                        <div class="boxMiddle">
-                                            <textarea id="sourceInputField" placeholder="Enter text or URL" name="sourceText" style="height: 30px;"></textarea>
-                                        </div>
-                                        <div class="boxBottomHolder">
-                                            <div class="suggestHolder">
-                                                <div class="boxBottom">
-                                                    <div id="pinyinField" name="pinyinField" style="height: auto; width: 100%;"></div>
-                                                    <button class="iconBtn lightBtn" type="button" onclick="doTTS1()" data-tip="voice">
-                                                        <img src="https://itranslate-webapp-production.web.app/images/icon-speaker.svg" alt="voice">
-                                                    </button>
-                                                    <div id="bdtts_div_id">
-                                                        <audio id="tts_autio_id" autoplay="autoplay">
-                                                          <source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=5&per=1&text=请输入文字" type="audio/mpeg">
-                                                          <embed id="tts_embed_id" height="0" width="0" src="">
-                                                        </audio>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="translateBox target">
-                                    <div class="boxTop">
-                                        <div id="targetLang">
-                                            <button type="button", id="mainButton2", name="mainButton2">
-                                                <img class="flag" src="https://itranslate-webapp-production.web.app/images/en-UK.svg" alt="en-UK">
-                                                English
-                                                <!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
-                                            </button>
-                                        </div>
-                                        <!-- <div class="langHistoryHolder">
+												<!-- translation convert -->
+												<button class="iconBtn darkBtn" type="button" data-button="btn-switch">
+													Translate
+													<!-- <img src="https://itranslate-webapp-production.web.app/images/icon-switch.svg" alt="switch"> -->
+												</button>
+											</div>
+											<div class="boxMiddle">
+												<textarea id="sourceInputField" placeholder="Enter text or URL"
+													name="sourceText" style="height: 30px;"></textarea>
+											</div>
+											<div class="boxBottomHolder">
+												<div class="suggestHolder">
+													<div class="boxBottom">
+														<button class="iconBtn lightBtn" type="button"
+															onclick="doTTS1()" data-tip="voice">
+															<img src="https://itranslate-webapp-production.web.app/images/icon-speaker.svg"
+																alt="voice">
+														</button>
+														<div id="bdtts_div_id">
+															<audio id="tts_autio_id" autoplay="autoplay">
+																<source id="tts_source_id"
+																	src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=5&per=1&text=请输入文字"
+																	type="audio/mpeg">
+																<embed id="tts_embed_id" height="0" width="0" src="">
+															</audio>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="translateBox target">
+											<div class="boxTop">
+												<div id="targetLang" >
+													<button type="button" , id="mainButton2" onclick="exchange()" class="aut-but">
+														<img class="flag"
+															src="https://itranslate-webapp-production.web.app/images/en-UK.svg"
+															alt="en-UK">
+														English
+														<!-- <img class="arrowdown" src="https://itranslate-webapp-production.web.app/images/icon-chevron.svg" alt="switch"> -->
+													</button>
+												</div>
+												<!-- <div class="langHistoryHolder">
                                             <button type="button" class="historyBtn">Spanish</button>
                                             <button type="button" class="historyBtn">French</button>
                                         </div> -->
-                                    </div>
-                                    <div class="targetText" role="presentation"></div>
-                                    <textarea id="input" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">used for copy text</textarea>
-                                    <div class="boxBottomHolder">
-                                        <div id="pinyinField1" name="pinyinField1" style="height: auto; width: 100%;"></div>
-                                        <div class="boxBottom">
-                                            <button class="iconBtn lightBtn" type="button" data-button="btn-switch" onclick="copyText()" data-tip="Copy text">
-                                                <span class="infoText">Text copied</span>
-                                                <img src="https://itranslate-webapp-production.web.app/images/icon-copy.svg" alt="copy">
-                                            </button>
-                                            <button class="iconBtn lightBtn" type="button"  onclick="doTTS2()" data-tip="voice">
-                                                <img src="https://itranslate-webapp-production.web.app/images/icon-speaker.svg" alt="voice">
-                                            </button>
-                                            <div id="bdtts_div_id1">
-                                                <audio id="tts_autio_id1" autoplay="autoplay">
-                                                  <source id="tts_source_id1" src="http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&spd=5&per=1&text=please enter the text" type="audio/mpeg">
-                                                  <embed id="tts_embed_id1" height="0" width="0" src="">
-                                                </audio>
-                                              </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>         
-            </div>         
-        </div>
-    </div>
-   <!-- footer -->
-    <footer class="footer">
-        <div class="copyright">
-            <p style="color: aliceblue;">Copyright © 2021 Student Name: Ruochen Xue & Nanjun Zhou</p>
-        </div>
-    </footer>
-</div>
-<!-- <iframe src="https://www.baidu.com" width="100%" height="100px"></iframe> -->
- 
-</body>
-<!-- 录音音频播放 -->
-<script src="../static/js/recorder.js"></script>
+											</div>
+											<div class="targetText" role="presentation"></div>
+											<textarea id="input"
+												style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">used for copy text</textarea>
+											<div class="boxBottomHolder">
+												<div class="boxBottom">
+													<button class="iconBtn lightBtn" type="button"
+														data-button="btn-switch" onclick="copyText()"
+														data-tip="Copy text">
+														<span class="infoText">Text copied</span>
+														<img src="https://itranslate-webapp-production.web.app/images/icon-copy.svg"
+															alt="copy">
+													</button>
+													<button class="iconBtn lightBtn" type="button" onclick="doTTS2()"
+														data-tip="voice">
+														<img src="https://itranslate-webapp-production.web.app/images/icon-speaker.svg"
+															alt="voice">
+													</button>
+													<div id="bdtts_div_id1">
+														<audio id="tts_autio_id1" autoplay="autoplay">
+															<source id="tts_source_id1"
+																src="http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&spd=5&per=1&text=please enter the text"
+																type="audio/mpeg">
+															<embed id="tts_embed_id1" height="0" width="0" src="">
+														</audio>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer class="footer">
+				<div class="copyright">
+					<p style="color: aliceblue;">Copyright © 2021 Student Name: Ruochen Xue & Nanjun Zhou</p>
+				</div>
+			</footer>
+		</div>
+		<!-- <iframe src="https://www.baidu.com" width="100%" height="100px"></iframe> -->
+
+	</body>
+	<!-- 录音音频播放 -->
+	<script>
+		var recorder;
+		var audio = document.querySelector('.audio-player');
+		
+		function startRecording() {
+			HZRecorder.get(function(rec) {
+				recorder = rec;
+				recorder.start();
+			});
+		}
+	
+		function stopRecording() {
+			recorder.stop();
+		}
+	
+		function playRecording() {
+			recorder.play(audio);
+		}
+	
+		function cancelAudio() {
+			recorder.stop();
+			recorder.clear();
+		}
+	
+		function uploadAudio() {
+			let id = document.getElementsByClassName('aut-but')[0].id;
+			let index = 1;
+			if(id == "mainButton1"){
+				index = 1
+			}
+			else if(id == "mainButton2"){
+				index = 2
+			}
+			recorder.upload("http://127.0.0.1:8000/recognize/?type="+index, function(state, e) {
+				switch (state) {
+					case 'uploading':
+						var percentComplete = Math.round(e.loaded * 100 / e.total) + '%';
+						console.log(percentComplete);
+						break;
+					case 'ok':
+						//alert(e.target.responseText);
+						var output = JSON.parse(e.target.responseText);
+						var res4 = output.data.content.transcript;
+						//$(".targetText")[0].innerHTML = res4
+						document.getElementById("sourceInputField").value=res4;
+						console.log(res4);
+						console.log(output);
+						break;
+					case 'error':
+						alert("上传失败");
+						break;
+					case 'cancel':
+						alert("上传被取消");
+						break;
+				}
+			});
+		}
+		
+		var appid = '20210625000871960';
+		var key = '0QMEkNIdfW2LudZqhD4U';
+		var salt = (new Date).getTime();
+		var from = 'auto';
+		var to = 'auto';
+			
+		var recordFlag = 1;
+		const recordBtn = document.querySelector(".record-btn");
+		const player = document.querySelector(".audio-player");
+		
+		recordBtn.onclick = () => {
+			if (recordFlag != 1) {
+				stopRecording();
+				recordBtn.getElementsByTagName('img')[0].src = '../static/img/microphone.png'
+				// recordBtn.textContent = "record";
+				console.log("录音结束");
+				recordFlag = 1
+				uploadAudio();
+			} else {
+				startRecording();
+				console.log("录音中...");
+				recordBtn.getElementsByTagName('img')[0].src = '../static/img/microphone1.png'
+				// recordBtn.textContent = "stop";
+				recordFlag = 2
+			}
+		};
+			
+		player.onclick = () => {
+			playRecording();
+		};
+			
+			
+		// word translation
+		$(".iconBtn.darkBtn").click(function() {
+			var query = $("#sourceInputField").val();
+			// var sourcebutton_list = document.getElementsByName("mainButton1");
+			var sourcediv = document.getElementById("sourceLang");
+			var sourcebutton = document.getElementById("mainButton1");
+			if (sourcediv.contains(sourcebutton)) {
+				sourcebutton_id = "mainButton1";
+			} else {
+				sourcebutton_id = "mainButton2";
+			}
+			console.log(query)
+			console.log(sourcebutton_id)
+			$.ajax({
+				url: 'http://127.0.0.1:8000/wordtrans/',
+				dataType: "json",
+				type: 'POST',
+				contentType: "application/json;charset=UTF-8",
+				async: true,
+				//data: JSON.stringify({word: query}),
+				data: JSON.stringify({
+					word: query,
+					id: sourcebutton_id
+				}),
+				success: function(data) {
+					console.log(data);
+					if (data.status == 200 && data.msg == "word query runs successfully.") {
+						var res1 = data.data.definitions;
+						$(".targetText")[0].innerHTML = res1;
+						console.log(res1);
+					}
+					if (data.status == 200 && data.msg == "url translation runs successfully.") {
+					  var res1 = data.data.content;
+					  var res2 = data.data.definitions;
+					  $(".targetText")[0].innerHTML = res2;
+					  document.getElementById("sourceInputField").value=res1;
+					  console.log(res1);
+					  console.log(res2);
+					}
+					if (data.status == 200 && data.msg ==
+						"sentence query runs successfully.") {
+						var res2 = data.data;
+						$(".targetText")[0].innerHTML = res2;
+						console.log(res2);
+					}
+					if (data.status == 200 && data.msg ==
+						"chinese sentence query runs successfully.") {
+						var res3 = data.data;
+						$(".targetText")[0].innerHTML = res3;
+						console.log(res3);
+					}
+					if (data.status == 200 && data.msg == "translate failed") {
+						var res4 = data.data;
+						$(".targetText")[0].innerHTML = res4;
+						console.log(res4);
+					}
+				}
+			});
+		})
+	
+		//audio function for input
+		function doTTS1() {
+			var ttsDiv = document.getElementById('bdtts_div_id');
+			var ttsAudio = document.getElementById('tts_autio_id');
+			var ttsText = document.getElementById('sourceInputField').value;
+	
+			ttsDiv.removeChild(ttsAudio);
+			var au1 = '<audio id="tts_autio_id" autoplay="autoplay">';
+			var sss = '<source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&per=3&spd=5&text=' +
+				ttsText + '" type="audio/mpeg">';
+			var eee = '<embed id="tts_embed_id" height="0" width="0" src="">';
+			var au2 = '</audio>';
+			ttsDiv.innerHTML = au1 + sss + eee + au2;
+	
+			ttsAudio = document.getElementById('tts_autio_id');
+	
+			ttsAudio.play();
+		}
+	
+		//audio function for output
+		function doTTS2() {
+			var ttsDiv = document.getElementById('bdtts_div_id1');
+			var ttsAudio = document.getElementById('tts_autio_id1');
+			var ttsText = $(".targetText")[0].innerHTML;
+			console.log(ttsText);
+	
+			ttsDiv.removeChild(ttsAudio);
+			var au1 = '<audio id="tts_autio_id1" autoplay="autoplay">';
+			var sss = '<source id="tts_source_id1" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&per=3&spd=5&text=' +
+				ttsText + '" type="audio/mpeg">';
+			var eee = '<embed id="tts_embed_id1" height="0" width="0" src="">';
+			var au2 = '</audio>';
+			ttsDiv.innerHTML = au1 + sss + eee + au2;
+	
+			ttsAudio = document.getElementById('tts_autio_id1');
+	
+			ttsAudio.play();
+		}
+	
+		//copy text
+		function copyText() {
+			var text = $(".targetText")[0].innerHTML;
+			var input = document.getElementById("input");
+			input.value = text; // 修改文本框的内容
+			input.select(); // 选中文本
+			document.execCommand("copy"); // 执行浏览器复制命令
+			alert("copy success");
+		}
+	
+		//exchange source and target language
+		function exchange() {
+			var sourcediv = document.getElementById("sourceLang");
+			var sourcebutton = document.getElementById("mainButton1");
+			if (sourcediv.contains(sourcebutton)) {
+				$("#mainButton1").appendTo("#targetLang");
+				$("#mainButton2").prependTo("#sourceLang");
+			} else {
+				$("#mainButton2").appendTo("#targetLang");
+				$("#mainButton1").prependTo("#sourceLang");
+			}
+	
+		}
+	</script>
+
 
 </html>

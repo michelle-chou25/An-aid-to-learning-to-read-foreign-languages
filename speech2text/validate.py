@@ -41,7 +41,7 @@ def validate(model,
     
     if tensorboard:
         writer = SummaryWriter()
-    # model = GatedConv.load(os.path.join('..', pretrained_model_path))
+    # speechmodel = GatedConv.load(os.path.join('..', pretrained_model_path))
     valid_dataset=data.MASRDataset(valid_index_path, labels_path)
     valid_dataloader = data.MASRDataLoader(
         valid_dataset, batch_size, num_workers
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     vocabulary = "".join(vocabulary)
     model = GatedConv.load(os.path.join('..', pretrained_model_path))
     if cuda_gpu:
-        model.cuda() # transfer model to GPU
+        model.cuda() # transfer speechmodel to GPU
     time1=time.time()
     validate(model)
     time2=time.time()

@@ -9,7 +9,7 @@ class MASRModel(nn.Module):
         self.config = config
 
     @classmethod
-    def load(cls, path): # load model
+    def load(cls, path): # load speechmodel
         # m = torch.load(path, map_location=torch.device('cpu'))
         m = torch.load(path)
         # state_dict = package["state_dict"]

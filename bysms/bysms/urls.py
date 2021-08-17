@@ -17,9 +17,11 @@ from wordtrans.views import index
 from django.conf.urls import url
 from django.contrib import admin
 from wordtrans.views import word
+from wordtrans.views import recognize
 
 urlpatterns = [
     url(r'admin/', admin.site.urls),
     url('wordtrans/',word),
+    url('recognize/',recognize),
     url('view/', index)
 ]

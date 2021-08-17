@@ -25,7 +25,7 @@ from tensorflow import keras
 import re
 
 # 1. preprocessing data
-# 2. build model
+# 2. build speechmodel
 # 2.1 encoder
 # 2.2 attention
 # 2.3 decoder
@@ -289,15 +289,15 @@ for epoch in range(epochs):
     if batch % 100 == 0:
       print('Epoch {} Batch {} Loss {:.4f}'.format(epoch + 1, batch, batch_loss.numpy()))
 
-# saving (checkpoint) the model every 2 epochs
+# saving (checkpoint) the speechmodel every 2 epochs
   if (epoch + 1) % 2 == 0:
     checkpoint.save(file_prefix = checkpoint_prefix)
 
     print('Epoch {} Loss {:.4f}'.format(epoch + 1, total_loss / steps_per_epoch))
     print('Time taken for 1 epoch {} sec\n'.format(time.time() - start))
 
-# evaluation model (small dataset)
-# load model
+# evaluation speechmodel (small dataset)
+# load speechmodel
 from nltk.translate.bleu_score import corpus_bleu
 
 encoder = Encoder(input_vocab_size, embedding_units, units, 1)
@@ -359,8 +359,8 @@ print(targets)
 score = corpus_bleu(targets, predictions)
 print("Bleu Score = " + str(100*score))
 
-# evaluation model
-# load model
+# evaluation speechmodel
+# load speechmodel
 import jieba
 from nltk.translate.bleu_score import corpus_bleu
 

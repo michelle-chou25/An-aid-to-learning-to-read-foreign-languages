@@ -47,8 +47,8 @@ def eval():
             sv.saver.restore(sess, tf.train.latest_checkpoint(hp.logdir))
             print("Restored!")
               
-            ## Get model name
-            mname = open(hp.logdir + '/checkpoint', 'r').read().split('"')[1] # model name
+            ## Get speechmodel name
+            mname = open(hp.logdir + '/checkpoint', 'r').read().split('"')[1] # speechmodel name
              
             ## Inference                  
             preds = np.zeros((1, hp.maxlen), np.int32)

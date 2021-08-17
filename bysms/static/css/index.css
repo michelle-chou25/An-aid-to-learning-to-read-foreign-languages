@@ -28,8 +28,35 @@
 .translateWebApp .translateBottomHolder{
     display:flex;justify-content:space-between;flex-wrap:wrap
 }
+/* 8.13新增 */
+#sourceLang{
+	display: flex;
+	width: 80%;
+	max-width: 475px;
+	justify-content: inherit;
+}
+#sourceLang .audio-player{
+	width: 230px;
+	height: auto;
+}
+.langHistoryHolder{
+	display: none;
+}
+.aut-but{
+	display: flex;
+	align-items: center;
+}
+.aut-but img:first-child{
+	margin-right: 5px;
+}
+
 @media only screen and (max-width: 520px){
     .translateWebApp{width:100%;margin:0px}
+	#mainButton1{
+		padding: 5px;
+		overflow: hidden;
+		width: 240px;
+	}
 }
 
 .customSelect{position:relative}
@@ -366,58 +393,6 @@ button.iconBtn.darkBtn{
     width:85px;
     padding:0px;
     outline: none;
-}
-
-button.iconBtn.lightBtn:before, button.iconBtn.lightBtn:after {
-    opacity: 0; /*透明度为完全透明*/
-    position: absolute;
-    z-index: 1000; /*设为最上层*/
-    /*鼠标放上元素上时的动画，鼠标放上后效果在.tip-*:hover:before, .tip-*:hover:after中设置;
-    0.3s:规定完成过渡效果需要多少秒或毫秒,ease:规定慢速开始，然后变快，然后慢速结束的过渡效果*/
-    transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-}
-
-button.iconBtn.lightBtn:before {
-    content: '';
-    border: 6px solid transparent;
-}
-
-button.iconBtn.lightBtn:after {
-    content: attr(data-tip); /*后去要提示的文本*/
-    padding: 5px;
-    white-space: nowrap; /*强制不换行*/
-    background-color: #000000;
-    color: #ffffff;
-}
-
-button.iconBtn.lightBtn:hover:before, button.iconBtn.lightBtn:hover:after {
-    opacity: 1; /*鼠标放上时透明度为完全显示*/
-    z-index: 1000;
-}
-
-
-button.iconBtn.lightBtn:before{
-    bottom: 100%;
-    left: 50%;
-    border-top-color: rgba(0, 0, 0, 0.8); /*小三角效果*/
-    margin-left: -3px;
-    margin-bottom: -12px;
-}
-
-button.iconBtn.lightBtn:after {
-    bottom: 100%;
-    left: 50%;
-    margin-left: -6px;
-}
-
-button.iconBtn.lightBtn:before {
-    margin-bottom: -6px;
-}
-
-button.iconBtn.lightBtn:after {
-    margin-bottom: 6px;
 }
 
 button:last-of-type{margin-right:0px}

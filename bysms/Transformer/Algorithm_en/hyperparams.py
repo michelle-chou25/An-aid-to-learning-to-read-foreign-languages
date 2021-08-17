@@ -10,7 +10,7 @@ class Hyperparams:
     lr = 0.0001 # learning rate.
     logdir = 'logdir' # log directory
     
-    # model
+    # speechmodel
     maxlen = 30 # Maximum number of words in a sentence. alias = T.
     min_cnt = 20 # words whose occurred less than min_cnt are encoded as <UNK>.
     hidden_units = 512 # alias = C

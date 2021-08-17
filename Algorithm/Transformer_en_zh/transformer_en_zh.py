@@ -27,7 +27,7 @@ batch_size = 32 # alias = N
 lr = 0.0001 # learning rate.
 logdir = 'drive/Shareddrives/ruochen.katherina@gmail.com/logdir_en_zh' # log directory
 
-# model
+# speechmodel
 maxlen = 30 # Maximum number of words in a sentence. alias = T.
 min_cnt = 20 # words whose occurred less than min_cnt are encoded as <UNK>.
 hidden_units = 512 # alias = C
@@ -456,8 +456,8 @@ def eval():
             sv.saver.restore(sess, tf.train.latest_checkpoint(logdir))
             print("Restored!")
               
-            ## Get model name
-            mname = open(logdir + '/checkpoint', 'r').read().split('"')[1] # model name
+            ## Get speechmodel name
+            mname = open(logdir + '/checkpoint', 'r').read().split('"')[1] # speechmodel name
              
             ## Inference
             if not os.path.exists('drive/Shareddrives/ruochen.katherina@gmail.com/results_en_zh'): os.mkdir('drive/Shareddrives/ruochen.katherina@gmail.com/results_en_zh')
