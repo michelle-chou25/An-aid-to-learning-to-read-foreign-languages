@@ -5,7 +5,6 @@ An aid to learning to read foreign languages
 The main content of this project is to build a simple Chinese-English translation web tool, which supports users to paste URL, extract paragraph text from it and translate automatically, users can also choose to paste the paragraph or word they want to translate manually. 
 
 # Demo-Preview
-https://drive.google.com/file/d/1cubSHR88Xq5f80XTGPJuY9ob-VGRROGD/view?usp=sharing
 ![img](images/demo.gif)
 
 # Table of contents
