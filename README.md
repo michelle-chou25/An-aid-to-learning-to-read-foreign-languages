@@ -6,6 +6,7 @@ The main content of this project is to build a simple Chinese-English translatio
 
 # Demo-Preview
 https://drive.google.com/file/d/1cubSHR88Xq5f80XTGPJuY9ob-VGRROGD/view?usp=sharing
+![img](images/demo.gif)
 
 # Table of contents
 Algorithm folder is to store different finished machine translation algoirthms.
