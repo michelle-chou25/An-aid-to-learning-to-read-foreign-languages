@@ -35,9 +35,9 @@ Then the word query and sentence translation can be done in the FrontEnd part.
 The Google Drive link for trained Machine Translation models are as follows: 
 (Format: Corpus name_Algorithm name_Translation direction)
 1.	Corpus1w_Transformer_Chinese-English:
-https://drive.google.com/file/d/1-q6RZcZyxEBfXzOFnJkLRNIa9ctQLWMD/view?usp=sharing
+https://drive.google.com/file/d/11269OHJtp9E6xLK1V2RdPEVDKj9ImljQ/view?usp=sharing
 2.	Corpus1w_Transformer_English-Chinese:
-https://drive.google.com/drive/folders/13y7P1uFnKijU8BS1J2YOVH_QyaHD114o?usp=sharing
+https://drive.google.com/file/d/12V2-ysI5hJpd7iY0OMkYBZpjhFg0cWUE/view?usp=sharing
 3.	Corpus1w_seq2seq+attention_Chinese-English:
 https://drive.google.com/drive/folders/1-P3U4B7RNtwdeeM0KjpyfHB7Aji4s8nq?usp=sharing
 4.	Corpus_education_Transformer_Chinese-English:
