@@ -6,39 +6,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="Merge branch 'michelle_dev'&#10;&#10;# Conflicts:&#10;#&#9;requirements">
-      <change afterPath="$PROJECT_DIR$/bysms/speech/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bysms/speech/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bysms/speech/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bysms/speech/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bysms/speech/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bysms/speech/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bysms/speech/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/spoken_experiment10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/AISHELL-1dataprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/beamdecode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/data_aishell/transcript/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/data_aishell/transcript/reademe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/decoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/_init_path.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/playaudio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/recognizeEng.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/recognize_cn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/recordaudio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/examples/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/feature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/lm/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/models/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/models/conv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/utils/mfccvisualization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/utils/sftt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/utils/speechdatapreprocessing.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech2text/validate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/speech2text/output" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/speech2text/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/speech2text/pretrained/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/speech2text/pretrained/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/speech2text/speechmodels/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/speech2text/speechmodels/conv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/speech2text/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/speech2text/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/static/js/record.js" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/static/js/record.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bysms/wordtrans/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bysms/wordtrans/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/education_result" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/en_zh_model_epoch_20_gs_2640" beforeDir="false" afterPath="$PROJECT_DIR$/results/experiemnt_en_zh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/experiemnt8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/model_epoch_19_gs_39824" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/model_epoch_20_gs_2640" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/spoken_result" beforeDir="false" afterPath="$PROJECT_DIR$/results/spoken_experiment9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/utils/speechdatapreprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/utils/speechdatapreprocessing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,11 +378,6 @@
           <url>file://$PROJECT_DIR$/speech2text/examples/playaudio.py</url>
           <line>48</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/speech2text/examples/demo-recognize.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

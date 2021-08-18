@@ -39,7 +39,6 @@ venv.bak/
 
 # audio / Image related
 *.avi
-*.mp4
 *.jpg
 *.jpeg
 *.png
@@ -131,5 +130,4 @@ Corpus/
 results/
 bysms/speech/
 /Demo_FrontEnd/
-/speech2text/
 
