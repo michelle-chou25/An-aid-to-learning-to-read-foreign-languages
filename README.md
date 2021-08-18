@@ -69,7 +69,7 @@ listed in requirements file
 All used machine translation corpora can be downloaded by this link (after the corpora downloaded, put the corpora into Corpus folder)
 https://drive.google.com/file/d/1lAh29Qxmo1oqa9WphnU3K7L4CNGRVv4L/view?usp=sharing
 
-ASR copus uses AISHELL-1, which is a Chinese madrian corpus inludes 178 hours speech recording of Chinese news, this corpus is conducted in a quiet room, from 400 people.
+ASR uses AISHELL-1 as the corpus, which is a Chinese madrian corpus inludes 178 hours speech recording of Chinese news, this corpus is conducted in a quiet room, from 400 people.
 Corpus address: https://www.openslr.org/33/
 
 ## Requirement package
