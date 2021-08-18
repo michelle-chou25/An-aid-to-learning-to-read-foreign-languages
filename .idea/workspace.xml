@@ -5,18 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="Merge branch 'michelle_dev'&#10;&#10;# Conflicts:&#10;#&#9;requirements">
-      <change afterPath="$PROJECT_DIR$/bysms/static/js/recordtmp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-recognize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/demo-record-recognize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/ecognizeEng.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/recognizeEng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/examples/recordaudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/examples/recordaudio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/pretrained" beforeDir="false" afterPath="$PROJECT_DIR$/speech2text/pretrained" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/pretrained/model_104.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech2text/pretrained/readme.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="41e21471-b053-4f1c-88d0-6bbda87700b0" name="Default Changelist" comment="Merge branch 'michelle_dev'&#10;&#10;# Conflicts:&#10;#&#9;requirements" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

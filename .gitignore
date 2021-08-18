@@ -116,7 +116,6 @@ nohupt
 
 speech2text/pretrained/nano.save
 runs/
-results
 speech2text/results/
 speech2text/data_aishell/train.index
 speech2text/data_aishell/dev.index
@@ -131,3 +130,4 @@ speech2text/pretrained/model_99.pth
 speech2text/error
 Corpus/
 results/
+

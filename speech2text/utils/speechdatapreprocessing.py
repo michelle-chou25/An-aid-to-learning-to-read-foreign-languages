@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # coding: utf-8
 
 # In[1]:
@@ -159,8 +158,29 @@ all_words = ['_'] + all_words[:27] + [' '] + all_words[27:]
 len(all_words)
 
 
-# In[36]:
 
+# In[45]:
+
+
+pd.DataFrame(res_train).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/train.index', index=False, header =None)
+pd.DataFrame(res_dev).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/dev.index', index=False, header =None)
+
+
+# In[50]:
+
+
+joblib.dump(all_words, 'labels.gz')
+
+
+# In[51]:
+
+
+with open('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/train.index') as f:
+    idx = f.readlines()
+idx = [x.strip().split(",", 1) for x in idx]
+
+
+# In[53]:
 
 pd.DataFrame(res_train).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/train.index',index=False,header=None)
 pd.DataFrame(res_dev).to_csv('/home/nz32/git/An-aid-to-learning-to-read-foreign-languages/speech2text/data_aishell/dev.index',index=False,header=None)
@@ -177,5 +197,6 @@ joblib.dump(all_words, '/home/nz32/git/An-aid-to-learning-to-read-foreign-langua
 # idx = [x.strip().split(",", 1) for x in idx]
 
 # all_words = joblib.load('data_aishell/labels.gz')
+
 
 

@@ -105,13 +105,13 @@ def train(
             writer.add_scalar("cer/epoch", cer, epoch + 1)
             writer.add_scalar("loss/epoch", loss, epoch + 1)
         if (epoch + 1) % 5 == 0:
-            torch.save(model, "pretrained/model_{}.pth".format(epoch))  # save a pretrained model every 5 epochs
+            torch.save(model, "pretrained/model_{}.pth".format(epoch))  # save a pretrained speechmodel every 5 epochs
 
 
 def eval(model, dataloader):
     # eval() is used to testing and predicting, to avoid
     # the influence that batch normalization and dropout have on testing/predicting.
-    # in evaluation model, BN is fixed, and the mean and std are those trained previously.
+    # in evaluation speechmodel, BN is fixed, and the mean and std are those trained previously.
     model.eval()
     decoder = GreedyDecoder(dataloader.dataset.labels_str)
     cer = 0  # CER
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     vocabulary = joblib.load(LABEL_PATH)  # vocabulary：all characters in corpus
     vocabulary = "".join(vocabulary)
     model = GatedConv(vocabulary)
-    model.cuda()  # trasnfer model from CPU to GPU
+    model.cuda()  # trasnfer speech model from CPU to GPU
     train(model)
-    # model.to_train()
-    # model.fit()
+    # speechmodel.to_train()
+    # speechmodel.fit()
