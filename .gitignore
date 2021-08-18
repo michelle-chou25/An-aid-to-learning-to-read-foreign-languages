@@ -37,7 +37,7 @@ ENV/
 env.bak/
 venv.bak/
 
-# Video / Image related
+# audio / Image related
 *.avi
 *.mp4
 *.jpg
@@ -89,9 +89,8 @@ ENV/
 env.bak/
 venv.bak/
 
-# Video / Image related
+# audio / Image related
 *.avi
-*.mp4
 *.jpg
 *.jpeg
 *.png

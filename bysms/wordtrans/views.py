@@ -9,15 +9,12 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import lxml
-# from fake_useragent import UserAgent
 import urllib.request
 import ssl
 import random
 from hashlib import md5
 import calendar, time, os, sys
-# from speech2text.models.conv import GatedConv
-# from speech2text.config import pretrained_model_path
-# from torch._C import import_ir_module
+import traceback
 
 
 
@@ -28,7 +25,7 @@ appid = '20210625000871960'
 appkey = '0QMEkNIdfW2LudZqhD4U'
 
 # For list of language codes, please refer to `https://api.fanyi.baidu.com/doc/21`
-from_lang = 'auto'  # 自动检测语种
+from_lang = 'auto'  # check languge automatically
 to_lang = 'en'
 
 endpoint = 'http://api.fanyi.baidu.com'
@@ -51,13 +48,13 @@ def word(request):
         # tell an url from a paragraph / sentence
         if re.match(r'^https?:/{2}\w.+$', url):
             print("This looks like a valid url.")
-            # id = req.get("id")
-            # if id == "mainButton1":
-            #         from_lang = "zh"
-            #         to_lang = "en"
-            # else:
-            #     from_lang = "en"
-            #     to_lang="zh"
+            id = req.get("id")
+            if id == "mainButton1":
+                    from_lang = "zh"
+                    to_lang = "en"
+            else:
+                from_lang = "en"
+                to_lang="zh"
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
                                      'Chrome/51.0.2704.63 Safari/537.36'}
             req = urllib.request.Request(url=url, headers=headers)
@@ -129,6 +126,7 @@ def word(request):
 def recognize(requests):
     if requests.method == "POST":
         try:
+            from speech2text import speechcompose
             info_str=""
             type = requests.GET.get('type',1)
             f =requests.FILES.get("audio", None)
@@ -140,22 +138,10 @@ def recognize(requests):
             print(type)
             if type == '1':
                 print("Chinese")
+                # use model
+                # info_str=speechcompose.get(filePath)
 
-                # add the path of its uppper directory to path
-                # os.path.join(os.getcwd(), "../..")
-                # sys.path.append('..')
-                # # 添加当前路径的前一级文件作为源文件夹,需要作为模块引入的路径
-                # path = os.path.dirname(os.path.dirname(__file__))
-                # print(path)
-                # sys.path.append(path)
-                #
-                # # modify pretrained_model_path to relative path if don't want to have ",,"
-                # # model = GatedConv.load(os.path.join('..', pretrained_model_path))
-                # model=GatedConv.load(os.path.join('..', pretrained_model_path))
-                # # model = GatedConv.load(r"D:\CS5014\An-aid-to-learning-to-read-foreign-languages\bysms\speech2text\pretrained\model_99.pth")
-                # info_str = model.predict(filePath)
-
-                # Using Google API
+                # Use Google API
                 r = speech_recognition.Recognizer()
                 harvard = speech_recognition.AudioFile(filePath)
                 with harvard as source:
@@ -171,16 +157,18 @@ def recognize(requests):
                with harvard as source:
                    r.adjust_for_ambient_noise(source, duration=0.5)
                    audio = r.record(source)
-                # 用witAI识别
+                # 用witAI
                # info_str = r.recognize_wit(audio_data=audio, key=wit_key)
                # print("recognized result: ", info_str)
-                # 用google识别
+                # 用google
                text = r.recognize_google(audio_data=audio, language="en-US", show_all=True)
                info_str = text['alternative'][0]
             data = {"content": info_str, "definitions": ""}
             return JsonResponse({"status": 200, "data": data, "msg": "speech recognized successfully."})
         except Exception as e:
             print(e)
+            print("============")
+            print(traceback.print_exc())
             return JsonResponse({'Recognized text': '', 'code': 600, 'message': 'error occurs！'})
 
 def index(request):
