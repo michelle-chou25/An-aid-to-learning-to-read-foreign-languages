@@ -3,6 +3,8 @@ An aid to learning to read foreign languages
 
 # Project Description
 The main content of this project is to build a simple Chinese-English translation web tool, which supports users to paste URL, extract paragraph text from it and translate automatically, users can also choose to paste the paragraph or word they want to translate manually. 
+ASR part is added to behave as an auxiliary input method,  therefore AST+MT can be bounded as a Spoken Language Translation(SLT).
+ASR part is inspired by wav2letter which is proposed by FaceBook in 2017. The model of ASR is a solely CNN end to end speech recognition experiment.
 
 # Demo-Preview
 ![img](images/demo.gif)
@@ -47,13 +49,20 @@ https://drive.google.com/drive/folders/1-P3U4B7RNtwdeeM0KjpyfHB7Aji4s8nq?usp=sha
 https://drive.google.com/drive/folders/1-R4lTnch3UEF_BQTAeUS74Yk9lSH5jIj?usp=sharing
 5.	Seq2seq_testcorpus_ seq2seq+attention_Chinese-English:
 https://drive.google.com/drive/folders/1UXjT5NN3JdNIImfNdWg3bHCXCNIPi9Ne?usp=sharing
+6. ASR model
+https://drive.google.com/file/d/1n9zJQhNyEXAlD6nQVULpHOov1A5tSr2W/view?usp=sharing
+
 
 ## Corpora
 All used machine translation corpora can be downloaded by this link (after the corpora downloaded, put the corpora into Corpus folder)
 https://drive.google.com/file/d/1lAh29Qxmo1oqa9WphnU3K7L4CNGRVv4L/view?usp=sharing
 
+ASR copus uses AISHELL-1, which is inludes 178 hours speech recording of Chinese news, this corpus is conducted in a quiet room, from 400 people, in Mandrian.
+Corpus address: https://www.openslr.org/33/
+
+
 ## Requirement package
-listed in requirements file
+see requirements file
 
 # Contributors
 Ruochen Xue & Nanjun Zhou
