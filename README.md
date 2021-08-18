@@ -9,7 +9,6 @@ ASR part is inspired by wav2letter which is proposed by FaceBook in 2017. The mo
 
 # Demo-Preview
 ![img](images/demo.gif)
-webpreview/20210818_225604.mp4
 
 # Table of contents
 Algorithm folder is to store different finished machine translation algoirthms.
