@@ -115,7 +115,6 @@ nohupt
 
 speech2text/pretrained/nano.save
 runs/
-results
 speech2text/results/
 speech2text/data_aishell/train.index
 speech2text/data_aishell/dev.index
@@ -133,3 +132,4 @@ results/
 bysms/speech/
 /Demo_FrontEnd/
 /speech2text/
+

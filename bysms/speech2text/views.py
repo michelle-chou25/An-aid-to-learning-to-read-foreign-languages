@@ -15,7 +15,8 @@ import random
 from hashlib import md5
 import calendar, time, os, sys
 import traceback
-import calendar, time, os
+
+
 
 ssl._create_default_https_context = ssl._create_stdlib_context
 
@@ -24,10 +25,8 @@ appid = '20210625000871960'
 appkey = '0QMEkNIdfW2LudZqhD4U'
 
 # For list of language codes, please refer to `https://api.fanyi.baidu.com/doc/21`
-
-# from_lang = 'auto'  # check languge automatically
-# to_lang = 'en'
-
+from_lang = 'auto'  # check languge automatically
+to_lang = 'en'
 
 endpoint = 'http://api.fanyi.baidu.com'
 path = '/api/trans/vip/translate'
@@ -127,6 +126,7 @@ def word(request):
 def recognize(requests):
     if requests.method == "POST":
         try:
+            from speech2text import speechcompose
             info_str=""
             type = requests.GET.get('type',1)
             f =requests.FILES.get("audio", None)
@@ -138,24 +138,10 @@ def recognize(requests):
             print(type)
             if type == '1':
                 print("Chinese")
-                # import os
-                # import sys
-                #
-                # # sys.path.append('the path needed to be imported as a modual')
-                # # add the path of its uppper directory to path
-                # path = os.path.dirname(os.path.dirname(__file__))
-                # print(path)
-                # sys.path.append(path)
-                # os.path.join(os.getcwd(), "../..")
-                #
-                # from torch._C import import_ir_module
-                # from speech2text.models.conv import GatedConv
-                # from speech2text.config import pretrained_model_path
-                # # modify pretrained_model_path to relative path if don't want to have ",,"
-                # model = GatedConv.load(os.path.join('./speech2text/pretrained/', pretrained_model_path))
-                # info_str = model.predict(filePath)
+                # use model
+                # info_str=speechcompose.get(filePath)
 
-                # Using Google API
+                # Use Google API
                 r = speech_recognition.Recognizer()
                 harvard = speech_recognition.AudioFile(filePath)
                 with harvard as source:
@@ -171,18 +157,10 @@ def recognize(requests):
                with harvard as source:
                    r.adjust_for_ambient_noise(source, duration=0.5)
                    audio = r.record(source)
-
                 # 用witAI
                # info_str = r.recognize_wit(audio_data=audio, key=wit_key)
                # print("recognized result: ", info_str)
                 # 用google
-               text = r.recognize_google(audio_data=audio, language="en-US", show_all=True)
-               info_str = text['alternative'][0]
-
-                # 用witAI识别
-               # info_str = r.recognize_wit(audio_data=audio, key=wit_key)
-               # print("recognized result: ", info_str)
-                # 用google识别
                text = r.recognize_google(audio_data=audio, language="en-US", show_all=True)
                info_str = text['alternative'][0]
             data = {"content": info_str, "definitions": ""}
@@ -193,6 +171,6 @@ def recognize(requests):
             print(traceback.print_exc())
             return JsonResponse({'Recognized text': '', 'code': 600, 'message': 'error occurs！'})
 
-
 def index(request):
     return render(request, 'index.html')
+

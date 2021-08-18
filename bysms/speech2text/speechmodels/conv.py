@@ -4,8 +4,13 @@ import torch.nn as nn
 from torch.nn.functional import hardtanh
 from torch.nn.utils import weight_norm
 from .base import MASRModel
+<<<<<<< HEAD:bysms/speech2text/speechmodels/conv.py
 from .. import feature
 from .. import config
+=======
+import feature
+import config
+>>>>>>> main:speech2text/models/conv.py
 
 # conv unit
 class ConvBlock(nn.Module):
